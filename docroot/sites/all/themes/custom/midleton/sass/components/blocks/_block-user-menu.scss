@@ -1,0 +1,25 @@
+/**
+ * $USER-MENU
+ */
+.block--system-user-menu {
+  float:right;
+  margin:25px 0;
+  @include breakpoint(0 $tab){
+    float:none;
+  }
+  .menu {
+    @extend %hlist;
+  }
+  a {
+    text-transform: uppercase;
+    padding: 0 0.6em;
+    border-right: 1px solid $orange;
+  }
+  li:first-child a {
+    padding-left: 0;
+  }
+  li:last-child a {
+    padding-right: 0;
+    border-right: 0;
+  }
+}

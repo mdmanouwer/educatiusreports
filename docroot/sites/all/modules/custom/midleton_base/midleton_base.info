@@ -1,0 +1,25 @@
+name = Midleton base
+description = "It provides the base configuration of active modules."
+package = Administration
+core = 7.x
+
+; Views handlers
+files[] = includes/views/handlers/midleton_base_plugin_style_table.inc
+
+dependencies[] = field_permissions
+dependencies[] = eck
+dependencies[] = rules
+dependencies[] = rules_admin
+dependencies[] = views
+dependencies[] = views_ui
+dependencies[] = entityreference
+dependencies[] = midleton_user_features
+dependencies[] = midleton_student_features
+dependencies[] = midleton_report_features
+dependencies[] = masquerade
+dependencies[] = navbar
+dependencies[] = libraries
+dependencies[] = token
+dependencies[] = menu_token
+dependencies[] = front_page
+dependencies[] = strongarm

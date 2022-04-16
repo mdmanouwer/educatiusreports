@@ -1,0 +1,145 @@
+/**
+ * $NODE
+ */
+.node--teaser {
+  margin-bottom: $vert-spacing-unit;
+}
+
+.node__links {
+  margin-bottom: $vert-spacing-unit;
+}
+
+.node-form {
+  .field-name-field-student-reference {
+    padding: 10px;
+    border: 2px solid $mid-blue;
+  }
+  .filter-wrapper{
+    display:none;
+  }
+  font-size: 1.1em;
+  .single-checkbox,
+  .form-item {
+    display: table;
+    width: 100%;
+    .element-wrapper,
+    .label-wrapper {
+      width: 50%;
+      display: table-cell;
+      // padding:20px;
+      // border: 1px solid $light-grey;
+      vertical-align: top;
+    }
+    .element-wrapper {
+      border-left: none;
+    }
+    .element-wrapper {
+      .element-wrapper,
+      .label-wrapper {
+        width: auto;
+        display: inline;
+        padding: 0px;
+        border: none;
+      }
+    }
+  }
+  .form-radios {
+    .form-item {
+      display: inline-block;
+      width: auto;
+      input[type="radio"] {
+        display: none;
+      }
+      input[type="radio"] + label {
+        font-size: 0;
+        cursor: pointer;
+        &:before {
+          font-size: 24px;
+          font-family: 'icons';
+          content: '\E801';
+        }
+      }
+      input[type="radio"].highlighted + label,
+      input[type="radio"]:checked + label {
+        &:before {
+          content: '\E800';
+        }
+      }
+    }
+  }
+  .field-name-field-comments-chief-coordinator,
+  .field-name-field-observations-coordinator,
+  .field-name-field-coordinator-observations-3,
+  .field-name-field-coordinator-observations-4,
+  .field-name-field-observations-coordinator-2 {
+    background: #eeeebb;
+    padding: 10px;
+  }
+  input#edit-delete {
+    float: right;
+  }
+}
+
+$main: #2e66b1;
+.node {
+  .node__content,
+  .collapsible > div {
+    > .field {
+      display: table;
+      width: 100%;
+      > .field__items,
+      > .field__label {
+        width: 50%;
+        display: table-cell;
+        padding: 20px;
+        border: 1px solid #555;
+        vertical-align: top;
+      }
+      .field__label {
+        color: #000;
+        .description {
+          font-style: italic;
+          font-weight: normal;
+          font-size: .9em;
+          color: #555;
+        }
+      }
+      > .field__items {
+        border-left: none;
+
+        color: $main;
+      }
+      &.field--label-hidden {
+        margin-left: 50%;
+        width: 50%;
+        > .field__items {
+          border-left: 1px solid #555;
+        }
+      }
+      .star {
+        font-size: 0;
+        img {
+          width: 25px;
+        }
+
+      }
+    }
+    .field--name-field-comments-chief-coordinator,
+    .field--name-field-observations-coordinator,
+    .field--name-field-coordinator-observations-3,
+    .field--name-field-coordinator-observations-4,
+    .field--name-field-observations-coordinator-2 {
+      .field__items,
+      .field__label {
+        background: #eeeebb;
+      }
+    }
+    .field--name-field-student-reference {
+      margin-left: 0 !important;
+      width: 100% !important;
+      .field__label {
+        width: 200px;
+      }
+    }
+  }
+}

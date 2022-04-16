@@ -1,0 +1,35 @@
+/**
+ * $ACTION-LINKS
+ */
+.action-links {
+  font-size: 1.4em;
+  @extend %hlist;
+  margin-bottom: $vert-spacing-unit;
+  li {
+    a {
+      color: white;
+      background-color: $mid-blue;
+      text-decoration: none;
+      font-size: .7em;
+      padding: 5px 10px;
+      text-transform: uppercase;
+      display: block;
+      &.active{
+        background:$dark-grey;
+      }
+      &:hover {
+        background: darken($mid-blue, 10);
+      }
+      &:before {
+        content: '\E802';
+        font-family: icons;
+        margin-right: 10px;
+      }
+      &.midleton-message-settings{
+        &:before{
+          display:none;
+        }
+      }
+    }
+  }
+}

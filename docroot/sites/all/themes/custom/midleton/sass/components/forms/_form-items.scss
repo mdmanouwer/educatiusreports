@@ -1,0 +1,71 @@
+/**
+ * $FORM-ITEM
+ */
+.form-item {
+  color: $mid-grey;
+  margin: 20px 0;
+  .node-form & {
+
+    margin: 10px 0;
+    label {
+      border-bottom: none;
+    }
+  }
+  label {
+    margin-bottom: 0.2em;
+  }
+  .form-select,
+  .form-text,
+  .form-textarea {
+    padding: 0.6em;
+    background-color: #fff;
+    border: 1px solid $light-grey;
+    color: $mid-grey;
+    vertical-align: middle;
+
+  }
+  .password-strength {
+    margin-top: 0;
+  }
+  select {
+    height: 37px;
+    padding:0 !important;
+  }
+  .description {
+    margin-top: 0.2em;
+    font-style: italic;
+
+    width: calc(100% - 250px);
+  }
+}
+
+.container-inline {
+  .form-select,
+  .form-text,
+  .form-textarea {
+    width: auto;
+  }
+}
+
+.form-type-checkbox .single-checkbox {
+  @include switch-box(30px);
+}
+
+.midleton-base-message-settings {
+  .form-type-checkbox {
+    input {
+      float: left;
+      margin: 2px 10px 0 0;
+    }
+  }
+}
+
+html.js .form-autocomplete {
+  background-image: url(../images/throbber.gif?1382488163);
+  background-position: 100% 13px;
+}
+
+html.js .throbbing {
+  background-image: url(../images/throbber.gif?1382488163);
+  background-position: 100% -66px;
+}

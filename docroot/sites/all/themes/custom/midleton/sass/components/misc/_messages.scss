@@ -1,0 +1,38 @@
+/**
+ * $MESSAGES
+ */
+.messages {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 15px;
+  border: none;
+  text-align: center;
+  font-size: 15px;
+  a{
+    font-weight:bold;
+    color:white;
+  }
+  ul{
+
+    list-style:none;
+    li{
+      list-style:none;
+      margin:10px 0;
+    }
+  }
+}
+
+.messages--status {
+  color: white;
+  background: green;
+}
+
+.messages--warning {
+  color:white;
+  background: orangered;
+}
+
+.messages--error {
+  color:white;
+  background: red;
+}

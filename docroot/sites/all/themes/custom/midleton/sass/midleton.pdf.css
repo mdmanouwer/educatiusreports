@@ -1,0 +1,213 @@
+html {
+  margin-top: 50px;
+  margin-bottom: 40px; }
+  html body {
+    position: relative;
+    margin: 0;
+    margin-bottom: 80px;
+    margin-top: 50px;
+    font-family: sans-serif;
+    line-height: 1;
+    margin-left: 60px;
+    margin-right: 20px; }
+    html body .logo {
+      position: absolute;
+      right: 5px;
+      top: -60px;
+      width: 170px; }
+      html body .logo img {
+        width: 100%; }
+    html body .logo-small {
+      position: fixed;
+      right: 25px;
+      top: 0;
+      width: 170px;
+      z-index: -2; }
+      html body .logo-small img {
+        width: 100%; }
+    html body .student {
+      height: 120px;
+      margin-left: 340px; }
+      html body .student h3 {
+        margin-top: 50px;
+        text-transform: uppercase;
+        color: #2e66b1;
+        font-size: 20px;
+        margin-left: 20px; }
+      html body .student .field {
+        width: 140px;
+        font-size: 13px;
+        margin-left: 20px;
+        margin-bottom: 10px; }
+        html body .student .field.field--name-field-name, html body .student .field.field--name-field-last-name {
+          display: none; }
+        html body .student .field .field__label,
+        html body .student .field .field__items {
+          display: inline-block;
+          vertical-align: top; }
+        html body .student .field .field__label {
+          margin-right: 10px; }
+          html body .student .field .field__label .description {
+            font-weight: normal;
+            color: #555;
+            font-style: italic;
+            font-size: 10px; }
+        html body .student .field .field__items {
+          color: #2e66b1; }
+    html body .side {
+      color: #808284;
+      left: -680px;
+      position: fixed;
+      top: 50%;
+      font-size: 8px; }
+      html body .side .inner {
+        -ms-transform: rotate(-90deg);
+        /* IE 9 */
+        -webkit-transform: rotate(-90deg);
+        /* Chrome, Safari, Opera */
+        transform: rotate(-90deg);
+        text-align: center; }
+    html body .footer {
+      position: fixed;
+      top: 0px;
+      width: 100%; }
+      html body .footer img {
+        width: 100%;
+        height: auto; }
+    html body h2 {
+      font-size: 2.3em; }
+    html body .footer {
+      bottom: 130px;
+      top: auto; }
+
+h2 {
+  padding: 0px;
+  margin-bottom: 30px; }
+
+div.collapsible {
+  border: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  margin-bottom: 50px; }
+  div.collapsible h3 {
+    padding: 0;
+    margin: 0;
+    display: block;
+    left: 0;
+    width: 100%;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    page-break-after: avoid;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px;
+    background: #6c9bd9;
+    color: white;
+    text-transform: uppercase; }
+
+.pager {
+  z-index: 9999;
+  position: fixed;
+  bottom: 0;
+  right: 0; }
+
+h1 {
+  font-size: 22px;
+  top: -80px;
+  margin-bottom: 10px; }
+
+.date {
+  color: #555;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+  font-size: 12px;
+  font-style: italic; }
+
+.node {
+  font-size: 13px; }
+  .node .contextual-links-wrapper {
+    display: none; }
+  .node h2 {
+    display: none; }
+  .node .field--name-field-status {
+    display: none; }
+  .node .field.field--name-field-student-reference {
+    display: none; }
+  .node .field {
+    width: 100%;
+    margin: 28px 0; }
+    .node .field:not(.field--type-text-long) {
+      page-break-inside: avoid; }
+    .node .field:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .node .field > .field__label {
+      width: 470px;
+      display: block;
+      float: left;
+      left: 0; }
+    .node .field > .field__items {
+      font-weight: bold;
+      padding: 0;
+      color: #2e66b1;
+      left: 0;
+      padding-left: 0;
+      min-height: 50px; }
+    .node .field > .field__items,
+    .node .field > .field__label {
+      vertical-align: top; }
+    .node .field .field__label .label {
+      font-weight: bold; }
+    .node .field .field__label .description {
+      font-style: italic;
+      font-size: .9em;
+      color: #555;
+      margin-top: 2px; }
+    .node .field.field--type-text-long, .node .field.field--label-hidden {
+      margin-bottom: 30px;
+      border-top: none; }
+      .node .field.field--type-text-long .field__label, .node .field.field--label-hidden .field__label {
+        width: 100%;
+        display: block;
+        float: none; }
+      .node .field.field--type-text-long .field__items, .node .field.field--label-hidden .field__items {
+        width: 100%;
+        font-weight: normal;
+        margin: 0;
+        margin-top: 10px;
+        display: block; }
+    .node .field .star {
+      font-size: 40px;
+      font-weight: bold;
+      color: #ddd; }
+      .node .field .star.highlighted, .node .field .star.selected {
+        color: #2e66b1; }
+      .node .field .star img {
+        width: 20px;
+        margin-right: 5px; }
+  .node .field--name-field-comments-chief-coordinator,
+  .node .field--name-field-observations-coordinator,
+  .node .field--name-field-coordinator-observations-3,
+  .node .field--name-field-coordinator-observations-4,
+  .node .field--name-field-observations-coordinator-2 {
+    /* .field__label {
+       display: block;
+       width: 100%;
+       margin-bottom: 15px;
+     }
+     .field__items {
+       width: 100%;
+       margin: 0;
+       background:lighten($main,20);
+       color:white;
+       padding: 10px;
+       font-style: italic;
+       font-weight: normal;
+       display: block;
+       width: 100%;
+     }*/ }
+
+/*# sourceMappingURL=midleton.pdf.css.map */

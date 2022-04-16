@@ -1,0 +1,154 @@
+<?php
+
+/**
+ * Implements hook_update_N().
+ */
+function midleton_base_update_7002() {
+  $modules = array('views', 'views_ui', 'midleton_student_features');
+  module_enable($modules);
+}
+
+/**
+ * Implements hook_update_N().
+ */
+function midleton_base_update_7003() {
+  $modules = array('midleton_report_features');
+  module_enable($modules);
+}
+
+/**
+ * Implements hook_update_N().
+ */
+function midleton_base_update_7004() {
+  $modules = array('rules_ui');
+  module_enable($modules);
+}
+
+/**
+ * Implements hook_update_N().
+ */
+function midleton_base_update_7005() {
+  $modules = array('masquerade');
+  module_enable($modules);
+}
+
+/**
+ * Implements hook_update_N().
+ */
+function midleton_base_update_7006() {
+  $modules = array('navbar');
+  module_enable($modules);
+}
+
+/**
+ * Implements hook_update_N().
+ */
+function midleton_base_update_7007() {
+  $modules = array('libraries');
+  module_enable($modules);
+}
+
+/**
+ * Implements hook_update_N().
+ */
+function midleton_base_update_7008() {
+  $modules = array('token','menu_token');
+  module_enable($modules);
+}
+
+/**
+ * Implements hook_update_N().
+ * Really installs the rules_admin module.
+ */
+function midleton_base_update_7009() {
+  $modules = array('rules_admin');
+  module_enable($modules);
+}
+
+/**
+ * Implements hook_update_N().
+ */
+function midleton_base_update_7010() {
+  $modules = array('front_page');
+  module_enable($modules);
+}
+
+/**
+ * Implements hook_update_N().
+ * Disables the comment module.
+ */
+function midleton_base_update_7011() {
+  $modules = array('comment');
+  module_disable($modules);
+}
+
+/**
+ * Implements hook_update_N().
+ * Enables the strongarm module.
+ */
+function midleton_base_update_7012() {
+  $modules = array('strongarm');
+  module_enable($modules);
+}
+
+/**
+ * Deletes content types.
+ */
+function midleton_base_update_7013(){
+  $node_types = array(
+    'inform_family',
+    'free_time_and_activities_involve',
+    'inform_general_issues',
+    'inform_school'
+  );
+  foreach($node_types as $type){
+    node_type_delete($type);
+  }
+}
+
+/**
+ * Deletes field types to be replaced by features.
+ */
+function midleton_base_update_7014(){
+  $field_types = [
+    'field_attitude_and_behavior2',
+    'field_average_hours_of_study',
+    'field_it_is_punctual2',
+    'field_observations_coordinator',
+    'field_participates_in_the_activ2',
+    'field_participates_in_the_daily2',
+  ];
+  foreach ($field_types as $type){
+    field_delete_field($type);
+  }
+}
+
+/**
+ * Update Module weight.
+ */
+function midleton_base_update_7015(){
+  db_update('system')
+    ->fields(array('weight' => 20))
+    ->condition('type', 'module')
+    ->condition('name', 'midleton_base')
+    ->execute();
+}
+
+/**
+ * Remove pantheon
+ */
+function midleton_base_update_7016(){
+  module_disable([
+    'pantheon_login',
+    'pantheon',
+  ]);
+}
+
+/**
+ * Remove ptm category and field.
+ */
+function midleton_base_update_7017(){
+  field_delete_field('field_ptm_category');
+  $vid = taxonomy_vocabulary_machine_name_load('ptm_category')->vid;
+  taxonomy_vocabulary_delete($vid);
+}

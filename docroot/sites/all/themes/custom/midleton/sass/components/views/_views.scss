@@ -1,0 +1,48 @@
+.views-exposed-widget > label{
+  margin-bottom:.2em;
+  display:block;
+}
+
+.view-midleton-coordinator-chief{
+  &.view-display-id-page{
+    tr.revision-pending{
+      font-weight:bold;
+    }
+  }
+}
+
+.view-midleton-madrid{
+  &.view-display-id-page{
+    tr.approval-pending{
+      font-weight:bold;
+    }
+  }
+}
+
+.view-midleton-coordinator{
+  &.view-display-id-page{
+    tr.new{
+      font-weight:bold;
+    }
+  }
+}
+
+.view{
+  table{
+    th{
+      &:not(.active){
+        a{
+          &:after{
+            content: '\E808';
+            font-family: 'icons';
+            margin-left:5px;
+            color:lightgrey;
+            font-size:11px;
+            text-decoration: none;
+            display:inline-block;
+          }
+        }
+      }
+    }
+  }
+}

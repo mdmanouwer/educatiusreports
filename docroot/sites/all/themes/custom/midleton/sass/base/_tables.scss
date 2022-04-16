@@ -1,0 +1,61 @@
+/**
+ * $TABLES
+ */
+table {
+  width: 100%;
+  margin-bottom: $vert-spacing-unit;
+}
+
+th {
+  padding: 0.5em 1em;
+  background-color: $mid-blue;
+  color: #fff;
+  text-transform:uppercase;
+  border-right:2px solid white;
+  a,
+  a.active {
+    color: #fff;
+
+    img {
+      margin: 2px 3px;
+    }
+  }
+}
+td {
+  padding: 0.5em 1em;
+  border-right:2px solid white;
+  &.views-field-edit-node{
+    a{
+      margin-right:10px;
+    }
+  }
+  &.active{
+    background:rgba(black,.05);
+  }
+  ul{
+    padding-left:20px;
+  }
+}
+
+tr.odd {
+  background: lighten($pale-blue, 4%);
+}
+tr.even {
+  background: lighten($pale-blue, 8%);
+}
+
+
+
+caption {
+  @extend .delta;
+}
+.tabledrag-handle .handle {
+  height: 23px;
+  width: 23px;
+  margin: 0;
+  padding: 2px;
+  background-position:0px 3px;
+  &:hover{
+    background-position:0 -17px;
+  }
+}

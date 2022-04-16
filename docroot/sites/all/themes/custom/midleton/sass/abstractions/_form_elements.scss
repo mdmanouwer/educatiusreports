@@ -1,0 +1,42 @@
+@mixin switch-box($switch-size, $border-size:2px){
+  input[type="checkbox"] {
+    display: none;
+    position:relative;
+  }
+  input[type="checkbox"] + label:before{
+    width:$switch-size*2;
+    height:$switch-size;
+    border-radius: $switch-size/2;
+    border: $border-size solid $red;
+    content: ' ';
+    display: block;
+    position:absolute;
+    left:0;
+    @include transition(all .3s ease);
+  }
+  input[type="checkbox"] + label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    font-size: 0;
+  }
+  input[type="checkbox"] + label:after {
+    content: "";
+    display: inline-block;
+    width: $switch-size - $border-size*4;
+    height: $switch-size - $border-size*4;
+    border-radius: $switch-size/2;
+    background:$red;
+    @include transition(all .3s ease);
+    margin:$border-size*2;
+  }
+  input[type="checkbox"]:checked + label:before{
+    border-color:$green;
+  }
+  input[type="checkbox"]:checked + label:after {
+    content: "";
+    display: inline-block;
+    margin-left:$switch-size*1 + $border-size;
+    background:$green;
+  }
+}

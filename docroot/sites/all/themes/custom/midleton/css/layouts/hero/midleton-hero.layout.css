@@ -1,0 +1,35 @@
+/*******************************************************************************
+ * midleton-hero.layout.scss
+ *
+ * Additional, theme specific styles for the Hero layout.
+ ******************************************************************************/
+/* line 7, ../../../sass/variables/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  line-height: normal; }
+
+/* line 10, ../../../sass/layouts/hero/midleton-hero.layout.scss */
+body {
+  background: transparent url('../../../images/diagonal.png?1486112050') left top repeat; }
+
+/* Header */
+/* line 15, ../../../sass/layouts/hero/midleton-hero.layout.scss */
+.l-header {
+  background-color: #52b1ea; }
+
+/* Content Area */
+/* line 20, ../../../sass/layouts/hero/midleton-hero.layout.scss */
+.l-highlighted-wrapper {
+  background: #fff; }
+
+/* Sidebars */
+/* line 25, ../../../sass/layouts/hero/midleton-hero.layout.scss */
+.l-region--sidebar-first,
+.l-region--sidebar-second {
+  background-color: #fff; }
+
+/* Footer */
+/* line 31, ../../../sass/layouts/hero/midleton-hero.layout.scss */
+.l-footer-wrapper {
+  background: #fff; }
+
+/*# sourceMappingURL=midleton-hero.layout.css.map */

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Midleton_student_features feature.
+ */
+
+include_once 'midleton_student_features.features.inc';

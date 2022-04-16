@@ -1,0 +1,116 @@
+.midleton-base-message-settings {
+  > div > table {
+    thead tr {
+      border-bottom: 1px solid #999;
+      th {
+        background: none;
+        text-transform: none;
+        font-weight: bold;
+        font-size: 14px;
+        padding: 5px 40px 5px 0;
+        color: #333;
+      }
+    }
+    > tbody {
+      > tr {
+        border-bottom: 1px solid #999;
+        font-size: .9em;
+        > td {
+          padding: 5px 40px 5px 0;
+          text-align: left;
+          &.disabled {
+            @include opacity(.2);
+            textarea,
+            input {
+              cursor: pointer;
+              pointer-events: none;
+            }
+          }
+          input[type="checkbox"] {
+            display: none;
+            + label {
+              background: red;
+              color: white;
+              padding: 10px;
+              font-weight: bold;
+              text-transform: uppercase;
+              border-radius: 2px;
+              cursor: pointer;
+            }
+            &:checked + label {
+              background: green;
+            }
+          }
+          .days-input{
+            width:40px;
+          }
+          .form-type-date-popup{
+            .form-type-textfield label{
+              display:none;
+            }
+          }
+          .clndr {
+            font-size:10px;
+            table{
+              thead{
+              }
+              tbody{
+                tr{
+                  td{
+
+                    border-bottom:1px solid #999;
+                    border-left:1px solid #999;
+                    > div{
+                      padding:0 2px;
+                    }
+                    &:last-child{
+                      border-right:1px solid #999;
+                    }
+                    &.adjacent-month{
+                      color: #DDD;
+                    }
+                    &.event{
+                      background:$orange;
+                      color:white;
+                      border-color:adjust-lightness($orange,10);
+                    }
+                  }
+                }
+              }
+            }
+            .clndr-controls {
+              @include clearfix;
+              border-bottom: 1px solid #999;
+              .month {
+                width: calc(100% - 23px);
+                text-align: center;
+                float: left;
+              }
+              > div:first-child {
+                float: left;
+              }
+              > div:last-child {
+                float: right;
+              }
+              .clndr-previous-button,
+              .clndr-next-button {
+                font-size: 0;
+                cursor:pointer;
+                &:before {
+                  font-size: 12px;
+                  font-family: 'icons';
+                  content: '\E805';
+                }
+              }
+              .clndr-next-button {
+                &:before {
+                  content: '\E804';
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

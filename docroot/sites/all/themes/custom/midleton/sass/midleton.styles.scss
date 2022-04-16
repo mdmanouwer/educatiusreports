@@ -1,0 +1,143 @@
+// Import external libraries.
+@import "compass";
+@import "breakpoint";
+@import "singularitygs";
+@import "toolkit";
+// Import variables, abstractions, base styles and components using globbing.
+//
+// Globbing will always import files alphabetically. Optimally, all your
+// components should be self-contained and explicit enough to not have any
+// contained styles leak into unrelated components: The import order should not
+// affect the result.
+//
+// If there are variables, functions or mixins that depend on each other and
+// therefore need to be imported in a specific order you can import them
+// directly. Variables-, function- or mixin providing partials should never
+// output any styles themselves: Importing them multiple times to resolve
+// dependencies shouldn't be a problem.
+@import "variables/**/*";
+@import "abstractions/**/*";
+@import "base/**/*";
+@import "components/**/*";
+
+.l-header {
+  padding: 10px;
+}
+
+.l-branding {
+
+  .site-logo {
+    width: 300px;
+  }
+
+  width: 100% !important;
+  @include breakpoint($tab) {
+
+    .site-logo {
+      float: left;
+    }
+  }
+}
+
+.l-main {
+
+  .action-links {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  .title-and-action-links {
+    ul.action-links {
+      float: right;
+      li {
+        a {
+          margin-left: 10px;
+        }
+      }
+    }
+    h1 {
+      padding: 5px 0;
+      &:before{
+        content: '\E803';
+        margin-right:.5em;
+        font-family: icons;
+      }
+    }
+
+    border-bottom: 2px solid $light-grey;
+    margin-bottom: 20px;
+  }
+
+  ul.tabs--secondary{
+    margin-bottom:40px;
+  }
+  ul.tabs--primary {
+    border-bottom: $dark-grey;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    padding-bottom: 0;
+    li {
+      float: none;
+      margin-right: 0;
+      &.active a,
+      a.active{
+          background: $dark-grey;
+          color: white;
+
+      }
+      a {
+        font-size:14px;
+        line-height: 1;
+        &.front{
+          font-size:0px;
+          &:after{
+            content:'\E806';
+            font-family:'icons';
+            font-size:14px;
+            line-height: 1;
+          }
+        }
+        &.back{
+          font-size:0px;
+          &:after{
+            content:'\E807';
+            font-family:'icons';
+            font-size:14px;
+            line-height: 1;
+          }
+        }
+        float: left;
+        margin-right: 10px;
+        padding: 10px 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+
+        &.midleton-message-settings,
+        &.midleton-mail-log {
+          margin-right: 0;
+          margin-left: 10px;
+          float: right;
+          color: $mid-blue;
+          &.active {
+            color: white;
+          }
+        }
+        @include breakpoint(0 $tab) {
+          width: 100% !important;
+          margin: 5px 0 !important;
+          float: none;
+        }
+      }
+    }
+  }
+  padding: 10px;
+
+}
+
+.l-footer {
+  padding: 10px;
+
+}
+
+body.pdf {
+  font-family: sans-serif;
+}
