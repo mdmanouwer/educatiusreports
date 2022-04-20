@@ -86,7 +86,7 @@ function midleton_report_features_field_default_field_instances() {
       ),
     ),
     'deleted' => 0,
-    'description' => 'Enviado por correo electrónico',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -153,7 +153,7 @@ function midleton_report_features_field_default_field_instances() {
     'bundle' => 'parent_teacher_meeting',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Comentarios',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -190,7 +190,7 @@ function midleton_report_features_field_default_field_instances() {
     'bundle' => 'parent_teacher_meeting',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Mes',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -220,7 +220,7 @@ function midleton_report_features_field_default_field_instances() {
     'bundle' => 'parent_teacher_meeting',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Asignaturas',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -257,7 +257,7 @@ function midleton_report_features_field_default_field_instances() {
     'bundle' => 'parent_teacher_meeting',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Año',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -291,7 +291,7 @@ function midleton_report_features_field_default_field_instances() {
       ),
     ),
     'deleted' => 0,
-    'description' => 'Estado',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -342,7 +342,7 @@ function midleton_report_features_field_default_field_instances() {
     'bundle' => 'parent_teacher_meeting',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Selecciona el estudiante',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -3121,7 +3121,7 @@ function midleton_report_features_field_default_field_instances() {
     'bundle' => 'report_2',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Faltas de asistencia. Número.',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -3174,7 +3174,7 @@ function midleton_report_features_field_default_field_instances() {
     'bundle' => 'report_2',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Observaciones',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -3257,7 +3257,7 @@ function midleton_report_features_field_default_field_instances() {
     'bundle' => 'report_2',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Actividades en las que participa',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -3310,7 +3310,7 @@ function midleton_report_features_field_default_field_instances() {
     'bundle' => 'report_2',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Convivencia con la familia',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -3358,9 +3358,13 @@ function midleton_report_features_field_default_field_instances() {
   // Exported field_instance: 'node-report_2-field_appropriate_use_of_int'.
   $field_instances['node-report_2-field_appropriate_use_of_int'] = array(
     'bundle' => 'report_2',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
     'deleted' => 0,
-    'description' => '¿Hace un uso apropiado de internet?',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -3410,9 +3414,13 @@ function midleton_report_features_field_default_field_instances() {
   // Exported field_instance: 'node-report_2-field_asks_permission_to_events'.
   $field_instances['node-report_2-field_asks_permission_to_events'] = array(
     'bundle' => 'report_2',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
     'deleted' => 0,
-    'description' => '¿Pide permiso para salir/acudir a eventos?',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -3468,7 +3476,7 @@ function midleton_report_features_field_default_field_instances() {
       ),
     ),
     'deleted' => 0,
-    'description' => '¿Sigue acudiendo al coordinador cuando necesita algo?',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -3524,7 +3532,7 @@ function midleton_report_features_field_default_field_instances() {
       ),
     ),
     'deleted' => 0,
-    'description' => '¿Acude a la familia cuando necesita algo?',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -3576,7 +3584,7 @@ function midleton_report_features_field_default_field_instances() {
     'bundle' => 'report_2',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Observaciones',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -3629,7 +3637,7 @@ function midleton_report_features_field_default_field_instances() {
     'bundle' => 'report_2',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Actitud y comportamiento en casa',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -3679,7 +3687,7 @@ function midleton_report_features_field_default_field_instances() {
     'bundle' => 'report_2',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Actitud hacia los compañeros',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -3713,7 +3721,7 @@ function midleton_report_features_field_default_field_instances() {
     'bundle' => 'report_2',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Actitud hacia los profesores',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -3763,7 +3771,7 @@ function midleton_report_features_field_default_field_instances() {
     'bundle' => 'report_2',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Cuidado del material',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -3797,7 +3805,7 @@ function midleton_report_features_field_default_field_instances() {
     'bundle' => 'report_2',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Cuidado de las instalaciones escolares',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -3831,7 +3839,7 @@ function midleton_report_features_field_default_field_instances() {
     'bundle' => 'report_2',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Comportamiento en clase',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -3865,7 +3873,7 @@ function midleton_report_features_field_default_field_instances() {
     'bundle' => 'report_2',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Comentarios Coordinador Jefe',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -3918,7 +3926,7 @@ function midleton_report_features_field_default_field_instances() {
     'bundle' => 'report_2',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '¿Han mejorado sus capacidades comunicativas en el colegio?',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -3968,7 +3976,7 @@ function midleton_report_features_field_default_field_instances() {
     'bundle' => 'report_2',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Observaciones del coordinador',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -4005,7 +4013,7 @@ function midleton_report_features_field_default_field_instances() {
     'bundle' => 'report_2',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Observaciones del coordinador',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -4042,7 +4050,7 @@ function midleton_report_features_field_default_field_instances() {
     'bundle' => 'report_2',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Diálogo con la familia anfitriona',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -4092,7 +4100,7 @@ function midleton_report_features_field_default_field_instances() {
     'bundle' => 'report_2',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '¿Qué suele hacer después del colegio?',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -4183,7 +4191,7 @@ function midleton_report_features_field_default_field_instances() {
       ),
     ),
     'deleted' => 0,
-    'description' => 'Enviado por correo electrónico',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -4215,7 +4223,7 @@ function midleton_report_features_field_default_field_instances() {
     'bundle' => 'report_2',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '¿Ha mejorado en su comunicación en inglés?',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -4253,7 +4261,7 @@ function midleton_report_features_field_default_field_instances() {
       ),
     ),
     'deleted' => 0,
-    'description' => '¿Ha hecho amistades en el colegio o en la comunidad?',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -4289,7 +4297,7 @@ function midleton_report_features_field_default_field_instances() {
     'bundle' => 'report_2',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Observaciones',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -4326,7 +4334,7 @@ function midleton_report_features_field_default_field_instances() {
     'bundle' => 'report_2',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '¿Ha habido alguna mejora significativa en su interacción en inglés con las personas de su entorno?',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -4376,7 +4384,7 @@ function midleton_report_features_field_default_field_instances() {
     'bundle' => 'report_2',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Obervaciones',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -4433,7 +4441,7 @@ function midleton_report_features_field_default_field_instances() {
       ),
     ),
     'deleted' => 0,
-    'description' => '¿Ha tenido que ir a algún médico?',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -4485,7 +4493,7 @@ function midleton_report_features_field_default_field_instances() {
     'bundle' => 'report_2',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '¿Cómo son sus relaciones con otros compañeros?',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -4538,7 +4546,7 @@ function midleton_report_features_field_default_field_instances() {
     'bundle' => 'report_2',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Reintegración en la vida familiar tras las vacaciones de Navidad',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -4586,9 +4594,13 @@ function midleton_report_features_field_default_field_instances() {
   // Exported field_instance: 'node-report_2-field_involved_school_activity'.
   $field_instances['node-report_2-field_involved_school_activity'] = array(
     'bundle' => 'report_2',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
     'deleted' => 0,
-    'description' => '¿Ha participado en alguna actividad organizada por el colegio?',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -4624,7 +4636,7 @@ function midleton_report_features_field_default_field_instances() {
     'bundle' => 'report_2',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Observaciones',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -4659,9 +4671,13 @@ function midleton_report_features_field_default_field_instances() {
   // Exported field_instance: 'node-report_2-field_it_consumes_what_is'.
   $field_instances['node-report_2-field_it_consumes_what_is'] = array(
     'bundle' => 'report_2',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
     'deleted' => 0,
-    'description' => '¿Consume lo que se le ofrece sin protestar?',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -4717,7 +4733,7 @@ function midleton_report_features_field_default_field_instances() {
       ),
     ),
     'deleted' => 0,
-    'description' => '¿Está motivado?',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -4773,7 +4789,7 @@ function midleton_report_features_field_default_field_instances() {
       ),
     ),
     'deleted' => 0,
-    'description' => '¿Es puntual?',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -4823,9 +4839,13 @@ function midleton_report_features_field_default_field_instances() {
   // Exported field_instance: 'node-report_2-field_it_leads_to_people'.
   $field_instances['node-report_2-field_it_leads_to_people'] = array(
     'bundle' => 'report_2',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
     'deleted' => 0,
-    'description' => '¿Lleva a personas ajenas a la familia a su cuarto?',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -4875,9 +4895,13 @@ function midleton_report_features_field_default_field_instances() {
   // Exported field_instance: 'node-report_2-field_leads_a_balanced_diet'.
   $field_instances['node-report_2-field_leads_a_balanced_diet'] = array(
     'bundle' => 'report_2',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
     'deleted' => 0,
-    'description' => '¿Lleva una alimentación equilibrada?',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -4929,7 +4953,7 @@ function midleton_report_features_field_default_field_instances() {
     'bundle' => 'report_2',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Observaciones del coordinador',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -4966,7 +4990,7 @@ function midleton_report_features_field_default_field_instances() {
     'bundle' => 'report_2',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '¿Participa en las actividades que propone la anfitriona?',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -5016,7 +5040,7 @@ function midleton_report_features_field_default_field_instances() {
     'bundle' => 'report_2',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '¿Participa en el día a día de la familia de forma activa?',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -5066,7 +5090,7 @@ function midleton_report_features_field_default_field_instances() {
     'bundle' => 'report_2',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Participación en el aula',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -5151,7 +5175,7 @@ function midleton_report_features_field_default_field_instances() {
     'bundle' => 'report_2',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Realización de tareas',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -5205,7 +5229,7 @@ function midleton_report_features_field_default_field_instances() {
       ),
     ),
     'deleted' => 0,
-    'description' => 'Puntualidad en el colegio',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -5257,7 +5281,7 @@ function midleton_report_features_field_default_field_instances() {
     'bundle' => 'report_2',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Observaciones',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -5314,7 +5338,7 @@ function midleton_report_features_field_default_field_instances() {
       ),
     ),
     'deleted' => 0,
-    'description' => '¿Respeta las normas establecidas por la organización anfitriona?',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -5366,7 +5390,7 @@ function midleton_report_features_field_default_field_instances() {
     'bundle' => 'report_2',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Observaciones',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -5417,9 +5441,13 @@ function midleton_report_features_field_default_field_instances() {
   // Exported field_instance: 'node-report_2-field_respect_your_sleep'.
   $field_instances['node-report_2-field_respect_your_sleep'] = array(
     'bundle' => 'report_2',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
     'deleted' => 0,
-    'description' => '¿Respeta sus horas de sueño?',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -5469,9 +5497,13 @@ function midleton_report_features_field_default_field_instances() {
   // Exported field_instance: 'node-report_2-field_respects_the_established_s'.
   $field_instances['node-report_2-field_respects_the_established_s'] = array(
     'bundle' => 'report_2',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
     'deleted' => 0,
-    'description' => '¿Respeta los horarios establecidos?',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -5523,7 +5555,7 @@ function midleton_report_features_field_default_field_instances() {
     'bundle' => 'report_2',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Rutina del fin del semana',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -5580,7 +5612,7 @@ function midleton_report_features_field_default_field_instances() {
       ),
     ),
     'deleted' => 0,
-    'description' => '¿Inicia por sí mismo actividades o las sugiere?',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -5636,7 +5668,7 @@ function midleton_report_features_field_default_field_instances() {
       ),
     ),
     'deleted' => 0,
-    'description' => 'Estado',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -5686,7 +5718,7 @@ function midleton_report_features_field_default_field_instances() {
     'bundle' => 'report_2',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Selecciona el estudiante',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -5742,7 +5774,7 @@ function midleton_report_features_field_default_field_instances() {
     'bundle' => 'report_2',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Asignaturas que cursa',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -5795,7 +5827,7 @@ function midleton_report_features_field_default_field_instances() {
     'bundle' => 'report_2',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Limpieza y orden de la habitación',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -5844,9 +5876,13 @@ function midleton_report_features_field_default_field_instances() {
   $field_instances['node-report_2-field_when_you_are_outside'] = array(
     'bundle' => 'report_2',
     'default  _value' => NULL,
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
     'deleted' => 0,
-    'description' => '¿Cuando está fuera, informa a la familia de dónde y con quién está?',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -5932,7 +5968,7 @@ function midleton_report_features_field_default_field_instances() {
       ),
     ),
     'deleted' => 0,
-    'description' => '¿Sigue acudiendo al coordinador cuando necesita algo?',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -5984,7 +6020,7 @@ function midleton_report_features_field_default_field_instances() {
       ),
     ),
     'deleted' => 0,
-    'description' => '¿Todavía acude a la familia cuando necesita algo?',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -6032,7 +6068,7 @@ function midleton_report_features_field_default_field_instances() {
     'bundle' => 'report_3',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Observaciones',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -6081,7 +6117,7 @@ function midleton_report_features_field_default_field_instances() {
     'bundle' => 'report_3',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Comentarios Coordinador Jefe',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -6134,7 +6170,7 @@ function midleton_report_features_field_default_field_instances() {
     'bundle' => 'report_3',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Observaciones del coordinador',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -6171,7 +6207,7 @@ function midleton_report_features_field_default_field_instances() {
     'bundle' => 'report_3',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Observaciones del coordinador',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -6246,7 +6282,7 @@ function midleton_report_features_field_default_field_instances() {
       ),
     ),
     'deleted' => 0,
-    'description' => 'Enviado por correo electrónico',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -6278,7 +6314,7 @@ function midleton_report_features_field_default_field_instances() {
     'bundle' => 'report_3',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '¿Ha aprovechado al máximo su estancia en Irlanda para mejorar su nivel de inglés?',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -6328,7 +6364,7 @@ function midleton_report_features_field_default_field_instances() {
     'bundle' => 'report_3',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Valoración general de la integración en el centro de estudios',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -6365,7 +6401,7 @@ function midleton_report_features_field_default_field_instances() {
     'bundle' => 'report_3',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Observaciones del coordinador',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -6437,7 +6473,7 @@ function midleton_report_features_field_default_field_instances() {
     'bundle' => 'report_3',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Valoración general de la estancia del estudiante con su familia anfitriona',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -6494,7 +6530,7 @@ function midleton_report_features_field_default_field_instances() {
       ),
     ),
     'deleted' => 0,
-    'description' => '¿Respeta las normas establecidas por la organización anfitriona?',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -6542,7 +6578,7 @@ function midleton_report_features_field_default_field_instances() {
     'bundle' => 'report_3',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Observaciones',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -6595,7 +6631,7 @@ function midleton_report_features_field_default_field_instances() {
       ),
     ),
     'deleted' => 0,
-    'description' => 'Estado',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -6645,7 +6681,7 @@ function midleton_report_features_field_default_field_instances() {
     'bundle' => 'report_3',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Selecciona el estudiante',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -6698,34 +6734,21 @@ function midleton_report_features_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Actitud hacia los compañeros');
-  t('Actitud hacia los profesores');
-  t('Actitud y comportamiento en casa');
-  t('Actividades en las que participa');
   t('Activities he/she is currently involved in');
   t('Adapting to the host');
-  t('Asignaturas');
-  t('Asignaturas que cursa');
   t('Attitude and behaviour at home');
   t('Attitude towards fellow classmates');
   t('Attitude towards teachers');
-  t('Año');
   t('Care of materials');
   t('Care of school facilities');
   t('Chief Coordinator comments');
   t('Classroom behaviour');
   t('Classroom participation');
   t('Cleanliness and tidiness of his/her bedroom');
-  t('Comentarios');
-  t('Comentarios Coordinador Jefe');
   t('Comments');
   t('Completion of tasks');
-  t('Comportamiento en clase');
-  t('Convivencia con la familia');
   t('Coordinator feedback');
   t('Coordinator\'s feedback');
-  t('Cuidado de las instalaciones escolares');
-  t('Cuidado del material');
   t('Deprecated: Coordinator\'s feedback (school)');
   t('Deprecated: Does he/she abide by the rules established by Midleton School?');
   t('Deprecated: Does he/she still contact the coordinator when he/she needs something? (general)');
@@ -6733,7 +6756,6 @@ function midleton_report_features_field_default_field_instances() {
   t('Deprecated: Observations (general)');
   t('Did he/she have to go to the doctor?');
   t('Did he/she have to see any doctor?');
-  t('Diálogo con la familia anfitriona');
   t('Does he/she abide by the rules established by Midleton School?');
   t('Does he/she actively participate in daily family life?');
   t('Does he/she arrive at class on time?');
@@ -6756,9 +6778,6 @@ function midleton_report_features_field_default_field_instances() {
   t('Does he/she turn to the family when he/she needs something?');
   t('Does he/she use the Internet appropriately?');
   t('Emails');
-  t('Enviado por correo electrónico');
-  t('Estado');
-  t('Faltas de asistencia. Número.');
   t('General observations');
   t('Has he/she been involved in any school activity?');
   t('Has he/she developed his/her communication skills at school?');
@@ -6772,23 +6791,12 @@ function midleton_report_features_field_default_field_instances() {
   t('Interaction with the host family');
   t('Is he/she motivated?');
   t('Is he/she punctual?');
-  t('Limpieza y orden de la habitación');
   t('Living together with the host family');
-  t('Mes');
   t('Month');
   t('Number of absences');
-  t('Obervaciones');
-  t('Observaciones');
-  t('Observaciones del coordinador');
   t('Observations');
   t('PDF');
-  t('Participación en el aula');
-  t('Puntualidad en el colegio');
-  t('Realización de tareas');
-  t('Reintegración en la vida familiar tras las vacaciones de Navidad');
-  t('Rutina del fin del semana');
   t('School year');
-  t('Selecciona el estudiante');
   t('Select the student');
   t('Sent by email');
   t('Status');
@@ -6796,38 +6804,10 @@ function midleton_report_features_field_default_field_instances() {
   t('Subjects he/she studies');
   t('Subjects studied');
   t('Tidiness (and order in) (of) his/her bedroom');
-  t('Valoración general de la estancia del estudiante con su familia anfitriona');
-  t('Valoración general de la integración en el centro de estudios');
   t('Weekend routine');
   t('What does he/she usually do after school?');
   t('When he/she is not at home, does he/she inform the family of his/her whereabouts and company?');
   t('Year');
-  t('¿Acude a la familia cuando necesita algo?');
-  t('¿Consume lo que se le ofrece sin protestar?');
-  t('¿Cuando está fuera, informa a la familia de dónde y con quién está?');
-  t('¿Cómo son sus relaciones con otros compañeros?');
-  t('¿Es puntual?');
-  t('¿Está motivado?');
-  t('¿Ha aprovechado al máximo su estancia en Irlanda para mejorar su nivel de inglés?');
-  t('¿Ha habido alguna mejora significativa en su interacción en inglés con las personas de su entorno?');
-  t('¿Ha hecho amistades en el colegio o en la comunidad?');
-  t('¿Ha mejorado en su comunicación en inglés?');
-  t('¿Ha participado en alguna actividad organizada por el colegio?');
-  t('¿Ha tenido que ir a algún médico?');
-  t('¿Hace un uso apropiado de internet?');
-  t('¿Han mejorado sus capacidades comunicativas en el colegio?');
-  t('¿Inicia por sí mismo actividades o las sugiere?');
-  t('¿Lleva a personas ajenas a la familia a su cuarto?');
-  t('¿Lleva una alimentación equilibrada?');
-  t('¿Participa en el día a día de la familia de forma activa?');
-  t('¿Participa en las actividades que propone la anfitriona?');
-  t('¿Pide permiso para salir/acudir a eventos?');
-  t('¿Qué suele hacer después del colegio?');
-  t('¿Respeta las normas establecidas por la organización anfitriona?');
-  t('¿Respeta los horarios establecidos?');
-  t('¿Respeta sus horas de sueño?');
-  t('¿Sigue acudiendo al coordinador cuando necesita algo?');
-  t('¿Todavía acude a la familia cuando necesita algo?');
 
   return $field_instances;
 }
