@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * midleton_report_features.strongarm.inc

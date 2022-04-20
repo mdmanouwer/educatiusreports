@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * midleton_report_features.views_default.inc
@@ -2569,7 +2570,7 @@ function midleton_report_features_views_default_views() {
   $handler->display->display_options['filters']['field_academic_course_tid']['table'] = 'field_data_field_academic_course';
   $handler->display->display_options['filters']['field_academic_course_tid']['field'] = 'field_academic_course_tid';
   $handler->display->display_options['filters']['field_academic_course_tid']['value'] = array(
-    2 => '2',
+    4 => '4',
   );
   $handler->display->display_options['filters']['field_academic_course_tid']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_academic_course_tid']['expose']['operator_id'] = 'field_academic_course_tid_op';

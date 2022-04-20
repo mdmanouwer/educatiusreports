@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * midleton_report_features.field_group.inc
@@ -152,20 +153,20 @@ function midleton_report_features_field_group_info() {
     'weight' => '8',
     'children' => array(
       0 => 'field__absences',
-      1 => 'field__care_of_installations',
-      2 => 'field_absences',
-      3 => 'field_attitude_toward_peers',
-      4 => 'field_attitude_towards_teachers',
-      5 => 'field_communicates_well_in_en',
-      6 => 'field_conduct',
-      7 => 'field_involved_school_activity',
-      8 => 'field_involved_school_activity2',
-      9 => 'field_it_is_punctual',
-      10 => 'field_material_care',
-      11 => 'field_observations_coordinator_2',
-      12 => 'field_participation_in_the_class',
-      13 => 'field_performing_tasks',
-      14 => 'field_subjects_courses',
+      1 => 'field_absences',
+      2 => 'field_attitude_towards_teachers',
+      3 => 'field_communicates_well_in_en',
+      4 => 'field_involved_school_activity',
+      5 => 'field_involved_school_activity2',
+      6 => 'field_it_is_punctual',
+      7 => 'field_observations_coordinator_2',
+      8 => 'field_participation_in_the_class',
+      9 => 'field_performing_tasks',
+      10 => 'field_subjects_courses',
+      11 => 'field_attitude_towards_fellow_cl',
+      12 => 'field_classroom_behaviour',
+      13 => 'field_care_of_materials',
+      14 => 'field_care_of_school_facilities',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -609,7 +610,7 @@ function midleton_report_features_field_group_info() {
   $field_group->mode = 'form';
   $field_group->parent_name = '';
   $field_group->data = array(
-    'label' => 'Free time and after-school activities',
+    'label' => 'Free time',
     'weight' => '9',
     'children' => array(
       0 => 'field_activities_in_which_it',
@@ -624,13 +625,14 @@ function midleton_report_features_field_group_info() {
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
-      'formatter' => 'collapsible',
+      'label' => 'Free time',
       'instance_settings' => array(
-        'description' => '',
-        'classes' => 'group-free-time field-group-fieldset',
         'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-free-time field-group-fieldset',
+        'description' => '',
       ),
+      'formatter' => 'collapsible',
     ),
   );
   $field_groups['group_free_time|node|report_2|form'] = $field_group;
@@ -940,6 +942,7 @@ function midleton_report_features_field_group_info() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Free time');
   t('Free time and after-school activities');
   t('General');
   t('Hidden');
