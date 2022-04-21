@@ -55,7 +55,8 @@ function midleton_report_features_ckeditor_profile_defaults() {
         'html_entities' => 'f',
         'scayt_autoStartup' => 't',
         'theme_config_js' => 'f',
-        'js_conf' => '',
+        'js_conf' => 'config.scayt_sLang = \'en_GB\';
+',
         'loadPlugins' => array(
           'drupalbreaks' => array(
             'name' => 'drupalbreaks',
@@ -162,7 +163,8 @@ function midleton_report_features_ckeditor_profile_defaults() {
         'html_entities' => 'f',
         'scayt_autoStartup' => 't',
         'theme_config_js' => 'f',
-        'js_conf' => '',
+        'js_conf' => 'config.scayt_sLang = \'en_GB\';
+',
         'loadPlugins' => array(
           'drupalbreaks' => array(
             'name' => 'drupalbreaks',
