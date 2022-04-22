@@ -30,9 +30,9 @@ function midleton_report_features_views_api($module = NULL, $api = NULL) {
 function midleton_report_features_node_info() {
   $items = array(
     'parent_teacher_meeting' => array(
-      'name' => t('PTM'),
+      'name' => t('School Progress'),
       'base' => 'node_content',
-      'description' => t('Parent Teacher Meeting'),
+      'description' => t('School Progress'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
