@@ -313,6 +313,7 @@ features[variable][] = menu_options_inform_school
 features[variable][] = menu_options_parent_teacher_meeting
 features[variable][] = menu_options_report_1
 features[variable][] = menu_options_report_2
+features[variable][] = menu_options_report_3
 features[variable][] = menu_parent_free_time_and_activities_involve
 features[variable][] = menu_parent_inform_family
 features[variable][] = menu_parent_inform_general_issues

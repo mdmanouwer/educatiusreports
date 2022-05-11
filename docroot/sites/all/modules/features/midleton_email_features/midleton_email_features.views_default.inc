@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * midleton_email_features.views_default.inc

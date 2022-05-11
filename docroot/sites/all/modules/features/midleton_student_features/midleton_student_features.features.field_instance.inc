@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * midleton_student_features.features.field_instance.inc
@@ -15,7 +16,7 @@ function midleton_student_features_field_default_field_instances() {
     'bundle' => 'student',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Curso académico',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'inline',
@@ -65,6 +66,7 @@ function midleton_student_features_field_default_field_instances() {
         'label' => 'inline',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'empty_fields_emptyfieldtext_empty_text' => '',
           'empty_fields_handler' => '',
           'link' => FALSE,
@@ -76,6 +78,7 @@ function midleton_student_features_field_default_field_instances() {
         'label' => 'inline',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'empty_fields_emptyfieldtext_empty_text' => '',
           'empty_fields_handler' => '',
           'link' => FALSE,
@@ -105,7 +108,7 @@ function midleton_student_features_field_default_field_instances() {
     'bundle' => 'student',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Curso',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'inline',
@@ -205,7 +208,7 @@ function midleton_student_features_field_default_field_instances() {
     'bundle' => 'student',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Correo electrónico de los padres',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'inline',
@@ -226,7 +229,7 @@ function midleton_student_features_field_default_field_instances() {
     ),
     'entity_type' => 'student',
     'field_name' => 'field_email',
-    'label' => 'Parents\' email',
+    'label' => 'Agent Email',
     'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -247,7 +250,7 @@ function midleton_student_features_field_default_field_instances() {
     'bundle' => 'student',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Apellido(s)',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'inline',
@@ -294,7 +297,7 @@ function midleton_student_features_field_default_field_instances() {
     'bundle' => 'student',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Nombre',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'inline',
@@ -341,7 +344,7 @@ function midleton_student_features_field_default_field_instances() {
     'bundle' => 'student',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Nombre de la escuela',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'inline',
@@ -409,7 +412,7 @@ function midleton_student_features_field_default_field_instances() {
     ),
     'entity_type' => 'student',
     'field_name' => 'field_student_observaciones',
-    'label' => 'Observaciones',
+    'label' => 'Comments',
     'required' => 0,
     'settings' => array(
       'text_processing' => 0,
@@ -428,19 +431,13 @@ function midleton_student_features_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Apellido(s)');
+  t('Agent Email');
+  t('Comments');
   t('Coordinator');
-  t('Correo electrónico de los padres');
   t('Course');
-  t('Curso');
-  t('Curso académico');
   t('Documents');
   t('Last Name');
   t('Name');
-  t('Nombre');
-  t('Nombre de la escuela');
-  t('Observaciones');
-  t('Parents\' email');
   t('School');
   t('School year');
 

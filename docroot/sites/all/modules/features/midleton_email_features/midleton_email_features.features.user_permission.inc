@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * midleton_email_features.features.user_permission.inc
@@ -35,6 +36,16 @@ function midleton_email_features_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'reroute_email',
+  );
+
+  // Exported permission: 'create field_email'.
+  $permissions['create field_email'] = array(
+    'name' => 'create field_email',
+    'roles' => array(
+      'Midleton School' => 'Midleton School',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'field_permissions',
   );
 
   // Exported permission: 'create field_email_reference'.
@@ -153,7 +164,9 @@ function midleton_email_features_user_default_permissions() {
   // Exported permission: 'eck delete document document entities'.
   $permissions['eck delete document document entities'] = array(
     'name' => 'eck delete document document entities',
-    'roles' => array(),
+    'roles' => array(
+      'Chief Coordinator' => 'Chief Coordinator',
+    ),
     'module' => 'eck',
   );
 
@@ -272,6 +285,16 @@ function midleton_email_features_user_default_permissions() {
     'module' => 'entityform',
   );
 
+  // Exported permission: 'edit field_email'.
+  $permissions['edit field_email'] = array(
+    'name' => 'edit field_email',
+    'roles' => array(
+      'Midleton School' => 'Midleton School',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'field_permissions',
+  );
+
   // Exported permission: 'edit field_email_reference'.
   $permissions['edit field_email_reference'] = array(
     'name' => 'edit field_email_reference',
@@ -306,6 +329,16 @@ function midleton_email_features_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'entityform',
+  );
+
+  // Exported permission: 'edit own field_email'.
+  $permissions['edit own field_email'] = array(
+    'name' => 'edit own field_email',
+    'roles' => array(
+      'Midleton School' => 'Midleton School',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'field_permissions',
   );
 
   // Exported permission: 'edit own field_email_reference'.
@@ -367,6 +400,16 @@ function midleton_email_features_user_default_permissions() {
     'module' => 'entityform',
   );
 
+  // Exported permission: 'view field_email'.
+  $permissions['view field_email'] = array(
+    'name' => 'view field_email',
+    'roles' => array(
+      'Midleton School' => 'Midleton School',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'field_permissions',
+  );
+
   // Exported permission: 'view field_email_reference'.
   $permissions['view field_email_reference'] = array(
     'name' => 'view field_email_reference',
@@ -406,6 +449,16 @@ function midleton_email_features_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'entityform',
+  );
+
+  // Exported permission: 'view own field_email'.
+  $permissions['view own field_email'] = array(
+    'name' => 'view own field_email',
+    'roles' => array(
+      'Midleton School' => 'Midleton School',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'field_permissions',
   );
 
   // Exported permission: 'view own field_email_reference'.

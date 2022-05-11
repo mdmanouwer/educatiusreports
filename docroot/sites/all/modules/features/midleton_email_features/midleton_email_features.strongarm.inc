@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * midleton_email_features.strongarm.inc
@@ -49,7 +50,7 @@ function midleton_email_features_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'mimemail_mail';
-  $strongarm->value = 'noreply@midletonschool.com';
+  $strongarm->value = 'soporte@planealia.com';
   $export['mimemail_mail'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -112,7 +113,7 @@ function midleton_email_features_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'site_mail';
-  $strongarm->value = 'noreply@midletonschool.com';
+  $strongarm->value = 'soporte@planealia.com';
   $export['site_mail'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -134,7 +135,7 @@ function midleton_email_features_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'update_notify_emails';
   $strongarm->value = array(
-    0 => 'david@front.id',
+    0 => 'soporte@planealia.com',
   );
   $export['update_notify_emails'] = $strongarm;
 
