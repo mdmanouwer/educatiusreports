@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * midleton_user_features.features.field_instance.inc
@@ -21,6 +22,7 @@ function midleton_user_features_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'empty_fields_emptyfieldtext_empty_text' => '',
           'empty_fields_handler' => '',
           'link' => FALSE,

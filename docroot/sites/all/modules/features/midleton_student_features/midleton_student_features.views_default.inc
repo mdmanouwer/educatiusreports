@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * midleton_student_features.views_default.inc
@@ -80,7 +81,7 @@ function midleton_student_features_views_default_views() {
     'empty_fields_handler' => '',
     'empty_fields_emptyfieldtext_empty_text' => '',
   );
-  /* Field: Student: Parents' email */
+  /* Field: Student: Agent Email */
   $handler->display->display_options['fields']['field_email']['id'] = 'field_email';
   $handler->display->display_options['fields']['field_email']['table'] = 'field_data_field_email';
   $handler->display->display_options['fields']['field_email']['field'] = 'field_email';
@@ -97,7 +98,7 @@ function midleton_student_features_views_default_views() {
     'empty_fields_handler' => '',
     'empty_fields_emptyfieldtext_empty_text' => '',
   );
-  /* Field: Student: School year */
+  /* Field: Field: School year */
   $handler->display->display_options['fields']['field_academic_course']['id'] = 'field_academic_course';
   $handler->display->display_options['fields']['field_academic_course']['table'] = 'field_data_field_academic_course';
   $handler->display->display_options['fields']['field_academic_course']['field'] = 'field_academic_course';
@@ -105,7 +106,7 @@ function midleton_student_features_views_default_views() {
     'empty_fields_handler' => '',
     'empty_fields_emptyfieldtext_empty_text' => '',
   );
-  /* Field: Student: Observaciones */
+  /* Field: Student: Comments */
   $handler->display->display_options['fields']['field_student_observaciones']['id'] = 'field_student_observaciones';
   $handler->display->display_options['fields']['field_student_observaciones']['table'] = 'field_data_field_student_observaciones';
   $handler->display->display_options['fields']['field_student_observaciones']['field'] = 'field_student_observaciones';

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * midleton_user_features.features.user_permission.inc
@@ -292,6 +293,16 @@ function midleton_user_features_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'create report_3 content'.
+  $permissions['create report_3 content'] = array(
+    'name' => 'create report_3 content',
+    'roles' => array(
+      'Coordinator' => 'Coordinator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete any audio files'.
   $permissions['delete any audio files'] = array(
     'name' => 'delete any audio files',
@@ -323,6 +334,7 @@ function midleton_user_features_user_default_permissions() {
   $permissions['delete any parent_teacher_meeting content'] = array(
     'name' => 'delete any parent_teacher_meeting content',
     'roles' => array(
+      'Chief Coordinator' => 'Chief Coordinator',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -332,6 +344,7 @@ function midleton_user_features_user_default_permissions() {
   $permissions['delete any report_1 content'] = array(
     'name' => 'delete any report_1 content',
     'roles' => array(
+      'Chief Coordinator' => 'Chief Coordinator',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -341,6 +354,17 @@ function midleton_user_features_user_default_permissions() {
   $permissions['delete any report_2 content'] = array(
     'name' => 'delete any report_2 content',
     'roles' => array(
+      'Chief Coordinator' => 'Chief Coordinator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete any report_3 content'.
+  $permissions['delete any report_3 content'] = array(
+    'name' => 'delete any report_3 content',
+    'roles' => array(
+      'Chief Coordinator' => 'Chief Coordinator',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -368,6 +392,7 @@ function midleton_user_features_user_default_permissions() {
   $permissions['delete own document files'] = array(
     'name' => 'delete own document files',
     'roles' => array(
+      'Chief Coordinator' => 'Chief Coordinator',
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
@@ -386,6 +411,8 @@ function midleton_user_features_user_default_permissions() {
   $permissions['delete own parent_teacher_meeting content'] = array(
     'name' => 'delete own parent_teacher_meeting content',
     'roles' => array(
+      'Chief Coordinator' => 'Chief Coordinator',
+      'Coordinator' => 'Coordinator',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -395,6 +422,8 @@ function midleton_user_features_user_default_permissions() {
   $permissions['delete own report_1 content'] = array(
     'name' => 'delete own report_1 content',
     'roles' => array(
+      'Chief Coordinator' => 'Chief Coordinator',
+      'Coordinator' => 'Coordinator',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -404,6 +433,19 @@ function midleton_user_features_user_default_permissions() {
   $permissions['delete own report_2 content'] = array(
     'name' => 'delete own report_2 content',
     'roles' => array(
+      'Chief Coordinator' => 'Chief Coordinator',
+      'Coordinator' => 'Coordinator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete own report_3 content'.
+  $permissions['delete own report_3 content'] = array(
+    'name' => 'delete own report_3 content',
+    'roles' => array(
+      'Chief Coordinator' => 'Chief Coordinator',
+      'Coordinator' => 'Coordinator',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -577,6 +619,15 @@ function midleton_user_features_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'edit any report_3 content'.
+  $permissions['edit any report_3 content'] = array(
+    'name' => 'edit any report_3 content',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit any video files'.
   $permissions['edit any video files'] = array(
     'name' => 'edit any video files',
@@ -700,6 +751,15 @@ function midleton_user_features_user_default_permissions() {
   // Exported permission: 'edit own report_2 content'.
   $permissions['edit own report_2 content'] = array(
     'name' => 'edit own report_2 content',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit own report_3 content'.
+  $permissions['edit own report_3 content'] = array(
+    'name' => 'edit own report_3 content',
     'roles' => array(
       'administrator' => 'administrator',
     ),
@@ -943,54 +1003,6 @@ function midleton_user_features_user_default_permissions() {
     ),
     'module' => 'node',
   );
-
-
-  // Exported permission: 'edit own report_3 content'.
-  $permissions['edit own report_3 content'] = array(
-    'name' => 'edit own report_3 content',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit any report_3 content'.
-  $permissions['edit any report_3 content'] = array(
-    'name' => 'edit any report_3 content',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete own report_3 content'.
-  $permissions['delete own report_3 content'] = array(
-    'name' => 'delete own report_3 content',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete any report_3 content'.
-  $permissions['delete any report_3 content'] = array(
-    'name' => 'delete any report_3 content',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'create report_3 content'.
-  $permissions['create report_3 content'] = array(
-    'name' => 'create report_3 content',
-    'roles' => array(
-      'Coordinator' => 'Coordinator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
 
   return $permissions;
 }

@@ -380,6 +380,15 @@ function midleton_report_features_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'menu_options_report_3';
+  $strongarm->value = array(
+    0 => 'main-menu',
+  );
+  $export['menu_options_report_3'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'menu_parent_free_time_and_activities_involve';
   $strongarm->value = 'main-menu:0';
   $export['menu_parent_free_time_and_activities_involve'] = $strongarm;

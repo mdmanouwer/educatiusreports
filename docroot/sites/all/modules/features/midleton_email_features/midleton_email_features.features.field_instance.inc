@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * midleton_email_features.features.field_instance.inc
@@ -21,6 +22,7 @@ function midleton_email_features_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'empty_fields_emptyfieldtext_empty_text' => '',
           'empty_fields_handler' => '',
           'link' => FALSE,
@@ -105,7 +107,7 @@ function midleton_email_features_field_default_field_instances() {
   $field_instances['document-document-field_file'] = array(
     'bundle' => 'document',
     'deleted' => 0,
-    'description' => 'Archivo',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -151,7 +153,7 @@ function midleton_email_features_field_default_field_instances() {
     'bundle' => 'document',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Descripción',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -200,6 +202,7 @@ function midleton_email_features_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'empty_fields_emptyfieldtext_empty_text' => '',
           'empty_fields_handler' => '',
           'link' => FALSE,
@@ -286,7 +289,7 @@ function midleton_email_features_field_default_field_instances() {
     'bundle' => 'email',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Descripción del correo electrónico',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -329,7 +332,7 @@ function midleton_email_features_field_default_field_instances() {
     'bundle' => 'email',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Asunto',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -420,6 +423,7 @@ function midleton_email_features_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'empty_fields_emptyfieldtext_empty_text' => '',
           'empty_fields_handler' => '',
           'link' => FALSE,
@@ -469,6 +473,7 @@ function midleton_email_features_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'empty_fields_emptyfieldtext_empty_text' => '',
           'empty_fields_handler' => '',
           'link' => FALSE,
@@ -609,11 +614,7 @@ function midleton_email_features_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Alt Text');
   t('Alternative text is used by screen readers, search engines, and when the image cannot be loaded. By adding alt text you improve accessibility and search engine optimization.');
-  t('Archivo');
-  t('Asunto');
   t('Body');
-  t('Descripción');
-  t('Descripción del correo electrónico');
   t('Description');
   t('Document attachments');
   t('Email description');
