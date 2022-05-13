@@ -11,22 +11,10 @@
 function midleton_user_features_user_default_roles() {
   $roles = array();
 
-  // Exported role: Chief Coordinator.
-  $roles['Chief Coordinator'] = array(
-    'name' => 'Chief Coordinator',
-    'weight' => 4,
-  );
-
   // Exported role: Coordinator.
   $roles['Coordinator'] = array(
     'name' => 'Coordinator',
     'weight' => 3,
-  );
-
-  // Exported role: Midleton School.
-  $roles['Midleton School'] = array(
-    'name' => 'Midleton School',
-    'weight' => 5,
   );
 
   // Exported role: administrator.

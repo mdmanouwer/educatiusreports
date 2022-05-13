@@ -15,9 +15,7 @@ function midleton_user_features_user_default_permissions() {
   $permissions['access content'] = array(
     'name' => 'access content',
     'roles' => array(
-      'Chief Coordinator' => 'Chief Coordinator',
       'Coordinator' => 'Coordinator',
-      'Midleton School' => 'Midleton School',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -36,7 +34,6 @@ function midleton_user_features_user_default_permissions() {
   $permissions['access mail logger'] = array(
     'name' => 'access mail logger',
     'roles' => array(
-      'Midleton School' => 'Midleton School',
       'administrator' => 'administrator',
     ),
     'module' => 'mail_logger',
@@ -45,18 +42,14 @@ function midleton_user_features_user_default_permissions() {
   // Exported permission: 'access notification message settings'.
   $permissions['access notification message settings'] = array(
     'name' => 'access notification message settings',
-    'roles' => array(
-      'Midleton School' => 'Midleton School',
-    ),
+    'roles' => array(),
     'module' => 'midleton_base',
   );
 
   // Exported permission: 'access pdf download'.
   $permissions['access pdf download'] = array(
     'name' => 'access pdf download',
-    'roles' => array(
-      'Midleton School' => 'Midleton School',
-    ),
+    'roles' => array(),
     'module' => 'midleton_base',
   );
 
@@ -73,8 +66,6 @@ function midleton_user_features_user_default_permissions() {
   $permissions['access user profiles'] = array(
     'name' => 'access user profiles',
     'roles' => array(
-      'Chief Coordinator' => 'Chief Coordinator',
-      'Midleton School' => 'Midleton School',
       'administrator' => 'administrator',
     ),
     'module' => 'user',
@@ -156,8 +147,6 @@ function midleton_user_features_user_default_permissions() {
   $permissions['administer users'] = array(
     'name' => 'administer users',
     'roles' => array(
-      'Chief Coordinator' => 'Chief Coordinator',
-      'Midleton School' => 'Midleton School',
       'administrator' => 'administrator',
     ),
     'module' => 'user',
@@ -167,8 +156,6 @@ function midleton_user_features_user_default_permissions() {
   $permissions['assign roles'] = array(
     'name' => 'assign roles',
     'roles' => array(
-      'Chief Coordinator' => 'Chief Coordinator',
-      'Midleton School' => 'Midleton School',
       'administrator' => 'administrator',
     ),
     'module' => 'roleassign',
@@ -225,9 +212,7 @@ function midleton_user_features_user_default_permissions() {
   $permissions['change own username'] = array(
     'name' => 'change own username',
     'roles' => array(
-      'Chief Coordinator' => 'Chief Coordinator',
       'Coordinator' => 'Coordinator',
-      'Midleton School' => 'Midleton School',
       'administrator' => 'administrator',
     ),
     'module' => 'user',
@@ -334,7 +319,6 @@ function midleton_user_features_user_default_permissions() {
   $permissions['delete any parent_teacher_meeting content'] = array(
     'name' => 'delete any parent_teacher_meeting content',
     'roles' => array(
-      'Chief Coordinator' => 'Chief Coordinator',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -344,7 +328,6 @@ function midleton_user_features_user_default_permissions() {
   $permissions['delete any report_1 content'] = array(
     'name' => 'delete any report_1 content',
     'roles' => array(
-      'Chief Coordinator' => 'Chief Coordinator',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -354,7 +337,6 @@ function midleton_user_features_user_default_permissions() {
   $permissions['delete any report_2 content'] = array(
     'name' => 'delete any report_2 content',
     'roles' => array(
-      'Chief Coordinator' => 'Chief Coordinator',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -364,7 +346,6 @@ function midleton_user_features_user_default_permissions() {
   $permissions['delete any report_3 content'] = array(
     'name' => 'delete any report_3 content',
     'roles' => array(
-      'Chief Coordinator' => 'Chief Coordinator',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -392,7 +373,6 @@ function midleton_user_features_user_default_permissions() {
   $permissions['delete own document files'] = array(
     'name' => 'delete own document files',
     'roles' => array(
-      'Chief Coordinator' => 'Chief Coordinator',
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
@@ -411,7 +391,6 @@ function midleton_user_features_user_default_permissions() {
   $permissions['delete own parent_teacher_meeting content'] = array(
     'name' => 'delete own parent_teacher_meeting content',
     'roles' => array(
-      'Chief Coordinator' => 'Chief Coordinator',
       'Coordinator' => 'Coordinator',
       'administrator' => 'administrator',
     ),
@@ -422,7 +401,6 @@ function midleton_user_features_user_default_permissions() {
   $permissions['delete own report_1 content'] = array(
     'name' => 'delete own report_1 content',
     'roles' => array(
-      'Chief Coordinator' => 'Chief Coordinator',
       'Coordinator' => 'Coordinator',
       'administrator' => 'administrator',
     ),
@@ -433,7 +411,6 @@ function midleton_user_features_user_default_permissions() {
   $permissions['delete own report_2 content'] = array(
     'name' => 'delete own report_2 content',
     'roles' => array(
-      'Chief Coordinator' => 'Chief Coordinator',
       'Coordinator' => 'Coordinator',
       'administrator' => 'administrator',
     ),
@@ -444,7 +421,6 @@ function midleton_user_features_user_default_permissions() {
   $permissions['delete own report_3 content'] = array(
     'name' => 'delete own report_3 content',
     'roles' => array(
-      'Chief Coordinator' => 'Chief Coordinator',
       'Coordinator' => 'Coordinator',
       'administrator' => 'administrator',
     ),
@@ -455,7 +431,6 @@ function midleton_user_features_user_default_permissions() {
   $permissions['delete own student entities'] = array(
     'name' => 'delete own student entities',
     'roles' => array(
-      'Chief Coordinator' => 'Chief Coordinator',
       'Coordinator' => 'Coordinator',
     ),
     'module' => 'midleton_base',
@@ -483,7 +458,6 @@ function midleton_user_features_user_default_permissions() {
   $permissions['delete terms in school_year'] = array(
     'name' => 'delete terms in school_year',
     'roles' => array(
-      'Midleton School' => 'Midleton School',
       'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
@@ -493,7 +467,6 @@ function midleton_user_features_user_default_permissions() {
   $permissions['download any audio files'] = array(
     'name' => 'download any audio files',
     'roles' => array(
-      'Midleton School' => 'Midleton School',
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
@@ -503,7 +476,6 @@ function midleton_user_features_user_default_permissions() {
   $permissions['download any document files'] = array(
     'name' => 'download any document files',
     'roles' => array(
-      'Midleton School' => 'Midleton School',
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
@@ -513,7 +485,6 @@ function midleton_user_features_user_default_permissions() {
   $permissions['download any image files'] = array(
     'name' => 'download any image files',
     'roles' => array(
-      'Midleton School' => 'Midleton School',
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
@@ -523,7 +494,6 @@ function midleton_user_features_user_default_permissions() {
   $permissions['download any video files'] = array(
     'name' => 'download any video files',
     'roles' => array(
-      'Midleton School' => 'Midleton School',
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
@@ -654,9 +624,7 @@ function midleton_user_features_user_default_permissions() {
   // Exported permission: 'edit field_user_superior'.
   $permissions['edit field_user_superior'] = array(
     'name' => 'edit field_user_superior',
-    'roles' => array(
-      'Midleton School' => 'Midleton School',
-    ),
+    'roles' => array(),
     'module' => 'field_permissions',
   );
 
@@ -715,9 +683,7 @@ function midleton_user_features_user_default_permissions() {
   // Exported permission: 'edit own field_user_superior'.
   $permissions['edit own field_user_superior'] = array(
     'name' => 'edit own field_user_superior',
-    'roles' => array(
-      'Midleton School' => 'Midleton School',
-    ),
+    'roles' => array(),
     'module' => 'field_permissions',
   );
 
@@ -779,7 +745,6 @@ function midleton_user_features_user_default_permissions() {
   $permissions['edit terms in school_year'] = array(
     'name' => 'edit terms in school_year',
     'roles' => array(
-      'Midleton School' => 'Midleton School',
       'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
@@ -798,7 +763,6 @@ function midleton_user_features_user_default_permissions() {
   $permissions['masquerade as any user'] = array(
     'name' => 'masquerade as any user',
     'roles' => array(
-      'Midleton School' => 'Midleton School',
       'administrator' => 'administrator',
     ),
     'module' => 'masquerade',
@@ -808,7 +772,6 @@ function midleton_user_features_user_default_permissions() {
   $permissions['masquerade as user'] = array(
     'name' => 'masquerade as user',
     'roles' => array(
-      'Midleton School' => 'Midleton School',
       'administrator' => 'administrator',
     ),
     'module' => 'masquerade',
@@ -845,7 +808,6 @@ function midleton_user_features_user_default_permissions() {
   $permissions['update own student entities'] = array(
     'name' => 'update own student entities',
     'roles' => array(
-      'Chief Coordinator' => 'Chief Coordinator',
       'Coordinator' => 'Coordinator',
     ),
     'module' => 'midleton_base',
@@ -892,10 +854,7 @@ function midleton_user_features_user_default_permissions() {
   // Exported permission: 'view field_user_superior'.
   $permissions['view field_user_superior'] = array(
     'name' => 'view field_user_superior',
-    'roles' => array(
-      'Chief Coordinator' => 'Chief Coordinator',
-      'Midleton School' => 'Midleton School',
-    ),
+    'roles' => array(),
     'module' => 'field_permissions',
   );
 
@@ -903,9 +862,7 @@ function midleton_user_features_user_default_permissions() {
   $permissions['view files'] = array(
     'name' => 'view files',
     'roles' => array(
-      'Chief Coordinator' => 'Chief Coordinator',
       'Coordinator' => 'Coordinator',
-      'Midleton School' => 'Midleton School',
       'administrator' => 'administrator',
       'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
@@ -931,9 +888,7 @@ function midleton_user_features_user_default_permissions() {
   $permissions['view own field_user_superior'] = array(
     'name' => 'view own field_user_superior',
     'roles' => array(
-      'Chief Coordinator' => 'Chief Coordinator',
       'Coordinator' => 'Coordinator',
-      'Midleton School' => 'Midleton School',
     ),
     'module' => 'field_permissions',
   );
@@ -960,7 +915,6 @@ function midleton_user_features_user_default_permissions() {
   $permissions['view own student entities'] = array(
     'name' => 'view own student entities',
     'roles' => array(
-      'Chief Coordinator' => 'Chief Coordinator',
       'Coordinator' => 'Coordinator',
     ),
     'module' => 'midleton_base',
@@ -987,9 +941,7 @@ function midleton_user_features_user_default_permissions() {
   // Exported permission: 'view revision overview'.
   $permissions['view revision overview'] = array(
     'name' => 'view revision overview',
-    'roles' => array(
-      'Midleton School' => 'Midleton School',
-    ),
+    'roles' => array(),
     'module' => 'midleton_base',
   );
 
@@ -997,8 +949,6 @@ function midleton_user_features_user_default_permissions() {
   $permissions['view revisions'] = array(
     'name' => 'view revisions',
     'roles' => array(
-      'Chief Coordinator' => 'Chief Coordinator',
-      'Midleton School' => 'Midleton School',
       'administrator' => 'administrator',
     ),
     'module' => 'node',

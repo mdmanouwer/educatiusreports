@@ -42,7 +42,6 @@ function midleton_email_features_user_default_permissions() {
   $permissions['create field_email'] = array(
     'name' => 'create field_email',
     'roles' => array(
-      'Midleton School' => 'Midleton School',
       'administrator' => 'administrator',
     ),
     'module' => 'field_permissions',
@@ -104,9 +103,7 @@ function midleton_email_features_user_default_permissions() {
   $permissions['eck add document document entities'] = array(
     'name' => 'eck add document document entities',
     'roles' => array(
-      'Chief Coordinator' => 'Chief Coordinator',
       'Coordinator' => 'Coordinator',
-      'Midleton School' => 'Midleton School',
       'administrator' => 'administrator',
     ),
     'module' => 'eck',
@@ -164,9 +161,7 @@ function midleton_email_features_user_default_permissions() {
   // Exported permission: 'eck delete document document entities'.
   $permissions['eck delete document document entities'] = array(
     'name' => 'eck delete document document entities',
-    'roles' => array(
-      'Chief Coordinator' => 'Chief Coordinator',
-    ),
+    'roles' => array(),
     'module' => 'eck',
   );
 
@@ -251,9 +246,7 @@ function midleton_email_features_user_default_permissions() {
   $permissions['eck view document document entities'] = array(
     'name' => 'eck view document document entities',
     'roles' => array(
-      'Chief Coordinator' => 'Chief Coordinator',
       'Coordinator' => 'Coordinator',
-      'Midleton School' => 'Midleton School',
       'administrator' => 'administrator',
     ),
     'module' => 'eck',
@@ -270,7 +263,6 @@ function midleton_email_features_user_default_permissions() {
   $permissions['eck view email email entities'] = array(
     'name' => 'eck view email email entities',
     'roles' => array(
-      'Midleton School' => 'Midleton School',
       'administrator' => 'administrator',
     ),
     'module' => 'eck',
@@ -289,7 +281,6 @@ function midleton_email_features_user_default_permissions() {
   $permissions['edit field_email'] = array(
     'name' => 'edit field_email',
     'roles' => array(
-      'Midleton School' => 'Midleton School',
       'administrator' => 'administrator',
     ),
     'module' => 'field_permissions',
@@ -335,7 +326,6 @@ function midleton_email_features_user_default_permissions() {
   $permissions['edit own field_email'] = array(
     'name' => 'edit own field_email',
     'roles' => array(
-      'Midleton School' => 'Midleton School',
       'administrator' => 'administrator',
     ),
     'module' => 'field_permissions',
@@ -385,9 +375,7 @@ function midleton_email_features_user_default_permissions() {
   // Exported permission: 'send emails'.
   $permissions['send emails'] = array(
     'name' => 'send emails',
-    'roles' => array(
-      'Midleton School' => 'Midleton School',
-    ),
+    'roles' => array(),
     'module' => 'midleton_base',
   );
 
@@ -404,7 +392,6 @@ function midleton_email_features_user_default_permissions() {
   $permissions['view field_email'] = array(
     'name' => 'view field_email',
     'roles' => array(
-      'Midleton School' => 'Midleton School',
       'administrator' => 'administrator',
     ),
     'module' => 'field_permissions',
@@ -455,7 +442,6 @@ function midleton_email_features_user_default_permissions() {
   $permissions['view own field_email'] = array(
     'name' => 'view own field_email',
     'roles' => array(
-      'Midleton School' => 'Midleton School',
       'administrator' => 'administrator',
     ),
     'module' => 'field_permissions',
