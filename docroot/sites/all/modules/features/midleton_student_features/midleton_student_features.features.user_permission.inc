@@ -15,7 +15,6 @@ function midleton_student_features_user_default_permissions() {
   $permissions['access draggableviews'] = array(
     'name' => 'access draggableviews',
     'roles' => array(
-      'Midleton School' => 'Midleton School',
       'administrator' => 'administrator',
     ),
     'module' => 'draggableviews',
@@ -24,9 +23,7 @@ function midleton_student_features_user_default_permissions() {
   // Exported permission: 'add school years'.
   $permissions['add school years'] = array(
     'name' => 'add school years',
-    'roles' => array(
-      'Midleton School' => 'Midleton School',
-    ),
+    'roles' => array(),
     'module' => 'midleton_base',
   );
 
@@ -34,7 +31,6 @@ function midleton_student_features_user_default_permissions() {
   $permissions['create field_email'] = array(
     'name' => 'create field_email',
     'roles' => array(
-      'Midleton School' => 'Midleton School',
       'administrator' => 'administrator',
     ),
     'module' => 'field_permissions',
@@ -44,7 +40,6 @@ function midleton_student_features_user_default_permissions() {
   $permissions['create field_student_observaciones'] = array(
     'name' => 'create field_student_observaciones',
     'roles' => array(
-      'Midleton School' => 'Midleton School',
       'administrator' => 'administrator',
     ),
     'module' => 'field_permissions',
@@ -61,9 +56,7 @@ function midleton_student_features_user_default_permissions() {
   $permissions['eck add student student entities'] = array(
     'name' => 'eck add student student entities',
     'roles' => array(
-      'Chief Coordinator' => 'Chief Coordinator',
       'Coordinator' => 'Coordinator',
-      'Midleton School' => 'Midleton School',
       'administrator' => 'administrator',
     ),
     'module' => 'eck',
@@ -80,9 +73,7 @@ function midleton_student_features_user_default_permissions() {
   $permissions['eck administer student student entities'] = array(
     'name' => 'eck administer student student entities',
     'roles' => array(
-      'Chief Coordinator' => 'Chief Coordinator',
       'Coordinator' => 'Coordinator',
-      'Midleton School' => 'Midleton School',
       'administrator' => 'administrator',
     ),
     'module' => 'eck',
@@ -99,7 +90,6 @@ function midleton_student_features_user_default_permissions() {
   $permissions['eck delete student student entities'] = array(
     'name' => 'eck delete student student entities',
     'roles' => array(
-      'Midleton School' => 'Midleton School',
       'administrator' => 'administrator',
     ),
     'module' => 'eck',
@@ -116,7 +106,6 @@ function midleton_student_features_user_default_permissions() {
   $permissions['eck edit student student entities'] = array(
     'name' => 'eck edit student student entities',
     'roles' => array(
-      'Midleton School' => 'Midleton School',
       'administrator' => 'administrator',
     ),
     'module' => 'eck',
@@ -133,7 +122,6 @@ function midleton_student_features_user_default_permissions() {
   $permissions['eck list student student entities'] = array(
     'name' => 'eck list student student entities',
     'roles' => array(
-      'Midleton School' => 'Midleton School',
       'administrator' => 'administrator',
     ),
     'module' => 'eck',
@@ -150,7 +138,6 @@ function midleton_student_features_user_default_permissions() {
   $permissions['eck view student student entities'] = array(
     'name' => 'eck view student student entities',
     'roles' => array(
-      'Midleton School' => 'Midleton School',
       'administrator' => 'administrator',
     ),
     'module' => 'eck',
@@ -160,7 +147,6 @@ function midleton_student_features_user_default_permissions() {
   $permissions['edit field_email'] = array(
     'name' => 'edit field_email',
     'roles' => array(
-      'Midleton School' => 'Midleton School',
       'administrator' => 'administrator',
     ),
     'module' => 'field_permissions',
@@ -170,7 +156,6 @@ function midleton_student_features_user_default_permissions() {
   $permissions['edit field_student_observaciones'] = array(
     'name' => 'edit field_student_observaciones',
     'roles' => array(
-      'Midleton School' => 'Midleton School',
       'administrator' => 'administrator',
     ),
     'module' => 'field_permissions',
@@ -180,7 +165,6 @@ function midleton_student_features_user_default_permissions() {
   $permissions['edit own field_email'] = array(
     'name' => 'edit own field_email',
     'roles' => array(
-      'Midleton School' => 'Midleton School',
       'administrator' => 'administrator',
     ),
     'module' => 'field_permissions',
@@ -190,7 +174,6 @@ function midleton_student_features_user_default_permissions() {
   $permissions['edit own field_student_observaciones'] = array(
     'name' => 'edit own field_student_observaciones',
     'roles' => array(
-      'Midleton School' => 'Midleton School',
       'administrator' => 'administrator',
     ),
     'module' => 'field_permissions',
@@ -207,7 +190,6 @@ function midleton_student_features_user_default_permissions() {
   $permissions['view field_email'] = array(
     'name' => 'view field_email',
     'roles' => array(
-      'Midleton School' => 'Midleton School',
       'administrator' => 'administrator',
     ),
     'module' => 'field_permissions',
@@ -217,7 +199,6 @@ function midleton_student_features_user_default_permissions() {
   $permissions['view field_student_observaciones'] = array(
     'name' => 'view field_student_observaciones',
     'roles' => array(
-      'Midleton School' => 'Midleton School',
       'administrator' => 'administrator',
     ),
     'module' => 'field_permissions',
@@ -227,7 +208,6 @@ function midleton_student_features_user_default_permissions() {
   $permissions['view own field_email'] = array(
     'name' => 'view own field_email',
     'roles' => array(
-      'Midleton School' => 'Midleton School',
       'administrator' => 'administrator',
     ),
     'module' => 'field_permissions',
@@ -237,7 +217,6 @@ function midleton_student_features_user_default_permissions() {
   $permissions['view own field_student_observaciones'] = array(
     'name' => 'view own field_student_observaciones',
     'roles' => array(
-      'Midleton School' => 'Midleton School',
       'administrator' => 'administrator',
     ),
     'module' => 'field_permissions',
