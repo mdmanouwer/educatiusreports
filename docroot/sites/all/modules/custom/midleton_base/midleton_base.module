@@ -395,7 +395,7 @@ function midleton_base_node_grants($account, $op) {
     $grants['view-' . $account->uid][] = midleton_base_get_status_id('approved');
     $grants['view-' . $account->uid][] = midleton_base_get_status_id('sent');
   }
-  if (in_array('Chief Coordinator', array_values($account->roles))) {
+  if (in_array('Manager', array_values($account->roles))) {
     $coordinators = db_select('field_data_field_user_superior', 'f')
       ->fields('f', ['entity_id'])
       ->condition('field_user_superior_target_id', $account->uid)
@@ -410,7 +410,7 @@ function midleton_base_node_grants($account, $op) {
       $grants['view-' . $coordinator_uid][] = midleton_base_get_status_id('sent');
     }
   }
-  if (in_array('Midleton School', array_values($account->roles))) {
+  if (in_array('Educatius Master', array_values($account->roles))) {
     $grants['midleton'] = [999];
   }
   return $grants;
