@@ -38,38 +38,6 @@ function midleton_report_features_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field__care_of_installations'.
-  $field_bases['field__care_of_installations'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field__care_of_installations',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'indexes' => array(
-      'value' => array(
-        0 => 'value',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'list',
-    'settings' => array(
-      'allowed_values' => array(
-        1 => 1,
-        2 => 2,
-        3 => 3,
-        4 => 4,
-        5 => 5,
-        6 => 6,
-      ),
-      'allowed_values_function' => '',
-    ),
-    'translatable' => 0,
-    'type' => 'list_text',
-  );
-
   // Exported field_base: 'field_absences'.
   $field_bases['field_absences'] = array(
     'active' => 1,
@@ -334,38 +302,6 @@ function midleton_report_features_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_attitude_toward_peers'.
-  $field_bases['field_attitude_toward_peers'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_attitude_toward_peers',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'indexes' => array(
-      'value' => array(
-        0 => 'value',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'list',
-    'settings' => array(
-      'allowed_values' => array(
-        1 => 1,
-        2 => 2,
-        3 => 3,
-        4 => 4,
-        5 => 5,
-        6 => 6,
-      ),
-      'allowed_values_function' => '',
-    ),
-    'translatable' => 0,
-    'type' => 'list_text',
-  );
-
   // Exported field_base: 'field_attitude_towards_fellow_cl'.
   $field_bases['field_attitude_towards_fellow_cl'] = array(
     'active' => 1,
@@ -602,38 +538,6 @@ function midleton_report_features_field_default_field_bases() {
     'type' => 'list_text',
   );
 
-  // Exported field_base: 'field_conduct'.
-  $field_bases['field_conduct'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_conduct',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'indexes' => array(
-      'value' => array(
-        0 => 'value',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'list',
-    'settings' => array(
-      'allowed_values' => array(
-        1 => 1,
-        2 => 2,
-        3 => 3,
-        4 => 4,
-        5 => 5,
-        6 => 6,
-      ),
-      'allowed_values_function' => '',
-    ),
-    'translatable' => 0,
-    'type' => 'list_text',
-  );
-
   // Exported field_base: 'field_coordinator_observations_3'.
   $field_bases['field_coordinator_observations_3'] = array(
     'active' => 1,
@@ -762,34 +666,6 @@ function midleton_report_features_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'list_text',
-  );
-
-  // Exported field_base: 'field_friendships_at_school'.
-  $field_bases['field_friendships_at_school'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_friendships_at_school',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'indexes' => array(
-      'value' => array(
-        0 => 'value',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'list',
-    'settings' => array(
-      'allowed_values' => array(
-        0 => 'No',
-        1 => 'Yes',
-      ),
-      'allowed_values_function' => '',
-    ),
-    'translatable' => 0,
-    'type' => 'list_boolean',
   );
 
   // Exported field_base: 'field_friendships_at_school2'.
@@ -1106,34 +982,6 @@ function midleton_report_features_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_it_leads_to_people'.
-  $field_bases['field_it_leads_to_people'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_it_leads_to_people',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'indexes' => array(
-      'value' => array(
-        0 => 'value',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'list',
-    'settings' => array(
-      'allowed_values' => array(
-        0 => 'No',
-        1 => 'Yes',
-      ),
-      'allowed_values_function' => '',
-    ),
-    'translatable' => 0,
-    'type' => 'list_boolean',
-  );
-
   // Exported field_base: 'field_leads_a_balanced_diet'.
   $field_bases['field_leads_a_balanced_diet'] = array(
     'active' => 1,
@@ -1160,38 +1008,6 @@ function midleton_report_features_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'list_boolean',
-  );
-
-  // Exported field_base: 'field_material_care'.
-  $field_bases['field_material_care'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_material_care',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'indexes' => array(
-      'value' => array(
-        0 => 'value',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'list',
-    'settings' => array(
-      'allowed_values' => array(
-        1 => 1,
-        2 => 2,
-        3 => 3,
-        4 => 4,
-        5 => 5,
-        6 => 6,
-      ),
-      'allowed_values_function' => '',
-    ),
-    'translatable' => 0,
-    'type' => 'list_text',
   );
 
   // Exported field_base: 'field_observations_coordinator'.
@@ -1649,34 +1465,6 @@ function midleton_report_features_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_respect_your_sleep'.
-  $field_bases['field_respect_your_sleep'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_respect_your_sleep',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'indexes' => array(
-      'value' => array(
-        0 => 'value',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'list',
-    'settings' => array(
-      'allowed_values' => array(
-        0 => 'No',
-        1 => 'Yes',
-      ),
-      'allowed_values_function' => '',
-    ),
-    'translatable' => 0,
-    'type' => 'list_boolean',
-  );
-
   // Exported field_base: 'field_respects_the_established_s'.
   $field_bases['field_respects_the_established_s'] = array(
     'active' => 1,
@@ -1784,6 +1572,31 @@ function midleton_report_features_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'list_text',
+  );
+
+  // Exported field_base: 'field_student_image'.
+  $field_bases['field_student_image'] = array(
+    'active' => 1,
+    'cardinality' => 5,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_student_image',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'indexes' => array(
+      'fid' => array(
+        0 => 'fid',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'image',
+    'settings' => array(
+      'default_image' => 0,
+      'uri_scheme' => 'public',
+    ),
+    'translatable' => 0,
+    'type' => 'image',
   );
 
   // Exported field_base: 'field_student_reference'.

@@ -33,13 +33,6 @@ function midleton_email_features_eck_bundle_info() {
       'label' => 'Document',
       'config' => array(),
     ),
-    'email_email' => array(
-      'machine_name' => 'email_email',
-      'entity_type' => 'email',
-      'name' => 'email',
-      'label' => 'Email',
-      'config' => array(),
-    ),
   );
   return $items;
 }

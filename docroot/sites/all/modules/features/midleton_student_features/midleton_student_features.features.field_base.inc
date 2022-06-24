@@ -47,9 +47,6 @@ function midleton_student_features_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_coordinator',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -96,16 +93,16 @@ function midleton_student_features_field_default_field_bases() {
     'module' => 'list',
     'settings' => array(
       'allowed_values' => array(
-        1 => 'IRE- 1st year',
-        2 => 'IRE- 2nd year',
-        3 => 'IRE- 3rd year',
-        4 => 'IRE- Transition Year',
-        5 => 'IRE- 5TH year',
-        6 => 'IRE- 6th year',
-        7 => 'UK- Year 10',
+        1 => ' IRE- 1st year',
+        2 => ' IRE- 2nd year',
+        3 => ' IRE- 3rd year',
+        4 => ' IRE- Transition Year',
+        5 => ' IRE- 5TH year',
+        6 => ' IRE- 6th year',
+        7 => ' UK- Year 10',
         8 => ' UK- Year 11',
-        9 => 'UK- Year 12',
-        10 => 'UK- Year 13',
+        9 => ' UK- Year 12',
+        10 => ' UK- Year 13',
       ),
       'allowed_values_function' => '',
     ),

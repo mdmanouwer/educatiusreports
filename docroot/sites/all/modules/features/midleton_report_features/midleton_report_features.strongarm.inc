@@ -15,28 +15,28 @@ function midleton_report_features_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_parent_teacher_meeting';
-  $strongarm->value = 'edit-submission';
+  $strongarm->value = 'edit-workflow';
   $export['additional_settings__active_tab_parent_teacher_meeting'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_report_1';
-  $strongarm->value = 'edit-submission';
+  $strongarm->value = 'edit-workflow';
   $export['additional_settings__active_tab_report_1'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_report_2';
-  $strongarm->value = 'edit-submission';
+  $strongarm->value = 'edit-workflow';
   $export['additional_settings__active_tab_report_2'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_report_3';
-  $strongarm->value = 'edit-submission';
+  $strongarm->value = 'edit-workflow';
   $export['additional_settings__active_tab_report_3'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -278,44 +278,10 @@ function midleton_report_features_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_student__student';
   $strongarm->value = array(
-    'view_modes' => array(
-      'teaser' => array(
-        'custom_settings' => TRUE,
-      ),
-      'full' => array(
-        'custom_settings' => FALSE,
-      ),
-      'token' => array(
-        'custom_settings' => FALSE,
-      ),
-      'diff_standard' => array(
-        'custom_settings' => FALSE,
-      ),
-    ),
+    'view_modes' => array(),
     'extra_fields' => array(
       'form' => array(),
-      'display' => array(
-        'report_history' => array(
-          'default' => array(
-            'weight' => '8',
-            'visible' => TRUE,
-          ),
-          'teaser' => array(
-            'weight' => '9',
-            'visible' => FALSE,
-          ),
-        ),
-        'email_history' => array(
-          'default' => array(
-            'weight' => '9',
-            'visible' => TRUE,
-          ),
-          'teaser' => array(
-            'weight' => '5',
-            'visible' => FALSE,
-          ),
-        ),
-      ),
+      'display' => array(),
     ),
   );
   $export['field_bundle_settings_student__student'] = $strongarm;
@@ -483,7 +449,8 @@ function midleton_report_features_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_parent_teacher_meeting';
   $strongarm->value = array(
-    0 => 'status',
+    0 => 'moderation',
+    1 => 'revision',
   );
   $export['node_options_parent_teacher_meeting'] = $strongarm;
 
@@ -492,7 +459,8 @@ function midleton_report_features_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_report_1';
   $strongarm->value = array(
-    0 => 'status',
+    0 => 'moderation',
+    1 => 'revision',
   );
   $export['node_options_report_1'] = $strongarm;
 
@@ -501,7 +469,8 @@ function midleton_report_features_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_report_2';
   $strongarm->value = array(
-    0 => 'status',
+    0 => 'moderation',
+    1 => 'revision',
   );
   $export['node_options_report_2'] = $strongarm;
 
@@ -510,7 +479,8 @@ function midleton_report_features_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_report_3';
   $strongarm->value = array(
-    0 => 'status',
+    0 => 'moderation',
+    1 => 'revision',
   );
   $export['node_options_report_3'] = $strongarm;
 

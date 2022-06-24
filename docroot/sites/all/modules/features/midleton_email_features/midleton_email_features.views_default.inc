@@ -86,15 +86,11 @@ function midleton_email_features_views_default_views() {
       'empty_column' => 1,
     ),
   );
-  /* Field: Email: Email description */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_mail_key']['id'] = 'field_mail_key';
   $handler->display->display_options['fields']['field_mail_key']['table'] = 'field_data_field_mail_key';
   $handler->display->display_options['fields']['field_mail_key']['field'] = 'field_mail_key';
   $handler->display->display_options['fields']['field_mail_key']['label'] = 'Description';
-  $handler->display->display_options['fields']['field_mail_key']['settings'] = array(
-    'empty_fields_handler' => '',
-    'empty_fields_emptyfieldtext_empty_text' => '',
-  );
   /* Field: Email: Created */
   $handler->display->display_options['fields']['created']['id'] = 'created';
   $handler->display->display_options['fields']['created']['table'] = 'eck_email';
@@ -102,55 +98,29 @@ function midleton_email_features_views_default_views() {
   $handler->display->display_options['fields']['created']['label'] = 'Sent';
   $handler->display->display_options['fields']['created']['date_format'] = 'short';
   $handler->display->display_options['fields']['created']['second_date_format'] = 'long';
-  /* Field: Email: To */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_mail_to']['id'] = 'field_mail_to';
   $handler->display->display_options['fields']['field_mail_to']['table'] = 'field_data_field_mail_to';
   $handler->display->display_options['fields']['field_mail_to']['field'] = 'field_mail_to';
-  $handler->display->display_options['fields']['field_mail_to']['settings'] = array(
-    'empty_fields_handler' => '',
-    'empty_fields_emptyfieldtext_empty_text' => '',
-  );
-  /* Field: Email: Subject */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_mail_subject']['id'] = 'field_mail_subject';
   $handler->display->display_options['fields']['field_mail_subject']['table'] = 'field_data_field_mail_subject';
   $handler->display->display_options['fields']['field_mail_subject']['field'] = 'field_mail_subject';
-  $handler->display->display_options['fields']['field_mail_subject']['settings'] = array(
-    'empty_fields_handler' => '',
-    'empty_fields_emptyfieldtext_empty_text' => '',
-  );
-  /* Field: Email: Body */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_mail_body']['id'] = 'field_mail_body';
   $handler->display->display_options['fields']['field_mail_body']['table'] = 'field_data_field_mail_body';
   $handler->display->display_options['fields']['field_mail_body']['field'] = 'field_mail_body';
-  $handler->display->display_options['fields']['field_mail_body']['settings'] = array(
-    'empty_fields_handler' => '',
-    'empty_fields_emptyfieldtext_empty_text' => '',
-  );
-  /* Field: Email: Report attachments */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_report_attachments']['id'] = 'field_report_attachments';
   $handler->display->display_options['fields']['field_report_attachments']['table'] = 'field_data_field_report_attachments';
   $handler->display->display_options['fields']['field_report_attachments']['field'] = 'field_report_attachments';
   $handler->display->display_options['fields']['field_report_attachments']['label'] = 'Attached reports';
-  $handler->display->display_options['fields']['field_report_attachments']['settings'] = array(
-    'link' => 1,
-    'empty_fields_handler' => '',
-    'empty_fields_emptyfieldtext_empty_text' => '',
-  );
-  $handler->display->display_options['fields']['field_report_attachments']['delta_offset'] = '0';
-  $handler->display->display_options['fields']['field_report_attachments']['multi_type'] = 'ul';
-  /* Field: Email: Document attachments */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_document_attachments']['id'] = 'field_document_attachments';
   $handler->display->display_options['fields']['field_document_attachments']['table'] = 'field_data_field_document_attachments';
   $handler->display->display_options['fields']['field_document_attachments']['field'] = 'field_document_attachments';
   $handler->display->display_options['fields']['field_document_attachments']['label'] = 'Attached documents';
-  $handler->display->display_options['fields']['field_document_attachments']['settings'] = array(
-    'link' => 1,
-    'empty_fields_handler' => '',
-    'empty_fields_emptyfieldtext_empty_text' => '',
-  );
-  $handler->display->display_options['fields']['field_document_attachments']['delta_offset'] = '0';
-  $handler->display->display_options['fields']['field_document_attachments']['multi_type'] = 'ul';
-  /* Contextual filter: Email: Student email reference (field_student_email_reference) */
+  /* Contextual filter: Broken/missing handler */
   $handler->display->display_options['arguments']['field_student_email_reference_target_id']['id'] = 'field_student_email_reference_target_id';
   $handler->display->display_options['arguments']['field_student_email_reference_target_id']['table'] = 'field_data_field_student_email_reference';
   $handler->display->display_options['arguments']['field_student_email_reference_target_id']['field'] = 'field_student_email_reference_target_id';
@@ -259,7 +229,7 @@ function midleton_email_features_views_default_views() {
   $handler->display->display_options['fields']['created']['alter']['text'] = '([created])';
   $handler->display->display_options['fields']['created']['date_format'] = 'short';
   $handler->display->display_options['fields']['created']['second_date_format'] = 'long';
-  /* Field: Email: Email description */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_mail_key']['id'] = 'field_mail_key';
   $handler->display->display_options['fields']['field_mail_key']['table'] = 'field_data_field_mail_key';
   $handler->display->display_options['fields']['field_mail_key']['field'] = 'field_mail_key';
@@ -267,10 +237,6 @@ function midleton_email_features_views_default_views() {
   $handler->display->display_options['fields']['field_mail_key']['label'] = 'Sent in';
   $handler->display->display_options['fields']['field_mail_key']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_mail_key']['alter']['text'] = '- [field_mail_key] [created]';
-  $handler->display->display_options['fields']['field_mail_key']['settings'] = array(
-    'empty_fields_handler' => '',
-    'empty_fields_emptyfieldtext_empty_text' => '',
-  );
   /* Contextual filter: Student: Id */
   $handler->display->display_options['arguments']['id_1']['id'] = 'id_1';
   $handler->display->display_options['arguments']['id_1']['table'] = 'eck_student';
@@ -507,7 +473,7 @@ function midleton_email_features_views_default_views() {
   $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['created']['date_format'] = 'short';
   $handler->display->display_options['fields']['created']['second_date_format'] = 'long';
-  /* Field: Email: Email description */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_mail_key']['id'] = 'field_mail_key';
   $handler->display->display_options['fields']['field_mail_key']['table'] = 'field_data_field_mail_key';
   $handler->display->display_options['fields']['field_mail_key']['field'] = 'field_mail_key';
@@ -515,10 +481,6 @@ function midleton_email_features_views_default_views() {
   $handler->display->display_options['fields']['field_mail_key']['label'] = 'Sent';
   $handler->display->display_options['fields']['field_mail_key']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_mail_key']['alter']['text'] = '- [field_mail_key] [created]';
-  $handler->display->display_options['fields']['field_mail_key']['settings'] = array(
-    'empty_fields_handler' => '',
-    'empty_fields_emptyfieldtext_empty_text' => '',
-  );
   /* Field: Content: Nid */
   $handler->display->display_options['fields']['nid']['id'] = 'nid';
   $handler->display->display_options['fields']['nid']['table'] = 'node';
@@ -814,7 +776,7 @@ function midleton_email_features_views_default_views() {
   $handler->display->display_options['fields']['created']['exclude'] = TRUE;
   $handler->display->display_options['fields']['created']['date_format'] = 'short';
   $handler->display->display_options['fields']['created']['second_date_format'] = 'long';
-  /* Field: Email: Email description */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_mail_key']['id'] = 'field_mail_key';
   $handler->display->display_options['fields']['field_mail_key']['table'] = 'field_data_field_mail_key';
   $handler->display->display_options['fields']['field_mail_key']['field'] = 'field_mail_key';
@@ -822,10 +784,6 @@ function midleton_email_features_views_default_views() {
   $handler->display->display_options['fields']['field_mail_key']['label'] = 'Sent';
   $handler->display->display_options['fields']['field_mail_key']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_mail_key']['alter']['text'] = '[field_mail_key] ([created])';
-  $handler->display->display_options['fields']['field_mail_key']['settings'] = array(
-    'empty_fields_handler' => '',
-    'empty_fields_emptyfieldtext_empty_text' => '',
-  );
   /* Field: Document: Id */
   $handler->display->display_options['fields']['id']['id'] = 'id';
   $handler->display->display_options['fields']['id']['table'] = 'eck_document';

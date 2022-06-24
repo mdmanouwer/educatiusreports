@@ -16,6 +16,8 @@ function midleton_user_features_user_default_permissions() {
     'name' => 'access content',
     'roles' => array(
       'Coordinator' => 'Coordinator',
+      'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -25,6 +27,9 @@ function midleton_user_features_user_default_permissions() {
   $permissions['access content overview'] = array(
     'name' => 'access content overview',
     'roles' => array(
+      'Coordinator' => 'Coordinator',
+      'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -34,6 +39,7 @@ function midleton_user_features_user_default_permissions() {
   $permissions['access mail logger'] = array(
     'name' => 'access mail logger',
     'roles' => array(
+      'Educatius Master' => 'Educatius Master',
       'administrator' => 'administrator',
     ),
     'module' => 'mail_logger',
@@ -42,14 +48,20 @@ function midleton_user_features_user_default_permissions() {
   // Exported permission: 'access notification message settings'.
   $permissions['access notification message settings'] = array(
     'name' => 'access notification message settings',
-    'roles' => array(),
+    'roles' => array(
+      'Manager' => 'Manager',
+      'administrator' => 'administrator',
+    ),
     'module' => 'midleton_base',
   );
 
   // Exported permission: 'access pdf download'.
   $permissions['access pdf download'] = array(
     'name' => 'access pdf download',
-    'roles' => array(),
+    'roles' => array(
+      'Manager' => 'Manager',
+      'administrator' => 'administrator',
+    ),
     'module' => 'midleton_base',
   );
 
@@ -66,6 +78,8 @@ function midleton_user_features_user_default_permissions() {
   $permissions['access user profiles'] = array(
     'name' => 'access user profiles',
     'roles' => array(
+      'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'user',
@@ -75,6 +89,7 @@ function midleton_user_features_user_default_permissions() {
   $permissions['administer content types'] = array(
     'name' => 'administer content types',
     'roles' => array(
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -102,6 +117,7 @@ function midleton_user_features_user_default_permissions() {
   $permissions['administer masquerade'] = array(
     'name' => 'administer masquerade',
     'roles' => array(
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'masquerade',
@@ -111,6 +127,7 @@ function midleton_user_features_user_default_permissions() {
   $permissions['administer nodes'] = array(
     'name' => 'administer nodes',
     'roles' => array(
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -138,6 +155,7 @@ function midleton_user_features_user_default_permissions() {
   $permissions['administer userprotect'] = array(
     'name' => 'administer userprotect',
     'roles' => array(
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'userprotect',
@@ -147,6 +165,8 @@ function midleton_user_features_user_default_permissions() {
   $permissions['administer users'] = array(
     'name' => 'administer users',
     'roles' => array(
+      'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'user',
@@ -156,6 +176,7 @@ function midleton_user_features_user_default_permissions() {
   $permissions['assign roles'] = array(
     'name' => 'assign roles',
     'roles' => array(
+      'Educatius Master' => 'Educatius Master',
       'administrator' => 'administrator',
     ),
     'module' => 'roleassign',
@@ -174,6 +195,7 @@ function midleton_user_features_user_default_permissions() {
   $permissions['bypass node access'] = array(
     'name' => 'bypass node access',
     'roles' => array(
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -213,6 +235,8 @@ function midleton_user_features_user_default_permissions() {
     'name' => 'change own username',
     'roles' => array(
       'Coordinator' => 'Coordinator',
+      'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'user',
@@ -221,21 +245,27 @@ function midleton_user_features_user_default_permissions() {
   // Exported permission: 'create field_comments_chief_coordinator'.
   $permissions['create field_comments_chief_coordinator'] = array(
     'name' => 'create field_comments_chief_coordinator',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'field_permissions',
   );
 
   // Exported permission: 'create field_pdf'.
   $permissions['create field_pdf'] = array(
     'name' => 'create field_pdf',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'field_permissions',
   );
 
   // Exported permission: 'create field_user_superior'.
   $permissions['create field_user_superior'] = array(
     'name' => 'create field_user_superior',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'field_permissions',
   );
 
@@ -253,6 +283,8 @@ function midleton_user_features_user_default_permissions() {
     'name' => 'create parent_teacher_meeting content',
     'roles' => array(
       'Coordinator' => 'Coordinator',
+      'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -263,6 +295,8 @@ function midleton_user_features_user_default_permissions() {
     'name' => 'create report_1 content',
     'roles' => array(
       'Coordinator' => 'Coordinator',
+      'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -273,6 +307,8 @@ function midleton_user_features_user_default_permissions() {
     'name' => 'create report_2 content',
     'roles' => array(
       'Coordinator' => 'Coordinator',
+      'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -283,6 +319,8 @@ function midleton_user_features_user_default_permissions() {
     'name' => 'create report_3 content',
     'roles' => array(
       'Coordinator' => 'Coordinator',
+      'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -319,6 +357,7 @@ function midleton_user_features_user_default_permissions() {
   $permissions['delete any parent_teacher_meeting content'] = array(
     'name' => 'delete any parent_teacher_meeting content',
     'roles' => array(
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -328,6 +367,7 @@ function midleton_user_features_user_default_permissions() {
   $permissions['delete any report_1 content'] = array(
     'name' => 'delete any report_1 content',
     'roles' => array(
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -337,6 +377,7 @@ function midleton_user_features_user_default_permissions() {
   $permissions['delete any report_2 content'] = array(
     'name' => 'delete any report_2 content',
     'roles' => array(
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -346,6 +387,7 @@ function midleton_user_features_user_default_permissions() {
   $permissions['delete any report_3 content'] = array(
     'name' => 'delete any report_3 content',
     'roles' => array(
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -392,6 +434,8 @@ function midleton_user_features_user_default_permissions() {
     'name' => 'delete own parent_teacher_meeting content',
     'roles' => array(
       'Coordinator' => 'Coordinator',
+      'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -402,6 +446,8 @@ function midleton_user_features_user_default_permissions() {
     'name' => 'delete own report_1 content',
     'roles' => array(
       'Coordinator' => 'Coordinator',
+      'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -412,6 +458,8 @@ function midleton_user_features_user_default_permissions() {
     'name' => 'delete own report_2 content',
     'roles' => array(
       'Coordinator' => 'Coordinator',
+      'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -422,6 +470,8 @@ function midleton_user_features_user_default_permissions() {
     'name' => 'delete own report_3 content',
     'roles' => array(
       'Coordinator' => 'Coordinator',
+      'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -432,6 +482,9 @@ function midleton_user_features_user_default_permissions() {
     'name' => 'delete own student entities',
     'roles' => array(
       'Coordinator' => 'Coordinator',
+      'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
+      'administrator' => 'administrator',
     ),
     'module' => 'midleton_base',
   );
@@ -449,6 +502,7 @@ function midleton_user_features_user_default_permissions() {
   $permissions['delete revisions'] = array(
     'name' => 'delete revisions',
     'roles' => array(
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -458,6 +512,7 @@ function midleton_user_features_user_default_permissions() {
   $permissions['delete terms in school_year'] = array(
     'name' => 'delete terms in school_year',
     'roles' => array(
+      'Educatius Master' => 'Educatius Master',
       'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
@@ -467,6 +522,7 @@ function midleton_user_features_user_default_permissions() {
   $permissions['download any audio files'] = array(
     'name' => 'download any audio files',
     'roles' => array(
+      'Educatius Master' => 'Educatius Master',
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
@@ -557,6 +613,7 @@ function midleton_user_features_user_default_permissions() {
   $permissions['edit any image files'] = array(
     'name' => 'edit any image files',
     'roles' => array(
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
@@ -566,6 +623,9 @@ function midleton_user_features_user_default_permissions() {
   $permissions['edit any parent_teacher_meeting content'] = array(
     'name' => 'edit any parent_teacher_meeting content',
     'roles' => array(
+      'Coordinator' => 'Coordinator',
+      'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -575,6 +635,7 @@ function midleton_user_features_user_default_permissions() {
   $permissions['edit any report_1 content'] = array(
     'name' => 'edit any report_1 content',
     'roles' => array(
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -584,6 +645,7 @@ function midleton_user_features_user_default_permissions() {
   $permissions['edit any report_2 content'] = array(
     'name' => 'edit any report_2 content',
     'roles' => array(
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -593,6 +655,7 @@ function midleton_user_features_user_default_permissions() {
   $permissions['edit any report_3 content'] = array(
     'name' => 'edit any report_3 content',
     'roles' => array(
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -610,21 +673,28 @@ function midleton_user_features_user_default_permissions() {
   // Exported permission: 'edit field_comments_chief_coordinator'.
   $permissions['edit field_comments_chief_coordinator'] = array(
     'name' => 'edit field_comments_chief_coordinator',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'field_permissions',
   );
 
   // Exported permission: 'edit field_pdf'.
   $permissions['edit field_pdf'] = array(
     'name' => 'edit field_pdf',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'field_permissions',
   );
 
   // Exported permission: 'edit field_user_superior'.
   $permissions['edit field_user_superior'] = array(
     'name' => 'edit field_user_superior',
-    'roles' => array(),
+    'roles' => array(
+      'Educatius Master' => 'Educatius Master',
+      'administrator' => 'administrator',
+    ),
     'module' => 'field_permissions',
   );
 
@@ -669,21 +739,28 @@ function midleton_user_features_user_default_permissions() {
   // Exported permission: 'edit own field_comments_chief_coordinator'.
   $permissions['edit own field_comments_chief_coordinator'] = array(
     'name' => 'edit own field_comments_chief_coordinator',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'field_permissions',
   );
 
   // Exported permission: 'edit own field_pdf'.
   $permissions['edit own field_pdf'] = array(
     'name' => 'edit own field_pdf',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'field_permissions',
   );
 
   // Exported permission: 'edit own field_user_superior'.
   $permissions['edit own field_user_superior'] = array(
     'name' => 'edit own field_user_superior',
-    'roles' => array(),
+    'roles' => array(
+      'Educatius Master' => 'Educatius Master',
+      'administrator' => 'administrator',
+    ),
     'module' => 'field_permissions',
   );
 
@@ -691,6 +768,9 @@ function midleton_user_features_user_default_permissions() {
   $permissions['edit own image files'] = array(
     'name' => 'edit own image files',
     'roles' => array(
+      'Coordinator' => 'Coordinator',
+      'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
@@ -700,6 +780,9 @@ function midleton_user_features_user_default_permissions() {
   $permissions['edit own parent_teacher_meeting content'] = array(
     'name' => 'edit own parent_teacher_meeting content',
     'roles' => array(
+      'Coordinator' => 'Coordinator',
+      'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -709,6 +792,9 @@ function midleton_user_features_user_default_permissions() {
   $permissions['edit own report_1 content'] = array(
     'name' => 'edit own report_1 content',
     'roles' => array(
+      'Coordinator' => 'Coordinator',
+      'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -718,6 +804,9 @@ function midleton_user_features_user_default_permissions() {
   $permissions['edit own report_2 content'] = array(
     'name' => 'edit own report_2 content',
     'roles' => array(
+      'Coordinator' => 'Coordinator',
+      'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -727,6 +816,9 @@ function midleton_user_features_user_default_permissions() {
   $permissions['edit own report_3 content'] = array(
     'name' => 'edit own report_3 content',
     'roles' => array(
+      'Coordinator' => 'Coordinator',
+      'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -745,6 +837,9 @@ function midleton_user_features_user_default_permissions() {
   $permissions['edit terms in school_year'] = array(
     'name' => 'edit terms in school_year',
     'roles' => array(
+      'Coordinator' => 'Coordinator',
+      'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
@@ -754,6 +849,7 @@ function midleton_user_features_user_default_permissions() {
   $permissions['masquerade as admin'] = array(
     'name' => 'masquerade as admin',
     'roles' => array(
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'masquerade',
@@ -763,6 +859,8 @@ function midleton_user_features_user_default_permissions() {
   $permissions['masquerade as any user'] = array(
     'name' => 'masquerade as any user',
     'roles' => array(
+      'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'masquerade',
@@ -772,6 +870,7 @@ function midleton_user_features_user_default_permissions() {
   $permissions['masquerade as user'] = array(
     'name' => 'masquerade as user',
     'roles' => array(
+      'Educatius Master' => 'Educatius Master',
       'administrator' => 'administrator',
     ),
     'module' => 'masquerade',
@@ -781,6 +880,9 @@ function midleton_user_features_user_default_permissions() {
   $permissions['revert revisions'] = array(
     'name' => 'revert revisions',
     'roles' => array(
+      'Coordinator' => 'Coordinator',
+      'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -809,6 +911,9 @@ function midleton_user_features_user_default_permissions() {
     'name' => 'update own student entities',
     'roles' => array(
       'Coordinator' => 'Coordinator',
+      'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
+      'administrator' => 'administrator',
     ),
     'module' => 'midleton_base',
   );
@@ -828,6 +933,9 @@ function midleton_user_features_user_default_permissions() {
   $permissions['use text format full_html'] = array(
     'name' => 'use text format full_html',
     'roles' => array(
+      'Coordinator' => 'Coordinator',
+      'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'filter',
@@ -836,7 +944,9 @@ function midleton_user_features_user_default_permissions() {
   // Exported permission: 'view field_comments_chief_coordinator'.
   $permissions['view field_comments_chief_coordinator'] = array(
     'name' => 'view field_comments_chief_coordinator',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'field_permissions',
   );
 
@@ -854,7 +964,10 @@ function midleton_user_features_user_default_permissions() {
   // Exported permission: 'view field_user_superior'.
   $permissions['view field_user_superior'] = array(
     'name' => 'view field_user_superior',
-    'roles' => array(),
+    'roles' => array(
+      'Educatius Master' => 'Educatius Master',
+      'administrator' => 'administrator',
+    ),
     'module' => 'field_permissions',
   );
 
@@ -873,14 +986,21 @@ function midleton_user_features_user_default_permissions() {
   // Exported permission: 'view own field_comments_chief_coordinator'.
   $permissions['view own field_comments_chief_coordinator'] = array(
     'name' => 'view own field_comments_chief_coordinator',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'field_permissions',
   );
 
   // Exported permission: 'view own field_pdf'.
   $permissions['view own field_pdf'] = array(
     'name' => 'view own field_pdf',
-    'roles' => array(),
+    'roles' => array(
+      'Coordinator' => 'Coordinator',
+      'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
+      'administrator' => 'administrator',
+    ),
     'module' => 'field_permissions',
   );
 
@@ -888,7 +1008,8 @@ function midleton_user_features_user_default_permissions() {
   $permissions['view own field_user_superior'] = array(
     'name' => 'view own field_user_superior',
     'roles' => array(
-      'Coordinator' => 'Coordinator',
+      'Educatius Master' => 'Educatius Master',
+      'administrator' => 'administrator',
     ),
     'module' => 'field_permissions',
   );
@@ -897,6 +1018,9 @@ function midleton_user_features_user_default_permissions() {
   $permissions['view own files'] = array(
     'name' => 'view own files',
     'roles' => array(
+      'Coordinator' => 'Coordinator',
+      'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
@@ -906,6 +1030,9 @@ function midleton_user_features_user_default_permissions() {
   $permissions['view own private files'] = array(
     'name' => 'view own private files',
     'roles' => array(
+      'Coordinator' => 'Coordinator',
+      'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
@@ -916,6 +1043,9 @@ function midleton_user_features_user_default_permissions() {
     'name' => 'view own student entities',
     'roles' => array(
       'Coordinator' => 'Coordinator',
+      'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
+      'administrator' => 'administrator',
     ),
     'module' => 'midleton_base',
   );
@@ -924,6 +1054,9 @@ function midleton_user_features_user_default_permissions() {
   $permissions['view own unpublished content'] = array(
     'name' => 'view own unpublished content',
     'roles' => array(
+      'Coordinator' => 'Coordinator',
+      'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -933,6 +1066,7 @@ function midleton_user_features_user_default_permissions() {
   $permissions['view private files'] = array(
     'name' => 'view private files',
     'roles' => array(
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
@@ -941,7 +1075,12 @@ function midleton_user_features_user_default_permissions() {
   // Exported permission: 'view revision overview'.
   $permissions['view revision overview'] = array(
     'name' => 'view revision overview',
-    'roles' => array(),
+    'roles' => array(
+      'Coordinator' => 'Coordinator',
+      'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
+      'administrator' => 'administrator',
+    ),
     'module' => 'midleton_base',
   );
 
@@ -949,6 +1088,9 @@ function midleton_user_features_user_default_permissions() {
   $permissions['view revisions'] = array(
     'name' => 'view revisions',
     'roles' => array(
+      'Coordinator' => 'Coordinator',
+      'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'node',

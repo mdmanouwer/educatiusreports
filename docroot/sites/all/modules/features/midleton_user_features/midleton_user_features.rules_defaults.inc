@@ -17,7 +17,7 @@ function midleton_user_features_default_rules_configuration() {
       "REQUIRES" : [ "rules" ],
       "ON" : { "user_login" : [] },
       "IF" : [
-        { "user_has_role" : { "account" : [ "account" ], "roles" : { "value" : { "4" : "4" } } } }
+        { "user_has_role" : { "account" : [ "account" ], "roles" : { "value" : { "11" : "11" } } } }
       ],
       "DO" : [ { "redirect" : { "url" : "chief-coordinator\\/reports" } } ]
     }
@@ -29,9 +29,9 @@ function midleton_user_features_default_rules_configuration() {
       "REQUIRES" : [ "rules" ],
       "ON" : { "user_login" : [] },
       "IF" : [
-        { "user_has_role" : { "account" : [ "account" ], "roles" : { "value" : { "6" : "6" } } } }
+        { "user_has_role" : { "account" : [ "account" ], "roles" : { "value" : { "16" : "16" } } } }
       ],
-      "DO" : [ { "redirect" : { "url" : "midleton\\/reports" } } ]
+      "DO" : [ { "redirect" : { "url" : "educatius\\/reports" } } ]
     }
   }');
   $items['rules_login_for_rol'] = entity_import('rules_config', '{ "rules_login_for_rol" : {

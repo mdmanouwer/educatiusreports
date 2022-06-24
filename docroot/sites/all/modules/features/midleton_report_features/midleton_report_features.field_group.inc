@@ -65,7 +65,7 @@ function midleton_report_features_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'School',
-    'weight' => '8',
+    'weight' => '9',
     'children' => array(
       0 => 'field_it_is_punctual',
       1 => 'field__care_of_installations',
@@ -150,7 +150,7 @@ function midleton_report_features_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'School',
-    'weight' => '8',
+    'weight' => '9',
     'children' => array(
       0 => 'field__absences',
       1 => 'field_absences',
@@ -224,7 +224,7 @@ function midleton_report_features_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'School',
-    'weight' => '8',
+    'weight' => '9',
     'children' => array(
       0 => 'field_involved_school_activity2',
     ),
@@ -300,7 +300,7 @@ function midleton_report_features_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Host',
-    'weight' => '7',
+    'weight' => '8',
     'children' => array(
       0 => 'field_adjustment_family',
       1 => 'field_appropriate_use_of_int',
@@ -394,7 +394,7 @@ function midleton_report_features_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Host family',
-    'weight' => '7',
+    'weight' => '8',
     'children' => array(
       0 => 'field_adjustment_family',
       1 => 'field_appropriate_use_of_int',
@@ -472,7 +472,7 @@ function midleton_report_features_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Host family',
-    'weight' => '7',
+    'weight' => '8',
     'children' => array(
       0 => 'field_punctuality2',
     ),
@@ -538,7 +538,7 @@ function midleton_report_features_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Free time and after-school activities',
-    'weight' => '9',
+    'weight' => '10',
     'children' => array(
       0 => 'field_activities_in_which_it',
       1 => 'field_do_you_usually_do',
@@ -611,7 +611,7 @@ function midleton_report_features_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Free time',
-    'weight' => '9',
+    'weight' => '10',
     'children' => array(
       0 => 'field_activities_in_which_it',
       1 => 'field_coordinator_observations_3',
@@ -679,7 +679,7 @@ function midleton_report_features_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Free time and after-school activities',
-    'weight' => '9',
+    'weight' => '10',
     'children' => array(
       0 => 'field_coordinator_observations_3',
     ),
@@ -746,7 +746,7 @@ function midleton_report_features_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'General',
-    'weight' => '10',
+    'weight' => '11',
     'children' => array(
       0 => 'field_he_communicates_well_in_en',
       1 => 'field_attending_the_coord',
@@ -821,7 +821,7 @@ function midleton_report_features_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'General',
-    'weight' => '10',
+    'weight' => '11',
     'children' => array(
       0 => 'field_attending_the_coord',
       1 => 'field_attending_the_family',
@@ -889,7 +889,7 @@ function midleton_report_features_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'General',
-    'weight' => '10',
+    'weight' => '11',
     'children' => array(
       0 => 'field_coordinator_observations_4',
       1 => 'field_he_communicates_well_in_en',
@@ -918,7 +918,7 @@ function midleton_report_features_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Hidden',
-    'weight' => '12',
+    'weight' => '13',
     'children' => array(
       0 => 'field_attending_the_coord',
       1 => 'field_attending_the_family',

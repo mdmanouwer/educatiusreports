@@ -23,7 +23,12 @@ function midleton_student_features_user_default_permissions() {
   // Exported permission: 'add school years'.
   $permissions['add school years'] = array(
     'name' => 'add school years',
-    'roles' => array(),
+    'roles' => array(
+      'Coordinator' => 'Coordinator',
+      'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
+      'administrator' => 'administrator',
+    ),
     'module' => 'midleton_base',
   );
 
@@ -31,6 +36,7 @@ function midleton_student_features_user_default_permissions() {
   $permissions['create field_email'] = array(
     'name' => 'create field_email',
     'roles' => array(
+      'Educatius Master' => 'Educatius Master',
       'administrator' => 'administrator',
     ),
     'module' => 'field_permissions',
@@ -40,6 +46,7 @@ function midleton_student_features_user_default_permissions() {
   $permissions['create field_student_observaciones'] = array(
     'name' => 'create field_student_observaciones',
     'roles' => array(
+      'Educatius Master' => 'Educatius Master',
       'administrator' => 'administrator',
     ),
     'module' => 'field_permissions',
@@ -48,7 +55,9 @@ function midleton_student_features_user_default_permissions() {
   // Exported permission: 'eck add student bundles'.
   $permissions['eck add student bundles'] = array(
     'name' => 'eck add student bundles',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'eck',
   );
 
@@ -57,6 +66,8 @@ function midleton_student_features_user_default_permissions() {
     'name' => 'eck add student student entities',
     'roles' => array(
       'Coordinator' => 'Coordinator',
+      'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'eck',
@@ -65,7 +76,9 @@ function midleton_student_features_user_default_permissions() {
   // Exported permission: 'eck administer student bundles'.
   $permissions['eck administer student bundles'] = array(
     'name' => 'eck administer student bundles',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'eck',
   );
 
@@ -74,6 +87,8 @@ function midleton_student_features_user_default_permissions() {
     'name' => 'eck administer student student entities',
     'roles' => array(
       'Coordinator' => 'Coordinator',
+      'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'eck',
@@ -82,7 +97,9 @@ function midleton_student_features_user_default_permissions() {
   // Exported permission: 'eck delete student bundles'.
   $permissions['eck delete student bundles'] = array(
     'name' => 'eck delete student bundles',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'eck',
   );
 
@@ -98,7 +115,9 @@ function midleton_student_features_user_default_permissions() {
   // Exported permission: 'eck edit student bundles'.
   $permissions['eck edit student bundles'] = array(
     'name' => 'eck edit student bundles',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'eck',
   );
 
@@ -114,7 +133,9 @@ function midleton_student_features_user_default_permissions() {
   // Exported permission: 'eck list student bundles'.
   $permissions['eck list student bundles'] = array(
     'name' => 'eck list student bundles',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'eck',
   );
 
@@ -130,7 +151,9 @@ function midleton_student_features_user_default_permissions() {
   // Exported permission: 'eck view student bundles'.
   $permissions['eck view student bundles'] = array(
     'name' => 'eck view student bundles',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'eck',
   );
 
@@ -138,6 +161,7 @@ function midleton_student_features_user_default_permissions() {
   $permissions['eck view student student entities'] = array(
     'name' => 'eck view student student entities',
     'roles' => array(
+      'Educatius Master' => 'Educatius Master',
       'administrator' => 'administrator',
     ),
     'module' => 'eck',
@@ -147,6 +171,7 @@ function midleton_student_features_user_default_permissions() {
   $permissions['edit field_email'] = array(
     'name' => 'edit field_email',
     'roles' => array(
+      'Educatius Master' => 'Educatius Master',
       'administrator' => 'administrator',
     ),
     'module' => 'field_permissions',
@@ -156,6 +181,8 @@ function midleton_student_features_user_default_permissions() {
   $permissions['edit field_student_observaciones'] = array(
     'name' => 'edit field_student_observaciones',
     'roles' => array(
+      'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'field_permissions',
@@ -165,6 +192,7 @@ function midleton_student_features_user_default_permissions() {
   $permissions['edit own field_email'] = array(
     'name' => 'edit own field_email',
     'roles' => array(
+      'Educatius Master' => 'Educatius Master',
       'administrator' => 'administrator',
     ),
     'module' => 'field_permissions',
@@ -174,6 +202,7 @@ function midleton_student_features_user_default_permissions() {
   $permissions['edit own field_student_observaciones'] = array(
     'name' => 'edit own field_student_observaciones',
     'roles' => array(
+      'Educatius Master' => 'Educatius Master',
       'administrator' => 'administrator',
     ),
     'module' => 'field_permissions',
@@ -182,7 +211,9 @@ function midleton_student_features_user_default_permissions() {
   // Exported permission: 'manage student properties'.
   $permissions['manage student properties'] = array(
     'name' => 'manage student properties',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'eck',
   );
 
@@ -190,6 +221,7 @@ function midleton_student_features_user_default_permissions() {
   $permissions['view field_email'] = array(
     'name' => 'view field_email',
     'roles' => array(
+      'Educatius Master' => 'Educatius Master',
       'administrator' => 'administrator',
     ),
     'module' => 'field_permissions',
@@ -199,6 +231,8 @@ function midleton_student_features_user_default_permissions() {
   $permissions['view field_student_observaciones'] = array(
     'name' => 'view field_student_observaciones',
     'roles' => array(
+      'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'field_permissions',
@@ -208,6 +242,7 @@ function midleton_student_features_user_default_permissions() {
   $permissions['view own field_email'] = array(
     'name' => 'view own field_email',
     'roles' => array(
+      'Educatius Master' => 'Educatius Master',
       'administrator' => 'administrator',
     ),
     'module' => 'field_permissions',
@@ -217,6 +252,8 @@ function midleton_student_features_user_default_permissions() {
   $permissions['view own field_student_observaciones'] = array(
     'name' => 'view own field_student_observaciones',
     'roles' => array(
+      'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'field_permissions',

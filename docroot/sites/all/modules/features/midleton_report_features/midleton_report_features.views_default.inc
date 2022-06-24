@@ -309,7 +309,7 @@ function midleton_report_features_views_default_views() {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
-  $handler->display->display_options['path'] = 'midleton/mail-log';
+  $handler->display->display_options['path'] = 'educatius/mail-log';
   $handler->display->display_options['menu']['type'] = 'tab';
   $handler->display->display_options['menu']['title'] = 'Mail log';
   $handler->display->display_options['menu']['weight'] = '99';
@@ -334,7 +334,7 @@ function midleton_report_features_views_default_views() {
   $handler->display->display_options['group_by'] = TRUE;
   $handler->display->display_options['access']['type'] = 'role';
   $handler->display->display_options['access']['role'] = array(
-    4 => '4',
+    11 => '11',
   );
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
@@ -486,9 +486,9 @@ function midleton_report_features_views_default_views() {
   $handler->display->display_options['access']['type'] = 'role';
   $handler->display->display_options['access']['role'] = array(
     3 => '3',
-    4 => '4',
     5 => '5',
-    6 => '6',
+    16 => '16',
+    11 => '11',
   );
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
@@ -1001,7 +1001,7 @@ function midleton_report_features_views_default_views() {
   $handler->display->display_options['access']['type'] = 'role';
   $handler->display->display_options['access']['role'] = array(
     3 => '3',
-    4 => '4',
+    11 => '11',
   );
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
@@ -1405,7 +1405,7 @@ function midleton_report_features_views_default_views() {
   $handler->display->display_options['access']['type'] = 'role';
   $handler->display->display_options['access']['role'] = array(
     3 => '3',
-    4 => '4',
+    11 => '11',
   );
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
@@ -1775,7 +1775,7 @@ function midleton_report_features_views_default_views() {
   $handler->display->display_options['access']['type'] = 'role';
   $handler->display->display_options['access']['role'] = array(
     3 => '3',
-    6 => '6',
+    16 => '16',
   );
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
@@ -1805,12 +1805,6 @@ function midleton_report_features_views_default_views() {
   $handler->display->display_options['relationships']['field_student_reference_target_id']['label'] = 'student';
   $handler->display->display_options['relationships']['field_student_reference_target_id']['required'] = TRUE;
   /* Relationship: Entity Reference: Referenced Entity */
-  $handler->display->display_options['relationships']['field_coordinator_target_id']['id'] = 'field_coordinator_target_id';
-  $handler->display->display_options['relationships']['field_coordinator_target_id']['table'] = 'field_data_field_coordinator';
-  $handler->display->display_options['relationships']['field_coordinator_target_id']['field'] = 'field_coordinator_target_id';
-  $handler->display->display_options['relationships']['field_coordinator_target_id']['relationship'] = 'field_student_reference_target_id';
-  $handler->display->display_options['relationships']['field_coordinator_target_id']['label'] = 'coordinator';
-  /* Relationship: Entity Reference: Referenced Entity */
   $handler->display->display_options['relationships']['field_user_superior_target_id']['id'] = 'field_user_superior_target_id';
   $handler->display->display_options['relationships']['field_user_superior_target_id']['table'] = 'field_data_field_user_superior';
   $handler->display->display_options['relationships']['field_user_superior_target_id']['field'] = 'field_user_superior_target_id';
@@ -1830,30 +1824,6 @@ function midleton_report_features_views_default_views() {
   $handler->display->display_options['fields']['type']['label'] = 'Report';
   $handler->display->display_options['fields']['type']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['type']['link_to_node'] = TRUE;
-  /* Field: Student: Last Name */
-  $handler->display->display_options['fields']['field_last_name']['id'] = 'field_last_name';
-  $handler->display->display_options['fields']['field_last_name']['table'] = 'field_data_field_last_name';
-  $handler->display->display_options['fields']['field_last_name']['field'] = 'field_last_name';
-  $handler->display->display_options['fields']['field_last_name']['relationship'] = 'field_student_reference_target_id';
-  $handler->display->display_options['fields']['field_last_name']['label'] = '';
-  $handler->display->display_options['fields']['field_last_name']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_last_name']['element_label_colon'] = FALSE;
-  /* Field: Student: Name */
-  $handler->display->display_options['fields']['field_name']['id'] = 'field_name';
-  $handler->display->display_options['fields']['field_name']['table'] = 'field_data_field_name';
-  $handler->display->display_options['fields']['field_name']['field'] = 'field_name';
-  $handler->display->display_options['fields']['field_name']['relationship'] = 'field_student_reference_target_id';
-  $handler->display->display_options['fields']['field_name']['label'] = 'Student';
-  $handler->display->display_options['fields']['field_name']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_name']['alter']['text'] = '[field_name] [field_last_name]';
-  /* Field: Student: Coordinator */
-  $handler->display->display_options['fields']['field_coordinator']['id'] = 'field_coordinator';
-  $handler->display->display_options['fields']['field_coordinator']['table'] = 'field_data_field_coordinator';
-  $handler->display->display_options['fields']['field_coordinator']['field'] = 'field_coordinator';
-  $handler->display->display_options['fields']['field_coordinator']['relationship'] = 'field_student_reference_target_id';
-  $handler->display->display_options['fields']['field_coordinator']['settings'] = array(
-    'link' => 0,
-  );
   /* Field: Content: Post date */
   $handler->display->display_options['fields']['created']['id'] = 'created';
   $handler->display->display_options['fields']['created']['table'] = 'node';
@@ -1993,48 +1963,6 @@ function midleton_report_features_views_default_views() {
     4 => 0,
     6 => 0,
   );
-  /* Filter criterion: Student: Last Name (field_last_name) */
-  $handler->display->display_options['filters']['field_last_name_value']['id'] = 'field_last_name_value';
-  $handler->display->display_options['filters']['field_last_name_value']['table'] = 'field_data_field_last_name';
-  $handler->display->display_options['filters']['field_last_name_value']['field'] = 'field_last_name_value';
-  $handler->display->display_options['filters']['field_last_name_value']['relationship'] = 'field_student_reference_target_id';
-  $handler->display->display_options['filters']['field_last_name_value']['operator'] = 'contains';
-  $handler->display->display_options['filters']['field_last_name_value']['group'] = 1;
-  $handler->display->display_options['filters']['field_last_name_value']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_last_name_value']['expose']['operator_id'] = 'field_last_name_value_op';
-  $handler->display->display_options['filters']['field_last_name_value']['expose']['label'] = 'Last Name';
-  $handler->display->display_options['filters']['field_last_name_value']['expose']['operator'] = 'field_last_name_value_op';
-  $handler->display->display_options['filters']['field_last_name_value']['expose']['identifier'] = 'field_last_name_value';
-  $handler->display->display_options['filters']['field_last_name_value']['expose']['remember'] = TRUE;
-  $handler->display->display_options['filters']['field_last_name_value']['expose']['remember_roles'] = array(
-    2 => '2',
-    1 => 0,
-    3 => 0,
-    5 => 0,
-    4 => 0,
-    6 => 0,
-  );
-  /* Filter criterion: Student: Name (field_name) */
-  $handler->display->display_options['filters']['field_name_value']['id'] = 'field_name_value';
-  $handler->display->display_options['filters']['field_name_value']['table'] = 'field_data_field_name';
-  $handler->display->display_options['filters']['field_name_value']['field'] = 'field_name_value';
-  $handler->display->display_options['filters']['field_name_value']['relationship'] = 'field_student_reference_target_id';
-  $handler->display->display_options['filters']['field_name_value']['operator'] = 'contains';
-  $handler->display->display_options['filters']['field_name_value']['group'] = 1;
-  $handler->display->display_options['filters']['field_name_value']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_name_value']['expose']['operator_id'] = 'field_name_value_op';
-  $handler->display->display_options['filters']['field_name_value']['expose']['label'] = 'Name';
-  $handler->display->display_options['filters']['field_name_value']['expose']['operator'] = 'field_name_value_op';
-  $handler->display->display_options['filters']['field_name_value']['expose']['identifier'] = 'field_name_value';
-  $handler->display->display_options['filters']['field_name_value']['expose']['remember'] = TRUE;
-  $handler->display->display_options['filters']['field_name_value']['expose']['remember_roles'] = array(
-    2 => '2',
-    1 => 0,
-    3 => 0,
-    5 => 0,
-    4 => 0,
-    6 => 0,
-  );
   /* Filter criterion: Field: School year (field_academic_course) */
   $handler->display->display_options['filters']['field_academic_course_tid']['id'] = 'field_academic_course_tid';
   $handler->display->display_options['filters']['field_academic_course_tid']['table'] = 'field_data_field_academic_course';
@@ -2165,7 +2093,7 @@ function midleton_report_features_views_default_views() {
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
-  $handler->display->display_options['path'] = 'midleton/reports';
+  $handler->display->display_options['path'] = 'educatius/reports';
   $handler->display->display_options['menu']['type'] = 'default tab';
   $handler->display->display_options['menu']['title'] = 'Reports';
   $handler->display->display_options['menu']['description'] = 'Reports';
@@ -2196,7 +2124,7 @@ function midleton_report_features_views_default_views() {
   $handler->display->display_options['access']['type'] = 'role';
   $handler->display->display_options['access']['role'] = array(
     3 => '3',
-    6 => '6',
+    16 => '16',
   );
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
@@ -2303,44 +2231,6 @@ function midleton_report_features_views_default_views() {
   $handler->display->display_options['fields']['id']['id'] = 'id';
   $handler->display->display_options['fields']['id']['table'] = 'eck_student';
   $handler->display->display_options['fields']['id']['field'] = 'id';
-  /* Filter criterion: Student: Last Name (field_last_name) */
-  $handler->display->display_options['filters']['field_last_name_value']['id'] = 'field_last_name_value';
-  $handler->display->display_options['filters']['field_last_name_value']['table'] = 'field_data_field_last_name';
-  $handler->display->display_options['filters']['field_last_name_value']['field'] = 'field_last_name_value';
-  $handler->display->display_options['filters']['field_last_name_value']['operator'] = 'contains';
-  $handler->display->display_options['filters']['field_last_name_value']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_last_name_value']['expose']['operator_id'] = 'field_last_name_value_op';
-  $handler->display->display_options['filters']['field_last_name_value']['expose']['label'] = 'Last Name';
-  $handler->display->display_options['filters']['field_last_name_value']['expose']['operator'] = 'field_last_name_value_op';
-  $handler->display->display_options['filters']['field_last_name_value']['expose']['identifier'] = 'field_last_name_value';
-  $handler->display->display_options['filters']['field_last_name_value']['expose']['remember'] = TRUE;
-  $handler->display->display_options['filters']['field_last_name_value']['expose']['remember_roles'] = array(
-    2 => '2',
-    1 => 0,
-    3 => 0,
-    5 => 0,
-    4 => 0,
-    6 => 0,
-  );
-  /* Filter criterion: Student: Name (field_name) */
-  $handler->display->display_options['filters']['field_name_value']['id'] = 'field_name_value';
-  $handler->display->display_options['filters']['field_name_value']['table'] = 'field_data_field_name';
-  $handler->display->display_options['filters']['field_name_value']['field'] = 'field_name_value';
-  $handler->display->display_options['filters']['field_name_value']['operator'] = 'contains';
-  $handler->display->display_options['filters']['field_name_value']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_name_value']['expose']['operator_id'] = 'field_name_value_op';
-  $handler->display->display_options['filters']['field_name_value']['expose']['label'] = 'First name';
-  $handler->display->display_options['filters']['field_name_value']['expose']['operator'] = 'field_name_value_op';
-  $handler->display->display_options['filters']['field_name_value']['expose']['identifier'] = 'field_name_value';
-  $handler->display->display_options['filters']['field_name_value']['expose']['remember'] = TRUE;
-  $handler->display->display_options['filters']['field_name_value']['expose']['remember_roles'] = array(
-    2 => '2',
-    1 => 0,
-    3 => 0,
-    5 => 0,
-    4 => 0,
-    6 => 0,
-  );
 
   /* Display: Coordinators */
   $handler = $view->new_display('page', 'Coordinators', 'coordinators');
@@ -2348,20 +2238,11 @@ function midleton_report_features_views_default_views() {
   $handler->display->display_options['group_by'] = TRUE;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   /* Relationship: Entity Reference: Referenced Entity */
-  $handler->display->display_options['relationships']['field_coordinator_target_id']['id'] = 'field_coordinator_target_id';
-  $handler->display->display_options['relationships']['field_coordinator_target_id']['table'] = 'field_data_field_coordinator';
-  $handler->display->display_options['relationships']['field_coordinator_target_id']['field'] = 'field_coordinator_target_id';
-  $handler->display->display_options['relationships']['field_coordinator_target_id']['label'] = 'coordinator';
-  /* Relationship: Entity Reference: Referenced Entity */
   $handler->display->display_options['relationships']['field_user_superior_target_id']['id'] = 'field_user_superior_target_id';
   $handler->display->display_options['relationships']['field_user_superior_target_id']['table'] = 'field_data_field_user_superior';
   $handler->display->display_options['relationships']['field_user_superior_target_id']['field'] = 'field_user_superior_target_id';
   $handler->display->display_options['relationships']['field_user_superior_target_id']['relationship'] = 'field_coordinator_target_id';
   $handler->display->display_options['relationships']['field_user_superior_target_id']['label'] = 'chief-coordinator';
-  /* Relationship: Entity Reference: Referenced Entity */
-  $handler->display->display_options['relationships']['field_coordinator_target_id_1']['id'] = 'field_coordinator_target_id_1';
-  $handler->display->display_options['relationships']['field_coordinator_target_id_1']['table'] = 'field_data_field_coordinator';
-  $handler->display->display_options['relationships']['field_coordinator_target_id_1']['field'] = 'field_coordinator_target_id';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: User: Name */
   $handler->display->display_options['fields']['name']['id'] = 'name';
@@ -2393,7 +2274,7 @@ function midleton_report_features_views_default_views() {
   $handler->display->display_options['fields']['edit_node']['field'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['relationship'] = 'field_coordinator_target_id';
   $handler->display->display_options['fields']['edit_node']['label'] = 'Edit';
-  $handler->display->display_options['path'] = 'midleton/coordinators';
+  $handler->display->display_options['path'] = 'educatius/coordinators';
   $handler->display->display_options['menu']['type'] = 'tab';
   $handler->display->display_options['menu']['title'] = 'Coordinators';
   $handler->display->display_options['menu']['description'] = 'Coordinators';
@@ -2613,7 +2494,7 @@ function midleton_report_features_views_default_views() {
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'role';
   $handler->display->display_options['access']['role'] = array(
-    6 => '6',
+    16 => '16',
   );
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
@@ -2749,7 +2630,7 @@ function midleton_report_features_views_default_views() {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
-  $handler->display->display_options['path'] = 'midleton/users';
+  $handler->display->display_options['path'] = 'educatius/users';
   $handler->display->display_options['menu']['type'] = 'tab';
   $handler->display->display_options['menu']['title'] = 'Users';
   $handler->display->display_options['menu']['weight'] = '4';

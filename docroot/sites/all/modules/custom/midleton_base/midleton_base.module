@@ -7,9 +7,9 @@
 
 define('MIDLETON_BASE_COORDINATOR_ROLE', 'Coordinator');
 
-define('MIDLETON_BASE_CHIEF_COORDINATOR_ROLE', 'Chief Coordinator');
+define('MIDLETON_BASE_CHIEF_COORDINATOR_ROLE', 'Manager');
 
-define('MIDLETON_MIDLETON_ROLE', 'Midleton School');
+define('MIDLETON_MIDLETON_ROLE', 'Educatius Master');
 
 
 /**

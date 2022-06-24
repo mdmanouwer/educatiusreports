@@ -81,7 +81,7 @@ function midleton_student_features_views_default_views() {
     'empty_fields_handler' => '',
     'empty_fields_emptyfieldtext_empty_text' => '',
   );
-  /* Field: Student: Agent Email */
+  /* Field: Student:  AGENT EMAIL */
   $handler->display->display_options['fields']['field_email']['id'] = 'field_email';
   $handler->display->display_options['fields']['field_email']['table'] = 'field_data_field_email';
   $handler->display->display_options['fields']['field_email']['field'] = 'field_email';
@@ -106,7 +106,7 @@ function midleton_student_features_views_default_views() {
     'empty_fields_handler' => '',
     'empty_fields_emptyfieldtext_empty_text' => '',
   );
-  /* Field: Student: Comments */
+  /* Field: Student: Observaciones	 */
   $handler->display->display_options['fields']['field_student_observaciones']['id'] = 'field_student_observaciones';
   $handler->display->display_options['fields']['field_student_observaciones']['table'] = 'field_data_field_student_observaciones';
   $handler->display->display_options['fields']['field_student_observaciones']['field'] = 'field_student_observaciones';
@@ -291,7 +291,7 @@ function midleton_student_features_views_default_views() {
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'role';
   $handler->display->display_options['access']['role'] = array(
-    6 => '6',
+    16 => '16',
   );
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
@@ -335,7 +335,7 @@ function midleton_student_features_views_default_views() {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
-  $handler->display->display_options['path'] = 'midleton/school-year';
+  $handler->display->display_options['path'] = 'educatius/school-year';
   $handler->display->display_options['menu']['type'] = 'tab';
   $handler->display->display_options['menu']['title'] = 'School years';
   $handler->display->display_options['menu']['weight'] = '9';

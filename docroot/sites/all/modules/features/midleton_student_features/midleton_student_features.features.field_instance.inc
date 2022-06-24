@@ -19,24 +19,20 @@ function midleton_student_features_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'inline',
+        'label' => 'above',
         'module' => 'taxonomy',
         'settings' => array(
           'empty_fields_emptyfieldtext_empty_text' => '',
           'empty_fields_handler' => '',
         ),
-        'type' => 'taxonomy_term_reference_plain',
+        'type' => 'taxonomy_term_reference_link',
         'weight' => 3,
       ),
       'teaser' => array(
-        'label' => 'inline',
-        'module' => 'taxonomy',
-        'settings' => array(
-          'empty_fields_emptyfieldtext_empty_text' => '',
-          'empty_fields_handler' => '',
-        ),
-        'type' => 'taxonomy_term_reference_plain',
-        'weight' => 3,
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
     ),
     'entity_type' => 'student',
@@ -51,7 +47,7 @@ function midleton_student_features_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 3,
+      'weight' => 5,
     ),
   );
 
@@ -63,7 +59,7 @@ function midleton_student_features_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'inline',
+        'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
           'bypass_access' => FALSE,
@@ -72,34 +68,27 @@ function midleton_student_features_field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 4,
+        'weight' => 0,
       ),
       'teaser' => array(
-        'label' => 'inline',
-        'module' => 'entityreference',
-        'settings' => array(
-          'bypass_access' => FALSE,
-          'empty_fields_emptyfieldtext_empty_text' => '',
-          'empty_fields_handler' => '',
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 4,
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
     ),
     'entity_type' => 'student',
     'field_name' => 'field_coordinator',
     'label' => 'Coordinator',
-    'required' => 1,
+    'required' => FALSE,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
     'widget' => array(
-      'active' => 1,
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 0,
+      'weight' => 1,
     ),
   );
 
@@ -111,24 +100,20 @@ function midleton_student_features_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'inline',
+        'label' => 'above',
         'module' => 'list',
         'settings' => array(
           'empty_fields_emptyfieldtext_empty_text' => '',
           'empty_fields_handler' => '',
         ),
         'type' => 'list_default',
-        'weight' => 4,
+        'weight' => 5,
       ),
       'teaser' => array(
-        'label' => 'inline',
-        'module' => 'list',
-        'settings' => array(
-          'empty_fields_emptyfieldtext_empty_text' => '',
-          'empty_fields_handler' => '',
-        ),
-        'type' => 'list_default',
-        'weight' => 4,
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
     ),
     'entity_type' => 'student',
@@ -143,7 +128,7 @@ function midleton_student_features_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 4,
+      'weight' => 7,
     ),
   );
 
@@ -155,24 +140,21 @@ function midleton_student_features_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'views_field_formatter',
+        'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'empty_fields_emptyfieldtext_empty_text' => '',
           'empty_fields_handler' => '',
-          'views_field_formatter' => array(
-            'implode_character' => '',
-            'multiple' => 0,
-            'view' => 'midleton_documents::default',
-          ),
+          'link' => FALSE,
         ),
-        'type' => 'views_field_formatter',
-        'weight' => 6,
+        'type' => 'entityreference_label',
+        'weight' => 8,
       ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 6,
+        'weight' => 0,
       ),
     ),
     'entity_type' => 'student',
@@ -199,7 +181,7 @@ function midleton_student_features_field_default_field_instances() {
         ),
       ),
       'type' => 'inline_entity_form',
-      'weight' => 7,
+      'weight' => 10,
     ),
   );
 
@@ -211,25 +193,25 @@ function midleton_student_features_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'inline',
+        'label' => 'above',
         'module' => 'email',
         'settings' => array(
           'empty_fields_emptyfieldtext_empty_text' => '',
           'empty_fields_handler' => '',
         ),
-        'type' => 'email_plain',
-        'weight' => 5,
+        'type' => 'email_default',
+        'weight' => 6,
       ),
       'teaser' => array(
-        'label' => 'inline',
+        'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 8,
+        'weight' => 0,
       ),
     ),
     'entity_type' => 'student',
     'field_name' => 'field_email',
-    'label' => 'Agent Email',
+    'label' => ' AGENT EMAIL',
     'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -241,7 +223,7 @@ function midleton_student_features_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'email_textfield',
-      'weight' => 5,
+      'weight' => 8,
     ),
   );
 
@@ -253,24 +235,20 @@ function midleton_student_features_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'inline',
+        'label' => 'above',
         'module' => 'text',
         'settings' => array(
           'empty_fields_emptyfieldtext_empty_text' => '',
           'empty_fields_handler' => '',
         ),
         'type' => 'text_default',
-        'weight' => 1,
+        'weight' => 2,
       ),
       'teaser' => array(
-        'label' => 'inline',
-        'module' => 'text',
-        'settings' => array(
-          'empty_fields_emptyfieldtext_empty_text' => '',
-          'empty_fields_handler' => '',
-        ),
-        'type' => 'text_default',
-        'weight' => 1,
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
     ),
     'entity_type' => 'student',
@@ -288,7 +266,7 @@ function midleton_student_features_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 2,
+      'weight' => 3,
     ),
   );
 
@@ -300,23 +278,19 @@ function midleton_student_features_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'inline',
+        'label' => 'above',
         'module' => 'text',
         'settings' => array(
           'empty_fields_emptyfieldtext_empty_text' => '',
           'empty_fields_handler' => '',
         ),
         'type' => 'text_default',
-        'weight' => 0,
+        'weight' => 1,
       ),
       'teaser' => array(
-        'label' => 'inline',
-        'module' => 'text',
-        'settings' => array(
-          'empty_fields_emptyfieldtext_empty_text' => '',
-          'empty_fields_handler' => '',
-        ),
-        'type' => 'text_default',
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 0,
       ),
     ),
@@ -335,7 +309,7 @@ function midleton_student_features_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 1,
+      'weight' => 2,
     ),
   );
 
@@ -347,24 +321,20 @@ function midleton_student_features_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'inline',
+        'label' => 'above',
         'module' => 'text',
         'settings' => array(
           'empty_fields_emptyfieldtext_empty_text' => '',
           'empty_fields_handler' => '',
         ),
         'type' => 'text_default',
-        'weight' => 2,
+        'weight' => 4,
       ),
       'teaser' => array(
-        'label' => 'inline',
-        'module' => 'text',
-        'settings' => array(
-          'empty_fields_emptyfieldtext_empty_text' => '',
-          'empty_fields_handler' => '',
-        ),
-        'type' => 'text_default',
-        'weight' => 2,
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
     ),
     'entity_type' => 'student',
@@ -382,7 +352,7 @@ function midleton_student_features_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 4,
+      'weight' => 6,
     ),
   );
 
@@ -397,8 +367,8 @@ function midleton_student_features_field_default_field_instances() {
         'label' => 'above',
         'module' => 'text',
         'settings' => array(
-          'empty_fields_emptyfieldtext_empty_text' => '-',
-          'empty_fields_handler' => 'EmptyFieldText',
+          'empty_fields_emptyfieldtext_empty_text' => '',
+          'empty_fields_handler' => '',
         ),
         'type' => 'text_default',
         'weight' => 7,
@@ -407,12 +377,12 @@ function midleton_student_features_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 7,
+        'weight' => 0,
       ),
     ),
     'entity_type' => 'student',
     'field_name' => 'field_student_observaciones',
-    'label' => 'Comments',
+    'label' => 'Observaciones	',
     'required' => 0,
     'settings' => array(
       'text_processing' => 0,
@@ -425,19 +395,19 @@ function midleton_student_features_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 6,
+      'weight' => 9,
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Agent Email');
-  t('Comments');
+  t(' AGENT EMAIL');
   t('Coordinator');
   t('Course');
   t('Documents');
   t('Last Name');
   t('Name');
+  t('Observaciones	');
   t('School');
   t('School year');
 
