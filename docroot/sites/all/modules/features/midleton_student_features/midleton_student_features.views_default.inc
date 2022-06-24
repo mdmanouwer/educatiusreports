@@ -106,7 +106,7 @@ function midleton_student_features_views_default_views() {
     'empty_fields_handler' => '',
     'empty_fields_emptyfieldtext_empty_text' => '',
   );
-  /* Field: Student: Observaciones	 */
+  /* Field: Student: Comments */
   $handler->display->display_options['fields']['field_student_observaciones']['id'] = 'field_student_observaciones';
   $handler->display->display_options['fields']['field_student_observaciones']['table'] = 'field_data_field_student_observaciones';
   $handler->display->display_options['fields']['field_student_observaciones']['field'] = 'field_student_observaciones';

@@ -98,9 +98,6 @@ function midleton_report_features_user_default_permissions() {
   $permissions['view own field_pdf'] = array(
     'name' => 'view own field_pdf',
     'roles' => array(
-      'Coordinator' => 'Coordinator',
-      'Educatius Master' => 'Educatius Master',
-      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'field_permissions',

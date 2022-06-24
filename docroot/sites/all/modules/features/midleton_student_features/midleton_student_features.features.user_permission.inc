@@ -24,7 +24,6 @@ function midleton_student_features_user_default_permissions() {
   $permissions['add school years'] = array(
     'name' => 'add school years',
     'roles' => array(
-      'Coordinator' => 'Coordinator',
       'Educatius Master' => 'Educatius Master',
       'Manager' => 'Manager',
       'administrator' => 'administrator',

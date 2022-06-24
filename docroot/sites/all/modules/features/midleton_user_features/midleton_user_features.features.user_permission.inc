@@ -78,9 +78,11 @@ function midleton_user_features_user_default_permissions() {
   $permissions['access user profiles'] = array(
     'name' => 'access user profiles',
     'roles' => array(
+      'Coordinator' => 'Coordinator',
       'Educatius Master' => 'Educatius Master',
       'Manager' => 'Manager',
       'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'user',
   );
@@ -997,9 +999,6 @@ function midleton_user_features_user_default_permissions() {
   $permissions['view own field_pdf'] = array(
     'name' => 'view own field_pdf',
     'roles' => array(
-      'Coordinator' => 'Coordinator',
-      'Educatius Master' => 'Educatius Master',
-      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'field_permissions',
@@ -1009,6 +1008,7 @@ function midleton_user_features_user_default_permissions() {
   $permissions['view own field_user_superior'] = array(
     'name' => 'view own field_user_superior',
     'roles' => array(
+      'Coordinator' => 'Coordinator',
       'Educatius Master' => 'Educatius Master',
       'administrator' => 'administrator',
     ),

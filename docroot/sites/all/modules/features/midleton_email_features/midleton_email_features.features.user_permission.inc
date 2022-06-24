@@ -220,7 +220,6 @@ function midleton_email_features_user_default_permissions() {
   $permissions['eck list email bundles'] = array(
     'name' => 'eck list email bundles',
     'roles' => array(
-      'Coordinator' => 'Coordinator',
       'Educatius Master' => 'Educatius Master',
       'Manager' => 'Manager',
       'administrator' => 'administrator',
@@ -253,7 +252,6 @@ function midleton_email_features_user_default_permissions() {
   $permissions['eck view email bundles'] = array(
     'name' => 'eck view email bundles',
     'roles' => array(
-      'Coordinator' => 'Coordinator',
       'Educatius Master' => 'Educatius Master',
       'Manager' => 'Manager',
       'administrator' => 'administrator',
@@ -348,7 +346,6 @@ function midleton_email_features_user_default_permissions() {
   $permissions['manage email properties'] = array(
     'name' => 'manage email properties',
     'roles' => array(
-      'Coordinator' => 'Coordinator',
       'Educatius Master' => 'Educatius Master',
       'Manager' => 'Manager',
       'administrator' => 'administrator',
@@ -432,7 +429,6 @@ function midleton_email_features_user_default_permissions() {
   $permissions['view own field_email_reference'] = array(
     'name' => 'view own field_email_reference',
     'roles' => array(
-      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'field_permissions',

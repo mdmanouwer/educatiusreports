@@ -97,7 +97,7 @@ function midleton_student_features_field_default_field_bases() {
         2 => ' IRE- 2nd year',
         3 => ' IRE- 3rd year',
         4 => ' IRE- Transition Year',
-        5 => ' IRE- 5TH year',
+        5 => ' IRE- 5th year',
         6 => ' IRE- 6th year',
         7 => ' UK- Year 10',
         8 => ' UK- Year 11',

@@ -382,7 +382,7 @@ function midleton_student_features_field_default_field_instances() {
     ),
     'entity_type' => 'student',
     'field_name' => 'field_student_observaciones',
-    'label' => 'Observaciones	',
+    'label' => 'Comments',
     'required' => 0,
     'settings' => array(
       'text_processing' => 0,
@@ -402,12 +402,12 @@ function midleton_student_features_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t(' AGENT EMAIL');
+  t('Comments');
   t('Coordinator');
   t('Course');
   t('Documents');
   t('Last Name');
   t('Name');
-  t('Observaciones	');
   t('School');
   t('School year');
 
