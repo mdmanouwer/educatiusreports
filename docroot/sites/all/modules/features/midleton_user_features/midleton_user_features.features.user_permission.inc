@@ -177,6 +177,7 @@ function midleton_user_features_user_default_permissions() {
     'name' => 'assign roles',
     'roles' => array(
       'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'roleassign',
