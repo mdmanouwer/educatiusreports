@@ -492,6 +492,59 @@ function midleton_report_features_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-report_1-field_absences'.
+  $field_instances['node-report_1-field_absences'] = array(
+    'bundle' => 'report_1',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'empty_fields_emptyfieldtext_empty_text' => '-',
+          'empty_fields_handler' => 'EmptyFieldText',
+        ),
+        'type' => 'text_default',
+        'weight' => 13,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'empty_fields_emptyfieldtext_empty_text' => '-',
+          'empty_fields_handler' => 'EmptyFieldText',
+        ),
+        'type' => 'text_default',
+        'weight' => 7,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_absences',
+    'label' => 'Observations',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 12,
+    ),
+  );
+
   // Exported field_instance: 'node-report_1-field_academic_course'.
   $field_instances['node-report_1-field_academic_course'] = array(
     'bundle' => 'report_1',
@@ -949,6 +1002,56 @@ function midleton_report_features_field_default_field_instances() {
       ),
       'type' => 'text_textarea',
       'weight' => 12,
+    ),
+  );
+
+  // Exported field_instance: 'node-report_1-field_communicates_well_in_en'.
+  $field_instances['node-report_1-field_communicates_well_in_en'] = array(
+    'bundle' => 'report_1',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'midleton_base',
+        'settings' => array(
+          'empty_fields_emptyfieldtext_empty_text' => '-',
+          'empty_fields_handler' => 'EmptyFieldText',
+        ),
+        'type' => 'midleton_options_as_stars',
+        'weight' => 18,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(
+          'empty_fields_emptyfieldtext_empty_text' => '-',
+          'empty_fields_handler' => 'EmptyFieldText',
+        ),
+        'type' => 'list_default',
+        'weight' => 12,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_communicates_well_in_en',
+    'label' => 'Does he/she communicate well in English at School?',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 17,
     ),
   );
 
@@ -2568,6 +2671,56 @@ this is optional',
     ),
   );
 
+  // Exported field_instance: 'node-report_2-field_adjustment_family'.
+  $field_instances['node-report_2-field_adjustment_family'] = array(
+    'bundle' => 'report_2',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'midleton_base',
+        'settings' => array(
+          'empty_fields_emptyfieldtext_empty_text' => '-',
+          'empty_fields_handler' => 'EmptyFieldText',
+        ),
+        'type' => 'midleton_options_as_stars',
+        'weight' => 4,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(
+          'empty_fields_emptyfieldtext_empty_text' => '-',
+          'empty_fields_handler' => 'EmptyFieldText',
+        ),
+        'type' => 'list_default',
+        'weight' => 21,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_adjustment_family',
+    'label' => 'Relationship with host family',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 13,
+    ),
+  );
+
   // Exported field_instance: 'node-report_2-field_appropriate_use_of_int'.
   $field_instances['node-report_2-field_appropriate_use_of_int'] = array(
     'bundle' => 'report_2',
@@ -2839,6 +2992,40 @@ this is optional',
       'settings' => array(),
       'type' => 'options_buttons',
       'weight' => 16,
+    ),
+  );
+
+  // Exported field_instance: 'node-report_2-field_care_of_school_facilities'.
+  $field_instances['node-report_2-field_care_of_school_facilities'] = array(
+    'bundle' => 'report_2',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(
+          'empty_fields_emptyfieldtext_empty_text' => '',
+          'empty_fields_handler' => '',
+        ),
+        'type' => 'list_default',
+        'weight' => 31,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_care_of_school_facilities',
+    'label' => 'Care of school facilities',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 24,
     ),
   );
 
@@ -5254,6 +5441,7 @@ this is optional',
   t('Activities he/she is currently involved in');
   t('Are the host family satisfied with the student’s behaviour at home?');
   t('Attitude and behaviour at home');
+  t('Care of school facilities');
   t('Chief Coordinator comments');
   t('Cleanliness and tidiness of his/her bedroom');
   t('Comments');
@@ -5270,6 +5458,7 @@ this is optional',
   t('Does he/she actively participate in daily family life?');
   t('Does he/she arrive to class on time?');
   t('Does he/she ask for permission to go out / attend events?');
+  t('Does he/she communicate well in English at School?');
   t('Does he/she communicate well in English with those around him/her?');
   t('Does he/she communicate well in English?');
   t('Does he/she eat what he/she is offered without complaining?');
@@ -5304,6 +5493,7 @@ this is optional');
   t('Observations');
   t('PDF');
   t('Please detail any medical issues');
+  t('Relationship with host family');
   t('School year');
   t('Select the student');
   t('Sent by email');

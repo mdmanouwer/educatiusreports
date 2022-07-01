@@ -113,7 +113,7 @@ function midleton_email_features_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'site_mail';
-  $strongarm->value = 'soporte@planealia.com';
+  $strongarm->value = 'mdmanouwerhussain@gmail.com';
   $export['site_mail'] = $strongarm;
 
   $strongarm = new stdClass();

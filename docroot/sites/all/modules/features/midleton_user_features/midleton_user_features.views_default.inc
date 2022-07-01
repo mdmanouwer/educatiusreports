@@ -58,7 +58,7 @@ function midleton_user_features_views_default_views() {
   $handler->display->display_options['filters']['rid']['table'] = 'users_roles';
   $handler->display->display_options['filters']['rid']['field'] = 'rid';
   $handler->display->display_options['filters']['rid']['value'] = array(
-    4 => '4',
+    11 => '11',
   );
 
   /* Display: Entity Reference */
@@ -126,7 +126,7 @@ function midleton_user_features_views_default_views() {
   $handler->display->display_options['filters']['rid']['table'] = 'users_roles';
   $handler->display->display_options['filters']['rid']['field'] = 'rid';
   $handler->display->display_options['filters']['rid']['value'] = array(
-    6 => '6',
+    16 => '16',
   );
 
   /* Display: Entity Reference */

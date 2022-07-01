@@ -102,15 +102,15 @@ function midleton_email_features_views_default_views() {
   $handler->display->display_options['fields']['field_mail_to']['id'] = 'field_mail_to';
   $handler->display->display_options['fields']['field_mail_to']['table'] = 'field_data_field_mail_to';
   $handler->display->display_options['fields']['field_mail_to']['field'] = 'field_mail_to';
-  /* Field: Email: Subject */
+  /* Field: Email: Subject	 */
   $handler->display->display_options['fields']['field_mail_subject']['id'] = 'field_mail_subject';
   $handler->display->display_options['fields']['field_mail_subject']['table'] = 'field_data_field_mail_subject';
   $handler->display->display_options['fields']['field_mail_subject']['field'] = 'field_mail_subject';
-  /* Field: Email: Body */
+  /* Field: Email: Body	 */
   $handler->display->display_options['fields']['field_mail_body']['id'] = 'field_mail_body';
   $handler->display->display_options['fields']['field_mail_body']['table'] = 'field_data_field_mail_body';
   $handler->display->display_options['fields']['field_mail_body']['field'] = 'field_mail_body';
-  /* Field: Email: Report attachments */
+  /* Field: Email: Report attachments	 */
   $handler->display->display_options['fields']['field_report_attachments']['id'] = 'field_report_attachments';
   $handler->display->display_options['fields']['field_report_attachments']['table'] = 'field_data_field_report_attachments';
   $handler->display->display_options['fields']['field_report_attachments']['field'] = 'field_report_attachments';
