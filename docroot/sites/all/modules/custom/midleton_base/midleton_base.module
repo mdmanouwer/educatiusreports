@@ -449,7 +449,7 @@ function midleton_base_form_alter(&$form, &$form_state, $form_id) {
     $status = $wrapper->field_status->value();
     switch ($status) {
       case 'new':
-        $label = t('Save and send to the  Educatius Manager');
+        $label = t('Save and send to the  Manager');
         break;
       case 'revision_pending':
         $label = t('Save and send to  Educatius Master');
