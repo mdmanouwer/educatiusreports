@@ -45,7 +45,7 @@ function midleton_email_features_default_rules_configuration() {
       "DO" : [
         { "drupal_message" : { "message" : "Thank you for submitting the form. We\\u0027ve notified Midleton in Madrid." } },
         { "mail_to_users_of_role" : {
-            "roles" : { "value" : { "6" : "6" } },
+            "roles" : { "value" : { "16" : "16" } },
             "subject" : "Nuevo informe para revisar",
             "message" : "Buenos d\\u00edas,\\r\\n\\r\\nHay un nuevo informe para revisar.\\r\\n\\r\\nSaludos,"
           }
