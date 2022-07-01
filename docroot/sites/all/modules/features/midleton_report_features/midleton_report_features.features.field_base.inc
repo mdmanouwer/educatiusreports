@@ -1314,8 +1314,8 @@ function midleton_report_features_field_default_field_bases() {
     'module' => 'list',
     'settings' => array(
       'allowed_values' => array(
-        'new' => 'Pending submission to chief coordinator',
-        'revision_pending' => 'Pending submission to Midleton',
+        'new' => 'Pending submission to Manager',
+        'revision_pending' => 'Pending submission to Educatius Master',
         'approval_pending' => 'Pending approval',
         'approved' => 'Approved',
         'sent' => 'Sent to parents',
