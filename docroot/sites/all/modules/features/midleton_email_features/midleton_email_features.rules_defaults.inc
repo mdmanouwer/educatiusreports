@@ -11,7 +11,7 @@
 function midleton_email_features_default_rules_configuration() {
   $items = array();
   $items['rules_send_report_to_chief_coordinator'] = entity_import('rules_config', '{ "rules_send_report_to_chief_coordinator" : {
-      "LABEL" : "Send report to chief coordinator",
+      "LABEL" : "Send report to Manager",
       "PLUGIN" : "reaction rule",
       "OWNER" : "rules",
       "REQUIRES" : [ "rules", "midleton_base" ],
@@ -21,7 +21,7 @@ function midleton_email_features_default_rules_configuration() {
         { "data_is" : { "data" : [ "node:field-status" ], "value" : "revision_pending" } }
       ],
       "DO" : [
-        { "drupal_message" : { "message" : "You\\u0027ve just sent the report to be revised by a chief coordinator. We\\u0027ve sent him an email to notify him. " } },
+        { "drupal_message" : { "message" : "You\\u0027ve just sent the report to be revised by a manager. We\\u0027ve sent him an email to notify him. " } },
         { "mail" : {
             "to" : [ "node:author:field-user-superior:mail" ],
             "subject" : "New report from [node:author]",

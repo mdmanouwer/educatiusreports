@@ -910,7 +910,7 @@ function midleton_base_change_status_button($node) {
     $status = $node->field_status[LANGUAGE_NONE][0]['value'];
     switch ($status) {
       case 'new':
-        $label = t('Submit to Chief Coordinator');
+        $label = t('Submit to Manager');
         break;
       case 'revision_pending':
         $label = t("Submit to Midleton");
@@ -1118,7 +1118,7 @@ function midleton_base_form_user_profile_edit_form_alter(&$form, &$form_state) {
 }
 
 /**
- * Callback function for when the chief coordinator creates coordinators.
+ * Callback function for when the manager creates coordinators.
  *
  * @param $form
  * @param $form_state
@@ -1128,7 +1128,7 @@ function midleton_base_user_profile_auto_assign_chief_coordinator(&$form, &$form
   $account = $form['#user'];
   $account->field_user_superior[LANGUAGE_NONE][0]['target_id'] = $user->uid;
   user_save($account);
-  drupal_set_message(t('Succesfully assigned %name as chief coordinator to user %user', [
+  drupal_set_message(t('Succesfully assigned %name as manager to user %user', [
     '%name' => $user->name,
     '%user' => $account->name
   ]));

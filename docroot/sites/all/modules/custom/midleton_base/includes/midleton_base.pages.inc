@@ -118,13 +118,13 @@ function midleton_base_change_report_status_form($form, $form_state) {
   switch ($status) {
     case 'new':
       if (in_array(MIDLETON_BASE_COORDINATOR_ROLE, $user->roles)) {
-        $question = 'Are you sure you want to submit this report to the Chief Coordinator?';
-        $message = "If you confirm, this report will be pending revision by your chief coordinator. You won't be able to make any further changes.";
+        $question = 'Are you sure you want to submit this report to the Manager?';
+        $message = "If you confirm, this report will be pending revision by your Manager. You won't be able to make any further changes.";
       }
       else {
-        $question = 'Are you sure you want to submit this report to the Chief Coordinator?';
+        $question = 'Are you sure you want to submit this report to the Manager?';
         $message = 'The report will be available for revision by the 
-        Chief Coordinator. The Coordinator won\'t be able to edit the report anymore.';
+        Manager. The Coordinator won\'t be able to edit the report anymore.';
       }
       break;
     case 'revision_pending':
@@ -134,7 +134,7 @@ function midleton_base_change_report_status_form($form, $form_state) {
       }
       else {
         $question = 'Are you sure you want to change the status from "Pending revision" to "revised"?';
-        $message = 'The Chief Coordinator won\'t be able to edit the report anymore.';
+        $message = 'The Manager won\'t be able to edit the report anymore.';
       }
       break;
     case 'approval_pending':
@@ -165,8 +165,8 @@ function midleton_base_change_report_status_form_submit($form, &$form_state) {
   ];
 
   $log_messages = [
-    'new' => t('New >> Pending Revision by a Chief Coordinator'),
-    'revision_pending' => t('Pending Revision by a Chief Coordinator >> Pending Approval by Midleton'),
+    'new' => t('New >> Pending Revision by a Manager'),
+    'revision_pending' => t('Pending Revision by a Manager >> Pending Approval by Midleton'),
     'approval_pending' => t('Pending Approval by Midleton >> Approved'),
   ];
 
