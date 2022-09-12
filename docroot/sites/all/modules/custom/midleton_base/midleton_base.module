@@ -913,13 +913,13 @@ function midleton_base_change_status_button($node) {
         $label = t('Submit to Manager');
         break;
       case 'revision_pending':
-        $label = t("Submit to Midleton");
+        $label = t("Submit to Educatius");
         break;
       case 'approval_pending':
         $label = t("Approve");
         break;
       case 'approved':
-        $label = t("Send to parents");
+        $label = t("Send to Agnecy");
         break;
       case 'sent':
         $label = t("Email sent");
