@@ -50,14 +50,14 @@ function midleton_email_features_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'mimemail_mail';
-  $strongarm->value = 'soporte@planealia.com';
+  $strongarm->value = 'tom.poole@educatius.org ';
   $export['mimemail_mail'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'mimemail_name';
-  $strongarm->value = 'Midleton School';
+  $strongarm->value = ' Educatius UK & Ireland team';
   $export['mimemail_name'] = $strongarm;
 
   $strongarm = new stdClass();

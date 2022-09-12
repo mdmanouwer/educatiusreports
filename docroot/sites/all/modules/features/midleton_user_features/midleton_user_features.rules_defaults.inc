@@ -11,7 +11,7 @@
 function midleton_user_features_default_rules_configuration() {
   $items = array();
   $items['rules_login_for_chief_coordinator'] = entity_import('rules_config', '{ "rules_login_for_chief_coordinator" : {
-      "LABEL" : "Login for manager",
+      "LABEL" : "Login for chief coordinator",
       "PLUGIN" : "reaction rule",
       "OWNER" : "rules",
       "REQUIRES" : [ "rules" ],

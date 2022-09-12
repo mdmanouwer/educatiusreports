@@ -38,28 +38,6 @@ function midleton_report_features_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_absences'.
-  $field_bases['field_absences'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_absences',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'text',
-    'settings' => array(),
-    'translatable' => 0,
-    'type' => 'text_long',
-  );
-
   // Exported field_base: 'field_activities_in_which_it'.
   $field_bases['field_activities_in_which_it'] = array(
     'active' => 1,
@@ -226,28 +204,6 @@ function midleton_report_features_field_default_field_bases() {
     'type' => 'list_boolean',
   );
 
-  // Exported field_base: 'field_attending_the_family2'.
-  $field_bases['field_attending_the_family2'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_attending_the_family2',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'text',
-    'settings' => array(),
-    'translatable' => 0,
-    'type' => 'text_long',
-  );
-
   // Exported field_base: 'field_attitude_and_behavior'.
   $field_bases['field_attitude_and_behavior'] = array(
     'active' => 1,
@@ -376,38 +332,6 @@ function midleton_report_features_field_default_field_bases() {
     'settings' => array(),
     'translatable' => 0,
     'type' => 'text_long',
-  );
-
-  // Exported field_base: 'field_communicates_well_in_en'.
-  $field_bases['field_communicates_well_in_en'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_communicates_well_in_en',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'indexes' => array(
-      'value' => array(
-        0 => 'value',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'list',
-    'settings' => array(
-      'allowed_values' => array(
-        1 => 1,
-        2 => 2,
-        3 => 3,
-        4 => 4,
-        5 => 5,
-        6 => 6,
-      ),
-      'allowed_values_function' => '',
-    ),
-    'translatable' => 0,
-    'type' => 'list_text',
   );
 
   // Exported field_base: 'field_coordinator_observations_3'.
@@ -1105,11 +1029,11 @@ function midleton_report_features_field_default_field_bases() {
     'module' => 'list',
     'settings' => array(
       'allowed_values' => array(
-        2017 => 2017,
-        2018 => 2018,
-        2019 => 2019,
-        2020 => 2020,
-        2021 => 2022,
+        2022 => 2022,
+        2023 => 2023,
+        2024 => 2024,
+        2025 => 2025,
+        2026 => ' 2026',
       ),
       'allowed_values_function' => '',
     ),
@@ -1193,28 +1117,6 @@ function midleton_report_features_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'list_boolean',
-  );
-
-  // Exported field_base: 'field_respect_the_rules2'.
-  $field_bases['field_respect_the_rules2'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_respect_the_rules2',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'text',
-    'settings' => array(),
-    'translatable' => 0,
-    'type' => 'text_long',
   );
 
   // Exported field_base: 'field_respects_the_established_s'.
@@ -1318,7 +1220,7 @@ function midleton_report_features_field_default_field_bases() {
         'revision_pending' => 'Pending submission to Educatius Master',
         'approval_pending' => 'Pending approval',
         'approved' => 'Approved',
-        'sent' => 'Sent to parents',
+        'sent' => 'Send to Agency',
       ),
       'allowed_values_function' => '',
     ),
