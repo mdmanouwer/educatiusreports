@@ -15,28 +15,28 @@ function midleton_report_features_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_parent_teacher_meeting';
-  $strongarm->value = 'edit-submission';
+  $strongarm->value = 'edit-workflow';
   $export['additional_settings__active_tab_parent_teacher_meeting'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_report_1';
-  $strongarm->value = 'edit-submission';
+  $strongarm->value = 'edit-workflow';
   $export['additional_settings__active_tab_report_1'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_report_2';
-  $strongarm->value = 'edit-submission';
+  $strongarm->value = 'edit-workflow';
   $export['additional_settings__active_tab_report_2'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_report_3';
-  $strongarm->value = 'edit-submission';
+  $strongarm->value = 'edit-workflow';
   $export['additional_settings__active_tab_report_3'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -449,7 +449,8 @@ function midleton_report_features_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_parent_teacher_meeting';
   $strongarm->value = array(
-    0 => 'revision',
+    0 => 'status',
+    1 => 'revision',
   );
   $export['node_options_parent_teacher_meeting'] = $strongarm;
 
@@ -458,7 +459,8 @@ function midleton_report_features_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_report_1';
   $strongarm->value = array(
-    0 => 'revision',
+    0 => 'status',
+    1 => 'revision',
   );
   $export['node_options_report_1'] = $strongarm;
 
@@ -467,7 +469,8 @@ function midleton_report_features_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_report_2';
   $strongarm->value = array(
-    0 => 'revision',
+    0 => 'status',
+    1 => 'revision',
   );
   $export['node_options_report_2'] = $strongarm;
 
@@ -476,7 +479,8 @@ function midleton_report_features_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_report_3';
   $strongarm->value = array(
-    0 => 'revision',
+    0 => 'status',
+    1 => 'revision',
   );
   $export['node_options_report_3'] = $strongarm;
 

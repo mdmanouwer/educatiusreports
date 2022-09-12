@@ -179,8 +179,7 @@ function midleton_report_features_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'children' => array(
-      0 => 'field_involved_school_activity2',
-      1 => 'field_observations_coordinator_2',
+      0 => 'field_observations_coordinator_2',
     ),
     'format_settings' => array(
       'formatter' => 'collapsible',
@@ -196,7 +195,7 @@ function midleton_report_features_field_group_info() {
     ),
     'format_type' => 'div',
     'label' => 'School',
-    'weight' => '4',
+    'weight' => '5',
   );
   $field_groups['group_college|node|report_3|default'] = $field_group;
 
@@ -439,7 +438,7 @@ function midleton_report_features_field_group_info() {
     ),
     'format_type' => 'div',
     'label' => 'Host family',
-    'weight' => '3',
+    'weight' => '4',
   );
   $field_groups['group_family|node|report_3|default'] = $field_group;
 
@@ -644,6 +643,12 @@ function midleton_report_features_field_group_info() {
   $field_group->data = array(
     'children' => array(
       0 => 'field_coordinator_observations_3',
+      1 => 'field_it_is_motivated',
+      2 => 'field_starts_itself_activities',
+      3 => 'field_activities_in_which_it',
+      4 => 'field_do_you_usually_do',
+      5 => 'field_routine_weekend',
+      6 => 'field_how_are_your_relationships',
     ),
     'format_settings' => array(
       'formatter' => 'collapsible',
@@ -659,7 +664,7 @@ function midleton_report_features_field_group_info() {
     ),
     'format_type' => 'div',
     'label' => 'Free time and after-school activities',
-    'weight' => '5',
+    'weight' => '6',
   );
   $field_groups['group_free_time|node|report_3|default'] = $field_group;
 
@@ -870,7 +875,7 @@ function midleton_report_features_field_group_info() {
     ),
     'format_type' => 'div',
     'label' => 'General',
-    'weight' => '6',
+    'weight' => '7',
   );
   $field_groups['group_general_questions|node|report_3|default'] = $field_group;
 

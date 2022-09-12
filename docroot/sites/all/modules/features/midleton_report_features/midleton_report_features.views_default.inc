@@ -1363,7 +1363,7 @@ function midleton_report_features_views_default_views() {
     'empty_fields_emptyfieldtext_empty_text' => '',
   );
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: User: Coordinador Jefe (field_user_superior) */
+  /* Contextual filter: User: Assigned Manager (field_user_superior) */
   $handler->display->display_options['arguments']['field_user_superior_target_id']['id'] = 'field_user_superior_target_id';
   $handler->display->display_options['arguments']['field_user_superior_target_id']['table'] = 'field_data_field_user_superior';
   $handler->display->display_options['arguments']['field_user_superior_target_id']['field'] = 'field_user_superior_target_id';
@@ -1516,7 +1516,7 @@ function midleton_report_features_views_default_views() {
   $handler->display->display_options['sorts']['changed']['relationship'] = 'reverse_field_student_reference_node';
   $handler->display->display_options['sorts']['changed']['group_type'] = 'max';
   $handler->display->display_options['sorts']['changed']['order'] = 'DESC';
-  /* Contextual filter: User: Coordinador Jefe (field_user_superior) */
+  /* Contextual filter: User: Assigned Manager (field_user_superior) */
   $handler->display->display_options['arguments']['field_user_superior_target_id']['id'] = 'field_user_superior_target_id';
   $handler->display->display_options['arguments']['field_user_superior_target_id']['table'] = 'field_data_field_user_superior';
   $handler->display->display_options['arguments']['field_user_superior_target_id']['field'] = 'field_user_superior_target_id';
@@ -2257,7 +2257,7 @@ function midleton_report_features_views_default_views() {
   $handler->display->display_options['fields']['id']['field'] = 'id';
   $handler->display->display_options['fields']['id']['group_type'] = 'count_distinct';
   $handler->display->display_options['fields']['id']['label'] = 'Students';
-  /* Field: User: Coordinador Jefe */
+  /* Field: User: Assigned Manager */
   $handler->display->display_options['fields']['field_user_superior']['id'] = 'field_user_superior';
   $handler->display->display_options['fields']['field_user_superior']['table'] = 'field_data_field_user_superior';
   $handler->display->display_options['fields']['field_user_superior']['field'] = 'field_user_superior';

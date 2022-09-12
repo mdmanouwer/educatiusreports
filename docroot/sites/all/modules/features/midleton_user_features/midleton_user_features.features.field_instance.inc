@@ -33,7 +33,7 @@ function midleton_user_features_field_default_field_instances() {
     ),
     'entity_type' => 'user',
     'field_name' => 'field_user_superior',
-    'label' => 'Coordinador Jefe',
+    'label' => 'Assigned Manager',
     'required' => 0,
     'settings' => array(
       'user_register_form' => 1,
@@ -49,7 +49,7 @@ function midleton_user_features_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Coordinador Jefe');
+  t('Assigned Manager');
 
   return $field_instances;
 }
