@@ -15,28 +15,28 @@ function midleton_report_features_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_parent_teacher_meeting';
-  $strongarm->value = 'edit-workflow';
+  $strongarm->value = 'edit-submission';
   $export['additional_settings__active_tab_parent_teacher_meeting'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_report_1';
-  $strongarm->value = 'edit-workflow';
+  $strongarm->value = 'edit-submission';
   $export['additional_settings__active_tab_report_1'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_report_2';
-  $strongarm->value = 'edit-workflow';
+  $strongarm->value = 'edit-submission';
   $export['additional_settings__active_tab_report_2'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_report_3';
-  $strongarm->value = 'edit-workflow';
+  $strongarm->value = 'edit-submission';
   $export['additional_settings__active_tab_report_3'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -128,8 +128,16 @@ function midleton_report_features_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__parent_teacher_meeting';
   $strongarm->value = array(
+    'extra_fields' => array(
+      'display' => array(),
+      'form' => array(
+        'title' => array(
+          'weight' => '2',
+        ),
+      ),
+    ),
     'view_modes' => array(
-      'teaser' => array(
+      'diff_standard' => array(
         'custom_settings' => FALSE,
       ),
       'full' => array(
@@ -138,20 +146,12 @@ function midleton_report_features_strongarm() {
       'rss' => array(
         'custom_settings' => FALSE,
       ),
-      'diff_standard' => array(
+      'teaser' => array(
         'custom_settings' => FALSE,
       ),
       'token' => array(
         'custom_settings' => FALSE,
       ),
-    ),
-    'extra_fields' => array(
-      'form' => array(
-        'title' => array(
-          'weight' => '2',
-        ),
-      ),
-      'display' => array(),
     ),
   );
   $export['field_bundle_settings_node__parent_teacher_meeting'] = $strongarm;
@@ -161,8 +161,16 @@ function midleton_report_features_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__report_1';
   $strongarm->value = array(
+    'extra_fields' => array(
+      'display' => array(),
+      'form' => array(
+        'title' => array(
+          'weight' => '0',
+        ),
+      ),
+    ),
     'view_modes' => array(
-      'teaser' => array(
+      'diff_standard' => array(
         'custom_settings' => FALSE,
       ),
       'full' => array(
@@ -177,20 +185,12 @@ function midleton_report_features_strongarm() {
       'search_result' => array(
         'custom_settings' => FALSE,
       ),
-      'diff_standard' => array(
+      'teaser' => array(
         'custom_settings' => FALSE,
       ),
       'token' => array(
         'custom_settings' => FALSE,
       ),
-    ),
-    'extra_fields' => array(
-      'form' => array(
-        'title' => array(
-          'weight' => '0',
-        ),
-      ),
-      'display' => array(),
     ),
   );
   $export['field_bundle_settings_node__report_1'] = $strongarm;
@@ -200,8 +200,16 @@ function midleton_report_features_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__report_2';
   $strongarm->value = array(
+    'extra_fields' => array(
+      'display' => array(),
+      'form' => array(
+        'title' => array(
+          'weight' => '0',
+        ),
+      ),
+    ),
     'view_modes' => array(
-      'teaser' => array(
+      'diff_standard' => array(
         'custom_settings' => FALSE,
       ),
       'full' => array(
@@ -216,20 +224,12 @@ function midleton_report_features_strongarm() {
       'search_result' => array(
         'custom_settings' => FALSE,
       ),
-      'diff_standard' => array(
+      'teaser' => array(
         'custom_settings' => FALSE,
       ),
       'token' => array(
         'custom_settings' => FALSE,
       ),
-    ),
-    'extra_fields' => array(
-      'form' => array(
-        'title' => array(
-          'weight' => '0',
-        ),
-      ),
-      'display' => array(),
     ),
   );
   $export['field_bundle_settings_node__report_2'] = $strongarm;
@@ -239,8 +239,16 @@ function midleton_report_features_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__report_3';
   $strongarm->value = array(
+    'extra_fields' => array(
+      'display' => array(),
+      'form' => array(
+        'title' => array(
+          'weight' => '0',
+        ),
+      ),
+    ),
     'view_modes' => array(
-      'teaser' => array(
+      'diff_standard' => array(
         'custom_settings' => FALSE,
       ),
       'full' => array(
@@ -255,20 +263,12 @@ function midleton_report_features_strongarm() {
       'search_result' => array(
         'custom_settings' => FALSE,
       ),
-      'diff_standard' => array(
+      'teaser' => array(
         'custom_settings' => FALSE,
       ),
       'token' => array(
         'custom_settings' => FALSE,
       ),
-    ),
-    'extra_fields' => array(
-      'form' => array(
-        'title' => array(
-          'weight' => '0',
-        ),
-      ),
-      'display' => array(),
     ),
   );
   $export['field_bundle_settings_node__report_3'] = $strongarm;
@@ -278,11 +278,11 @@ function midleton_report_features_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_student__student';
   $strongarm->value = array(
-    'view_modes' => array(),
     'extra_fields' => array(
-      'form' => array(),
       'display' => array(),
+      'form' => array(),
     ),
+    'view_modes' => array(),
   );
   $export['field_bundle_settings_student__student'] = $strongarm;
 
@@ -449,8 +449,7 @@ function midleton_report_features_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_parent_teacher_meeting';
   $strongarm->value = array(
-    0 => 'moderation',
-    1 => 'revision',
+    0 => 'revision',
   );
   $export['node_options_parent_teacher_meeting'] = $strongarm;
 
@@ -459,8 +458,7 @@ function midleton_report_features_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_report_1';
   $strongarm->value = array(
-    0 => 'moderation',
-    1 => 'revision',
+    0 => 'revision',
   );
   $export['node_options_report_1'] = $strongarm;
 
@@ -469,8 +467,7 @@ function midleton_report_features_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_report_2';
   $strongarm->value = array(
-    0 => 'moderation',
-    1 => 'revision',
+    0 => 'revision',
   );
   $export['node_options_report_2'] = $strongarm;
 
@@ -479,8 +476,7 @@ function midleton_report_features_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_report_3';
   $strongarm->value = array(
-    0 => 'moderation',
-    1 => 'revision',
+    0 => 'revision',
   );
   $export['node_options_report_3'] = $strongarm;
 

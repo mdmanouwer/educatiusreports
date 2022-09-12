@@ -59,6 +59,7 @@ function midleton_user_features_user_default_permissions() {
   $permissions['access pdf download'] = array(
     'name' => 'access pdf download',
     'roles' => array(
+      'Educatius Master' => 'Educatius Master',
       'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
@@ -267,6 +268,7 @@ function midleton_user_features_user_default_permissions() {
   $permissions['create field_user_superior'] = array(
     'name' => 'create field_user_superior',
     'roles' => array(
+      'Educatius Master' => 'Educatius Master',
       'administrator' => 'administrator',
     ),
     'module' => 'field_permissions',
@@ -863,7 +865,6 @@ function midleton_user_features_user_default_permissions() {
     'name' => 'masquerade as any user',
     'roles' => array(
       'Educatius Master' => 'Educatius Master',
-      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'masquerade',

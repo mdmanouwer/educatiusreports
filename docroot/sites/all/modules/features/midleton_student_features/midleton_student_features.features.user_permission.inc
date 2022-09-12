@@ -36,6 +36,7 @@ function midleton_student_features_user_default_permissions() {
     'name' => 'create field_email',
     'roles' => array(
       'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'field_permissions',
@@ -171,6 +172,7 @@ function midleton_student_features_user_default_permissions() {
     'name' => 'edit field_email',
     'roles' => array(
       'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'field_permissions',
@@ -192,6 +194,7 @@ function midleton_student_features_user_default_permissions() {
     'name' => 'edit own field_email',
     'roles' => array(
       'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'field_permissions',
@@ -221,6 +224,7 @@ function midleton_student_features_user_default_permissions() {
     'name' => 'view field_email',
     'roles' => array(
       'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'field_permissions',
@@ -242,6 +246,7 @@ function midleton_student_features_user_default_permissions() {
     'name' => 'view own field_email',
     'roles' => array(
       'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'field_permissions',

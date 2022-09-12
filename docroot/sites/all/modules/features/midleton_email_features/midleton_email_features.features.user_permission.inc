@@ -45,6 +45,7 @@ function midleton_email_features_user_default_permissions() {
     'name' => 'create field_email',
     'roles' => array(
       'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'field_permissions',
@@ -202,6 +203,7 @@ function midleton_email_features_user_default_permissions() {
   $permissions['eck list document bundles'] = array(
     'name' => 'eck list document bundles',
     'roles' => array(
+      'Educatius Master' => 'Educatius Master',
       'administrator' => 'administrator',
     ),
     'module' => 'eck',
@@ -273,6 +275,7 @@ function midleton_email_features_user_default_permissions() {
     'name' => 'edit field_email',
     'roles' => array(
       'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'field_permissions',
@@ -310,6 +313,7 @@ function midleton_email_features_user_default_permissions() {
     'name' => 'edit own field_email',
     'roles' => array(
       'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'field_permissions',
@@ -379,6 +383,7 @@ function midleton_email_features_user_default_permissions() {
     'name' => 'view field_email',
     'roles' => array(
       'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'field_permissions',
@@ -420,6 +425,7 @@ function midleton_email_features_user_default_permissions() {
     'name' => 'view own field_email',
     'roles' => array(
       'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'field_permissions',
