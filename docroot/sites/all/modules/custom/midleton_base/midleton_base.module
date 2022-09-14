@@ -324,7 +324,6 @@ function midleton_base_email_access($op, $entity, $account, $entity_type_name) {
 function midleton_base_get_status_id($status) {
   $statusses = [
     'new',
-    'revision_pending',
     'approval_pending',
     'approved',
     'sent'
@@ -390,7 +389,6 @@ function midleton_base_node_grants($account, $op) {
 
   if (in_array('Coordinator', array_values($account->roles))) {
     $grants['view-update-delete-' . $account->uid][] = midleton_base_get_status_id('new');
-    $grants['view-' . $account->uid][] = midleton_base_get_status_id('revision_pending');
     $grants['view-' . $account->uid][] = midleton_base_get_status_id('approval_pending');
     $grants['view-' . $account->uid][] = midleton_base_get_status_id('approved');
     $grants['view-' . $account->uid][] = midleton_base_get_status_id('sent');
@@ -404,7 +402,6 @@ function midleton_base_node_grants($account, $op) {
 
     foreach (array_keys($coordinators) as $coordinator_uid) {
       $grants['view-' . $coordinator_uid][] = midleton_base_get_status_id('new');
-      $grants['view-update-' . $coordinator_uid][] = midleton_base_get_status_id('revision_pending');
       $grants['view-' . $coordinator_uid][] = midleton_base_get_status_id('approval_pending');
       $grants['view-' . $coordinator_uid][] = midleton_base_get_status_id('approved');
       $grants['view-' . $coordinator_uid][] = midleton_base_get_status_id('sent');
@@ -451,9 +448,7 @@ function midleton_base_form_alter(&$form, &$form_state, $form_id) {
       case 'new':
         $label = t('Save and send to the  Manager');
         break;
-      case 'revision_pending':
-        $label = t('Save and send to  Educatius Master');
-        break;
+
       case 'approval_pending':
         $label = t('Save, approve and generate PDF');
         break;
@@ -637,7 +632,7 @@ function midleton_base_field_formatter_view($entity_type, $entity, $field, $inst
         }
         elseif (in_array(MIDLETON_BASE_CHIEF_COORDINATOR_ROLE, $user->roles)) {
           $value = $items[0]['value'];
-          if ($value == "new" || $value == "revision_pending") {
+          if ($value == "new") {
             $element[0]['#markup'] = t('Pending submission');
           }
           else {
@@ -646,7 +641,7 @@ function midleton_base_field_formatter_view($entity_type, $entity, $field, $inst
         }
         elseif (in_array(MIDLETON_MIDLETON_ROLE, $user->roles)) {
           $value = $items[0]['value'];
-          if ($value == "new" || $value == "revision_pending" || $value == "approval_pending") {
+          if ($value == "new"  || $value == "approval_pending") {
             $element[0]['#markup'] = t('Pending approval');
           }
           elseif ($value == "approved") {
@@ -912,15 +907,15 @@ function midleton_base_change_status_button($node) {
       case 'new':
         $label = t('Submit to Manager');
         break;
-      case 'revision_pending':
-        $label = t("Submit to Educatius");
-        break;
+
       case 'approval_pending':
         $label = t("Approve");
         break;
+
       case 'approved':
         $label = t("Send to Agnecy");
         break;
+
       case 'sent':
         $label = t("Email sent");
         break;
@@ -998,7 +993,6 @@ function midleton_base_init() {
 
           $reports_pending = [];
           $statusses = [
-            'revision_pending',
             'approval_pending',
             'approved',
             'sent',

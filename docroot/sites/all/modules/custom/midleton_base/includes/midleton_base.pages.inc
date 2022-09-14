@@ -127,16 +127,6 @@ function midleton_base_change_report_status_form($form, $form_state) {
         Manager. The Coordinator won\'t be able to edit the report anymore.';
       }
       break;
-    case 'revision_pending':
-      if (in_array(MIDLETON_BASE_CHIEF_COORDINATOR_ROLE, $user->roles)) {
-        $question = 'Are you sure you want to submit this report to Midleton?';
-        $message = "If you confirm, this report will be pending approval by Midleton School. You won't be able to make any further changes.";
-      }
-      else {
-        $question = 'Are you sure you want to change the status from "Pending revision" to "revised"?';
-        $message = 'The Manager won\'t be able to edit the report anymore.';
-      }
-      break;
     case 'approval_pending':
       $question = 'Are you sure you to mark this report as <em>Approved</em> and generate the PDF?';
       $message = "If you confirm, this report will be available as PDF and
@@ -159,14 +149,12 @@ function midleton_base_change_report_status_form_submit($form, &$form_state) {
   $node = $form['#node'];
 
   $states = [
-    'new' => 'revision_pending',
-    'revision_pending' => 'approval_pending',
+    'new' => 'approval_pending',
     'approval_pending' => 'approved',
   ];
 
   $log_messages = [
     'new' => t('New >> Pending Revision by a Manager'),
-    'revision_pending' => t('Pending Revision by a Manager >> Pending Approval by Midleton'),
     'approval_pending' => t('Pending Approval by Midleton >> Approved'),
   ];
 
