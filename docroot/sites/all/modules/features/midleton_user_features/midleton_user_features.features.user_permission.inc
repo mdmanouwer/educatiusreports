@@ -27,7 +27,6 @@ function midleton_user_features_user_default_permissions() {
   $permissions['access content overview'] = array(
     'name' => 'access content overview',
     'roles' => array(
-      'Coordinator' => 'Coordinator',
       'Educatius Master' => 'Educatius Master',
       'Manager' => 'Manager',
       'administrator' => 'administrator',
@@ -79,11 +78,9 @@ function midleton_user_features_user_default_permissions() {
   $permissions['access user profiles'] = array(
     'name' => 'access user profiles',
     'roles' => array(
-      'Coordinator' => 'Coordinator',
       'Educatius Master' => 'Educatius Master',
       'Manager' => 'Manager',
       'administrator' => 'administrator',
-      'authenticated user' => 'authenticated user',
     ),
     'module' => 'user',
   );
@@ -628,7 +625,6 @@ function midleton_user_features_user_default_permissions() {
   $permissions['edit any parent_teacher_meeting content'] = array(
     'name' => 'edit any parent_teacher_meeting content',
     'roles' => array(
-      'Coordinator' => 'Coordinator',
       'Educatius Master' => 'Educatius Master',
       'Manager' => 'Manager',
       'administrator' => 'administrator',
@@ -773,7 +769,6 @@ function midleton_user_features_user_default_permissions() {
   $permissions['edit own image files'] = array(
     'name' => 'edit own image files',
     'roles' => array(
-      'Coordinator' => 'Coordinator',
       'Educatius Master' => 'Educatius Master',
       'Manager' => 'Manager',
       'administrator' => 'administrator',
@@ -785,7 +780,6 @@ function midleton_user_features_user_default_permissions() {
   $permissions['edit own parent_teacher_meeting content'] = array(
     'name' => 'edit own parent_teacher_meeting content',
     'roles' => array(
-      'Coordinator' => 'Coordinator',
       'Educatius Master' => 'Educatius Master',
       'Manager' => 'Manager',
       'administrator' => 'administrator',
@@ -797,7 +791,6 @@ function midleton_user_features_user_default_permissions() {
   $permissions['edit own report_1 content'] = array(
     'name' => 'edit own report_1 content',
     'roles' => array(
-      'Coordinator' => 'Coordinator',
       'Educatius Master' => 'Educatius Master',
       'Manager' => 'Manager',
       'administrator' => 'administrator',
@@ -809,7 +802,6 @@ function midleton_user_features_user_default_permissions() {
   $permissions['edit own report_2 content'] = array(
     'name' => 'edit own report_2 content',
     'roles' => array(
-      'Coordinator' => 'Coordinator',
       'Educatius Master' => 'Educatius Master',
       'Manager' => 'Manager',
       'administrator' => 'administrator',
@@ -821,7 +813,6 @@ function midleton_user_features_user_default_permissions() {
   $permissions['edit own report_3 content'] = array(
     'name' => 'edit own report_3 content',
     'roles' => array(
-      'Coordinator' => 'Coordinator',
       'Educatius Master' => 'Educatius Master',
       'Manager' => 'Manager',
       'administrator' => 'administrator',
@@ -842,7 +833,6 @@ function midleton_user_features_user_default_permissions() {
   $permissions['edit terms in school_year'] = array(
     'name' => 'edit terms in school_year',
     'roles' => array(
-      'Coordinator' => 'Coordinator',
       'Educatius Master' => 'Educatius Master',
       'Manager' => 'Manager',
       'administrator' => 'administrator',
@@ -884,7 +874,6 @@ function midleton_user_features_user_default_permissions() {
   $permissions['revert revisions'] = array(
     'name' => 'revert revisions',
     'roles' => array(
-      'Coordinator' => 'Coordinator',
       'Educatius Master' => 'Educatius Master',
       'Manager' => 'Manager',
       'administrator' => 'administrator',
@@ -937,7 +926,6 @@ function midleton_user_features_user_default_permissions() {
   $permissions['use text format full_html'] = array(
     'name' => 'use text format full_html',
     'roles' => array(
-      'Coordinator' => 'Coordinator',
       'Educatius Master' => 'Educatius Master',
       'Manager' => 'Manager',
       'administrator' => 'administrator',
@@ -1009,7 +997,6 @@ function midleton_user_features_user_default_permissions() {
   $permissions['view own field_user_superior'] = array(
     'name' => 'view own field_user_superior',
     'roles' => array(
-      'Coordinator' => 'Coordinator',
       'Educatius Master' => 'Educatius Master',
       'administrator' => 'administrator',
     ),
@@ -1032,7 +1019,6 @@ function midleton_user_features_user_default_permissions() {
   $permissions['view own private files'] = array(
     'name' => 'view own private files',
     'roles' => array(
-      'Coordinator' => 'Coordinator',
       'Educatius Master' => 'Educatius Master',
       'Manager' => 'Manager',
       'administrator' => 'administrator',
@@ -1056,7 +1042,6 @@ function midleton_user_features_user_default_permissions() {
   $permissions['view own unpublished content'] = array(
     'name' => 'view own unpublished content',
     'roles' => array(
-      'Coordinator' => 'Coordinator',
       'Educatius Master' => 'Educatius Master',
       'Manager' => 'Manager',
       'administrator' => 'administrator',
@@ -1078,7 +1063,6 @@ function midleton_user_features_user_default_permissions() {
   $permissions['view revision overview'] = array(
     'name' => 'view revision overview',
     'roles' => array(
-      'Coordinator' => 'Coordinator',
       'Educatius Master' => 'Educatius Master',
       'Manager' => 'Manager',
       'administrator' => 'administrator',
@@ -1090,7 +1074,6 @@ function midleton_user_features_user_default_permissions() {
   $permissions['view revisions'] = array(
     'name' => 'view revisions',
     'roles' => array(
-      'Coordinator' => 'Coordinator',
       'Educatius Master' => 'Educatius Master',
       'Manager' => 'Manager',
       'administrator' => 'administrator',
