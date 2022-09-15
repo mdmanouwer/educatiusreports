@@ -439,6 +439,10 @@ function midleton_base_form_alter(&$form, &$form_state, $form_id) {
       $form['field_status']['#access'] = FALSE;
     }
 
+    if (user_has_role(11, $user)) {
+      $form['field_status']['#access'] = TRUE;
+    }
+
     $form['actions']['submit']['#value'] = t('Save');
 
     $node = $form['#node'];
