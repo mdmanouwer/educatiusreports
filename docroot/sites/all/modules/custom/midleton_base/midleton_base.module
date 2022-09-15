@@ -917,7 +917,7 @@ function midleton_base_change_status_button($node) {
         break;
 
       case 'approved':
-        $label = t("Send to Agnecy");
+        $label = t("Send to Agency");
         break;
 
       case 'sent':
