@@ -96,11 +96,13 @@ html body .footer {
 }
 /* line 98, ../sass/midleton.pdf.scss */
 html body .footer img {
-  width: 275px;
+  max-width: 275px;
   height: auto;
   position: fixed;
+  left: 50%;
+  transform: translate(-50%);
   bottom: 50px;
-  left: 240px;
+
 }
 /* line 103, ../sass/midleton.pdf.scss */
 html body h2 {
