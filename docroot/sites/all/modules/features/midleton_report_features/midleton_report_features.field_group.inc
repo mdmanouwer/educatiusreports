@@ -22,19 +22,9 @@ function midleton_report_features_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'children' => array(
-      0 => 'field_it_is_punctual',
-      1 => 'field__care_of_installations',
-      2 => 'field_absences',
-      3 => 'field_attitude_toward_peers',
-      4 => 'field_attitude_towards_teachers',
-      5 => 'field_communicates_well_in_en',
-      6 => 'field_conduct',
-      7 => 'field_material_care',
-      8 => 'field_participation_in_the_class',
-      9 => 'field_performing_tasks',
-      10 => 'field_subjects_courses',
-      11 => 'field_observations_coordinator_2',
-      12 => 'field__absences',
+      0 => 'field_subjects_courses',
+      1 => 'field_observations_coordinator_2',
+      2 => 'field__absences',
     ),
     'format_settings' => array(
       'formatter' => 'collapsible',
@@ -50,7 +40,7 @@ function midleton_report_features_field_group_info() {
     ),
     'format_type' => 'div',
     'label' => 'School',
-    'weight' => '3',
+    'weight' => '4',
   );
   $field_groups['group_college|node|report_1|default'] = $field_group;
 
@@ -98,20 +88,9 @@ function midleton_report_features_field_group_info() {
   $field_group->data = array(
     'children' => array(
       0 => 'field__absences',
-      1 => 'field__care_of_installations',
-      2 => 'field_absences',
-      3 => 'field_attitude_toward_peers',
-      4 => 'field_attitude_towards_teachers',
-      5 => 'field_communicates_well_in_en',
-      6 => 'field_conduct',
-      7 => 'field_involved_school_activity',
-      8 => 'field_involved_school_activity2',
-      9 => 'field_it_is_punctual',
-      10 => 'field_material_care',
-      11 => 'field_observations_coordinator_2',
-      12 => 'field_participation_in_the_class',
-      13 => 'field_performing_tasks',
-      14 => 'field_subjects_courses',
+      1 => 'field_involved_school_activity2',
+      2 => 'field_observations_coordinator_2',
+      3 => 'field_subjects_courses',
     ),
     'format_settings' => array(
       'formatter' => 'collapsible',
@@ -127,7 +106,7 @@ function midleton_report_features_field_group_info() {
     ),
     'format_type' => 'div',
     'label' => 'School',
-    'weight' => '3',
+    'weight' => '4',
   );
   $field_groups['group_college|node|report_2|default'] = $field_group;
 
@@ -195,7 +174,7 @@ function midleton_report_features_field_group_info() {
     ),
     'format_type' => 'div',
     'label' => 'School',
-    'weight' => '5',
+    'weight' => '4',
   );
   $field_groups['group_college|node|report_3|default'] = $field_group;
 
@@ -247,17 +226,14 @@ function midleton_report_features_field_group_info() {
       4 => 'field_dialogue_with_family',
       5 => 'field_integration_into_family_li',
       6 => 'field_it_consumes_what_is',
-      7 => 'field_it_leads_to_people',
-      8 => 'field_leads_a_balanced_diet',
-      9 => 'field_participates_in_the_activ',
-      10 => 'field_participates_in_the_daily',
-      11 => 'field_respect_your_sleep',
-      12 => 'field_respects_the_established_s',
-      13 => 'field_tidiness_of_the_room',
-      14 => 'field_when_you_are_outside',
-      15 => 'field_punctuality',
-      16 => 'field_punctuality2',
-      17 => 'field_english_communication',
+      7 => 'field_leads_a_balanced_diet',
+      8 => 'field_participates_in_the_activ',
+      9 => 'field_respects_the_established_s',
+      10 => 'field_tidiness_of_the_room',
+      11 => 'field_when_you_are_outside',
+      12 => 'field_punctuality',
+      13 => 'field_punctuality2',
+      14 => 'field_english_communication',
     ),
     'format_settings' => array(
       'formatter' => 'collapsible',
@@ -273,7 +249,7 @@ function midleton_report_features_field_group_info() {
     ),
     'format_type' => 'div',
     'label' => 'Host',
-    'weight' => '2',
+    'weight' => '3',
   );
   $field_groups['group_family|node|report_1|default'] = $field_group;
 
@@ -336,18 +312,15 @@ function midleton_report_features_field_group_info() {
       3 => 'field_attitude_and_behavior',
       4 => 'field_dialogue_with_family',
       5 => 'field_english_communication',
-      6 => 'field_integration_into_family_li',
-      7 => 'field_it_consumes_what_is',
-      8 => 'field_it_leads_to_people',
-      9 => 'field_leads_a_balanced_diet',
-      10 => 'field_participates_in_the_activ',
-      11 => 'field_participates_in_the_daily',
-      12 => 'field_punctuality',
-      13 => 'field_punctuality2',
-      14 => 'field_respect_your_sleep',
-      15 => 'field_respects_the_established_s',
-      16 => 'field_tidiness_of_the_room',
-      17 => 'field_when_you_are_outside',
+      6 => 'field_it_consumes_what_is',
+      7 => 'field_leads_a_balanced_diet',
+      8 => 'field_participates_in_the_activ',
+      9 => 'field_participates_in_the_daily',
+      10 => 'field_punctuality',
+      11 => 'field_punctuality2',
+      12 => 'field_respects_the_established_s',
+      13 => 'field_tidiness_of_the_room',
+      14 => 'field_when_you_are_outside',
     ),
     'format_settings' => array(
       'formatter' => 'collapsible',
@@ -364,7 +337,7 @@ function midleton_report_features_field_group_info() {
     ),
     'format_type' => 'div',
     'label' => 'Host family',
-    'weight' => '2',
+    'weight' => '3',
   );
   $field_groups['group_family|node|report_2|default'] = $field_group;
 
@@ -438,7 +411,7 @@ function midleton_report_features_field_group_info() {
     ),
     'format_type' => 'div',
     'label' => 'Host family',
-    'weight' => '4',
+    'weight' => '3',
   );
   $field_groups['group_family|node|report_3|default'] = $field_group;
 
@@ -518,7 +491,7 @@ function midleton_report_features_field_group_info() {
     ),
     'format_type' => 'div',
     'label' => 'Free time and after-school activities',
-    'weight' => '4',
+    'weight' => '5',
   );
   $field_groups['group_free_time|node|report_1|default'] = $field_group;
 
@@ -570,12 +543,11 @@ function midleton_report_features_field_group_info() {
       0 => 'field_activities_in_which_it',
       1 => 'field_coordinator_observations_3',
       2 => 'field_do_you_usually_do',
-      3 => 'field_friendships_at_school',
-      4 => 'field_friendships_at_school2',
-      5 => 'field_how_are_your_relationships',
-      6 => 'field_it_is_motivated',
-      7 => 'field_routine_weekend',
-      8 => 'field_starts_itself_activities',
+      3 => 'field_friendships_at_school2',
+      4 => 'field_how_are_your_relationships',
+      5 => 'field_it_is_motivated',
+      6 => 'field_routine_weekend',
+      7 => 'field_starts_itself_activities',
     ),
     'format_settings' => array(
       'formatter' => 'collapsible',
@@ -591,7 +563,7 @@ function midleton_report_features_field_group_info() {
     ),
     'format_type' => 'div',
     'label' => 'Free time and after-school activities',
-    'weight' => '4',
+    'weight' => '5',
   );
   $field_groups['group_free_time|node|report_2|default'] = $field_group;
 
@@ -664,7 +636,7 @@ function midleton_report_features_field_group_info() {
     ),
     'format_type' => 'div',
     'label' => 'Free time and after-school activities',
-    'weight' => '6',
+    'weight' => '5',
   );
   $field_groups['group_free_time|node|report_3|default'] = $field_group;
 
@@ -716,12 +688,10 @@ function midleton_report_features_field_group_info() {
       0 => 'field_he_communicates_well_in_en',
       1 => 'field_attending_the_coord',
       2 => 'field_attending_the_family',
-      3 => 'field_attending_the_family2',
-      4 => 'field_he_had_to_go_to_the_docto2',
-      5 => 'field_he_had_to_go_to_the_doctor',
-      6 => 'field_respect_the_rules',
-      7 => 'field_respect_the_rules2',
-      8 => 'field_coordinator_observations_4',
+      3 => 'field_he_had_to_go_to_the_docto2',
+      4 => 'field_he_had_to_go_to_the_doctor',
+      5 => 'field_respect_the_rules',
+      6 => 'field_coordinator_observations_4',
     ),
     'format_settings' => array(
       'formatter' => 'collapsible',
@@ -737,7 +707,7 @@ function midleton_report_features_field_group_info() {
     ),
     'format_type' => 'div',
     'label' => 'General',
-    'weight' => '5',
+    'weight' => '6',
   );
   $field_groups['group_general_questions|node|report_1|default'] = $field_group;
 
@@ -788,13 +758,10 @@ function midleton_report_features_field_group_info() {
     'children' => array(
       0 => 'field_attending_the_coord',
       1 => 'field_attending_the_family',
-      2 => 'field_attending_the_family2',
-      3 => 'field_coordinator_observations_4',
-      4 => 'field_he_communicates_well_in_en',
-      5 => 'field_he_had_to_go_to_the_docto2',
-      6 => 'field_he_had_to_go_to_the_doctor',
-      7 => 'field_respect_the_rules',
-      8 => 'field_respect_the_rules2',
+      2 => 'field_coordinator_observations_4',
+      3 => 'field_he_had_to_go_to_the_docto2',
+      4 => 'field_he_had_to_go_to_the_doctor',
+      5 => 'field_respect_the_rules',
     ),
     'format_settings' => array(
       'formatter' => 'collapsible',
@@ -810,7 +777,7 @@ function midleton_report_features_field_group_info() {
     ),
     'format_type' => 'div',
     'label' => 'General',
-    'weight' => '5',
+    'weight' => '6',
   );
   $field_groups['group_general_questions|node|report_2|default'] = $field_group;
 
@@ -875,7 +842,7 @@ function midleton_report_features_field_group_info() {
     ),
     'format_type' => 'div',
     'label' => 'General',
-    'weight' => '7',
+    'weight' => '6',
   );
   $field_groups['group_general_questions|node|report_3|default'] = $field_group;
 

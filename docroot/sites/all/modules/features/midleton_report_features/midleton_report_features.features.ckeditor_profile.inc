@@ -82,13 +82,6 @@ function midleton_report_features_ckeditor_profile_defaults() {
             ),
             'default' => 't',
           ),
-          'scayt' => array(
-            'name' => 'scayt',
-            'desc' => 'Plugin file: scayt',
-            'path' => '%plugin_dir%scayt/',
-            'buttons' => FALSE,
-            'default' => 'f',
-          ),
           'tableresize' => array(
             'name' => 'tableresize',
             'desc' => 'Table Resize plugin. See <a href="http://ckeditor.com/addon/tableresize">addon page</a> for more details.',
@@ -189,13 +182,6 @@ function midleton_report_features_ckeditor_profile_defaults() {
               ),
             ),
             'default' => 't',
-          ),
-          'scayt' => array(
-            'name' => 'scayt',
-            'desc' => 'Plugin file: scayt',
-            'path' => '%plugin_dir%scayt/',
-            'buttons' => FALSE,
-            'default' => 'f',
           ),
           'tableresize' => array(
             'name' => 'tableresize',
