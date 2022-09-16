@@ -90,14 +90,17 @@ html body .student .field .field__items {
 /* line 94, ../sass/midleton.pdf.scss */
 html body .footer {
   position: fixed;
-  top: 0px;
+  bottom: 0px;
   width: 100%;
+  text-align: center;
 }
 /* line 98, ../sass/midleton.pdf.scss */
 html body .footer img {
-  width: 100%;
+  width: 275px;
   height: auto;
-  max-height: 200px;
+  position: fixed;
+  bottom: 50px;
+  left: 250px;
 }
 /* line 103, ../sass/midleton.pdf.scss */
 html body h2 {

@@ -37,12 +37,9 @@ global $base_url;
 <?php print render($node); ?>
 <div class="footer">
   <img
-    src="<?php print $base_url . '/' . drupal_get_path('module', 'midleton_base'); ?>/images/footer.jpg"/>
+    src="<?php print $base_url . '/' . drupal_get_path('module', 'midleton_base'); ?>/images/footer.jpg" width="300" height="200"/>
 </div>
-<div class="logo-small">
-  <img
-    src="<?php print $base_url . '/' . drupal_get_path('module', 'midleton_base'); ?>/images/logo_small.jpg"/>
-</div>
+
   <script type="text/php">
   print $pdf->page_text(560,814, "{$PAGE_COUNT}", 'Helvetica', 7);
   </script>
