@@ -28,7 +28,7 @@ global $base_url;
 </div>
 <div class="student">
   <h3><?php print $student_name; ?></h3>
-  <?php print render($student); ?>
+
 </div>
 <h1><?php print $report; ?></h1>
 <div class="date">
