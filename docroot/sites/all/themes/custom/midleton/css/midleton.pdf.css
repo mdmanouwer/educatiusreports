@@ -1,109 +1,119 @@
 /* line 10, ../sass/midleton.pdf.scss */
 html {
   margin-top: 50px;
-  margin-bottom: 40px; }
-  /* line 13, ../sass/midleton.pdf.scss */
-  html body {
-    position: relative;
-    margin: 0;
-    margin-bottom: 80px;
-    margin-top: 50px;
-    font-family: sans-serif;
-    line-height: 1;
-    margin-left: 60px;
-    margin-right: 20px; }
-    /* line 22, ../sass/midleton.pdf.scss */
-    html body .logo {
-      position: absolute;
-      right: 5px;
-      top: -60px;
-      width: 170px; }
-      /* line 27, ../sass/midleton.pdf.scss */
-      html body .logo img {
-        width: 100%; }
-    /* line 31, ../sass/midleton.pdf.scss */
-    html body .logo-small {
-      position: fixed;
-      right: 25px;
-      top: 0;
-      width: 170px;
-      z-index: -2; }
-      /* line 37, ../sass/midleton.pdf.scss */
-      html body .logo-small img {
-        width: 100%; }
-    /* line 41, ../sass/midleton.pdf.scss */
-    html body .student {
-      height: 155px;
-      margin-left: 340px; }
-      /* line 44, ../sass/midleton.pdf.scss */
-      html body .student h3 {
-        margin-top: 50px;
-        text-transform: uppercase;
-        color: #2e66b1;
-        font-size: 20px;
-        margin-left: 20px; }
-      /* line 51, ../sass/midleton.pdf.scss */
-      html body .student .field {
-        width: 140px;
-        font-size: 13px;
-        margin-left: 20px;
-        margin-bottom: 10px; }
-        /* line 56, ../sass/midleton.pdf.scss */
-        html body .student .field.field--name-field-name, html body .student .field.field--name-field-last-name {
-          display: none; }
-        /* line 60, ../sass/midleton.pdf.scss */
-        html body .student .field .field__label,
-        html body .student .field .field__items {
-          display: inline-block;
-          vertical-align: top; }
-        /* line 65, ../sass/midleton.pdf.scss */
-        html body .student .field .field__label {
-          margin-right: 10px; }
-          /* line 68, ../sass/midleton.pdf.scss */
-          html body .student .field .field__label .description {
-            font-weight: normal;
-            color: #555;
-            font-style: italic;
-            font-size: 10px; }
-        /* line 75, ../sass/midleton.pdf.scss */
-        html body .student .field .field__items {
-          color: #2e66b1; }
-    /* line 80, ../sass/midleton.pdf.scss */
-    html body .side {
-      color: #808284;
-      left: -680px;
-      position: fixed;
-      top: 50%;
-      font-size: 8px; }
-      /* line 81, ../sass/midleton.pdf.scss */
-      html body .side .inner {
-        -ms-transform: rotate(-90deg);
-        /* IE 9 */
-        -webkit-transform: rotate(-90deg);
-        /* Chrome, Safari, Opera */
-        transform: rotate(-90deg);
-        text-align: center; }
-    /* line 94, ../sass/midleton.pdf.scss */
-    html body .footer {
-      position: fixed;
-      top: 0px;
-      width: 100%; }
-      /* line 98, ../sass/midleton.pdf.scss */
-      html body .footer img {
-        width: 100%;
-        height: auto; }
-    /* line 103, ../sass/midleton.pdf.scss */
-    html body h2 {
-      font-size: 2.3em; }
-    /* line 106, ../sass/midleton.pdf.scss */
-    html body .footer {
-      bottom: 130px;
-      top: auto; }
+  margin-bottom: 40px;
+}
+/* line 13, ../sass/midleton.pdf.scss */
+html body {
+  position: relative;
+  margin: 0;
+  margin-bottom: 80px;
+  margin-top: 50px;
+  font-family: sans-serif;
+  line-height: 1;
+  margin-left: 60px;
+  margin-right: 20px;
+}
+/* line 22, ../sass/midleton.pdf.scss */
+html body .logo {
+  position: absolute;
+  right: 5px;
+  top: -60px;
+  width: 170px;
+}
+/* line 27, ../sass/midleton.pdf.scss */
+html body .logo img {
+  width: 100%;
+}
+/* line 31, ../sass/midleton.pdf.scss */
+html body .logo-small {
+  position: fixed;
+  right: 25px;
+  top: 0;
+  width: 170px;
+  z-index: -2;
+}
+/* line 37, ../sass/midleton.pdf.scss */
+html body .logo-small img {
+  width: 100%;
+}
+/* line 41, ../sass/midleton.pdf.scss */
+html body .student {
+  height: 155px;
+  margin-left: 340px;
+}
+/* line 44, ../sass/midleton.pdf.scss */
+html body .student h3 {
+  margin-top: 50px;
+  text-transform: uppercase;
+  color: #2e66b1;
+  font-size: 20px;
+  margin-left: 20px;
+}
+/* line 51, ../sass/midleton.pdf.scss */
+html body .student .field {
+  width: 140px;
+  font-size: 13px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+/* line 56, ../sass/midleton.pdf.scss */
+html body .student .field.field--name-field-name,
+html body .student .field.field--name-field-last-name {
+  display: none;
+}
+/* line 60, ../sass/midleton.pdf.scss */
+html body .student .field .field__label,
+html body .student .field .field__items {
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 65, ../sass/midleton.pdf.scss */
+html body .student .field .field__label {
+  margin-right: 10px;
+}
+/* line 68, ../sass/midleton.pdf.scss */
+html body .student .field .field__label .description {
+  font-weight: normal;
+  color: #555;
+  font-style: italic;
+  font-size: 10px;
+}
+/* line 75, ../sass/midleton.pdf.scss */
+html body .student .field .field__items {
+  color: #2e66b1;
+}
+/* line 80, ../sass/midleton.pdf.scss */
+
+/* line 81, ../sass/midleton.pdf.scss */
+
+/* line 94, ../sass/midleton.pdf.scss */
+html body .footer {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+/* line 98, ../sass/midleton.pdf.scss */
+html body .footer img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+}
+/* line 103, ../sass/midleton.pdf.scss */
+html body h2 {
+  font-size: 2.3em;
+}
+/* line 106, ../sass/midleton.pdf.scss */
+html body .footer {
+  bottom: 200px;
+  top: auto;
+}
 
 /* line 116, ../sass/midleton.pdf.scss */
 h2 {
   padding: 0px;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+}
 
 /* line 121, ../sass/midleton.pdf.scss */
 div.collapsible {
@@ -111,37 +121,41 @@ div.collapsible {
   margin: 0;
   padding: 0;
   display: block;
-  margin-bottom: 50px; }
-  /* line 127, ../sass/midleton.pdf.scss */
-  div.collapsible h3 {
-    padding: 0;
-    margin: 0;
-    display: block;
-    left: 0;
-    width: 100%;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-    font-size: 1.5em;
-    page-break-after: avoid;
-    font-weight: bold;
-    font-size: 14px;
-    padding: 10px;
-    background: #6c9bd9;
-    color: white;
-    text-transform: uppercase; }
+  margin-bottom: 50px;
+}
+/* line 127, ../sass/midleton.pdf.scss */
+div.collapsible h3 {
+  padding: 0;
+  margin: 0;
+  display: block;
+  left: 0;
+  width: 100%;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  page-break-after: avoid;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 10px;
+  background: #6c9bd9;
+  color: white;
+  text-transform: uppercase;
+}
 
 /* line 146, ../sass/midleton.pdf.scss */
 .pager {
   z-index: 9999;
   position: fixed;
   bottom: 0;
-  right: 0; }
+  right: 0;
+}
 
 /* line 153, ../sass/midleton.pdf.scss */
 h1 {
   font-size: 22px;
   top: -80px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+}
 
 /* line 159, ../sass/midleton.pdf.scss */
 .date {
@@ -149,99 +163,123 @@ h1 {
   text-transform: uppercase;
   margin-bottom: 35px;
   font-size: 12px;
-  font-style: italic; }
+  font-style: italic;
+}
 
 /* line 167, ../sass/midleton.pdf.scss */
 .node {
-  font-size: 13px; }
-  /* line 169, ../sass/midleton.pdf.scss */
-  .node .contextual-links-wrapper {
-    display: none; }
-  /* line 173, ../sass/midleton.pdf.scss */
-  .node h2 {
-    display: none; }
-  /* line 176, ../sass/midleton.pdf.scss */
-  .node .field--name-field-status {
-    display: none; }
-  /* line 179, ../sass/midleton.pdf.scss */
-  .node .field.field--name-field-student-reference {
-    display: none; }
-  /* line 182, ../sass/midleton.pdf.scss */
-  .node .field {
-    width: 100%;
-    clear: both;
-    padding: 20px 0;
-    margin: 0; }
-    /* line 183, ../sass/midleton.pdf.scss */
-    .node .field:not(.field--type-text-long) {
-      page-break-inside: avoid; }
-    /* line 3, ../sass/midleton.pdf.scss */
-    .node .field:after {
-      content: "";
-      display: table;
-      clear: both; }
-    /* line 191, ../sass/midleton.pdf.scss */
-    .node .field > .field__label {
-      width: 470px;
-      display: block;
-      float: left;
-      left: 0; }
-    /* line 197, ../sass/midleton.pdf.scss */
-    .node .field > .field__items {
-      font-weight: bold;
-      padding: 0;
-      color: #2e66b1;
-      left: 0;
-      padding-left: 0;
-      min-height: 50px; }
-    /* line 206, ../sass/midleton.pdf.scss */
-    .node .field > .field__items,
-    .node .field > .field__label {
-      vertical-align: top; }
-    /* line 212, ../sass/midleton.pdf.scss */
-    .node .field .field__label .label {
-      font-weight: bold; }
-    /* line 216, ../sass/midleton.pdf.scss */
-    .node .field .field__label .description {
-      font-style: italic;
-      font-size: .9em;
-      color: #555;
-      margin-top: 2px; }
-    /* line 223, ../sass/midleton.pdf.scss */
-    .node .field.field--type-text-long, .node .field.field--label-hidden {
-      margin-bottom: 30px;
-      border-top: none; }
-      /* line 227, ../sass/midleton.pdf.scss */
-      .node .field.field--type-text-long .field__label, .node .field.field--label-hidden .field__label {
-        width: 100%;
-        display: block;
-        float: none; }
-      /* line 232, ../sass/midleton.pdf.scss */
-      .node .field.field--type-text-long .field__items, .node .field.field--label-hidden .field__items {
-        width: 100%;
-        font-weight: normal;
-        margin: 0;
-        margin-top: 10px;
-        display: block; }
-    /* line 241, ../sass/midleton.pdf.scss */
-    .node .field .star {
-      font-size: 40px;
-      font-weight: bold;
-      color: #ddd; }
-      /* line 245, ../sass/midleton.pdf.scss */
-      .node .field .star.highlighted, .node .field .star.selected {
-        color: #2e66b1; }
-      /* line 249, ../sass/midleton.pdf.scss */
-      .node .field .star img {
-        width: 20px;
-        margin-right: 5px; }
-  /* line 255, ../sass/midleton.pdf.scss */
-  .node .field--name-field-comments-chief-coordinator,
-  .node .field--name-field-observations-coordinator,
-  .node .field--name-field-coordinator-observations-3,
-  .node .field--name-field-coordinator-observations-4,
-  .node .field--name-field-observations-coordinator-2 {
-    /* .field__label {
+  font-size: 13px;
+}
+/* line 169, ../sass/midleton.pdf.scss */
+.node .contextual-links-wrapper {
+  display: none;
+}
+/* line 173, ../sass/midleton.pdf.scss */
+.node h2 {
+  display: none;
+}
+/* line 176, ../sass/midleton.pdf.scss */
+.node .field--name-field-status {
+  display: none;
+}
+/* line 179, ../sass/midleton.pdf.scss */
+.node .field.field--name-field-student-reference {
+  display: none;
+}
+/* line 182, ../sass/midleton.pdf.scss */
+.node .field {
+  width: 100%;
+  clear: both;
+  padding: 20px 0;
+  margin: 0;
+}
+/* line 183, ../sass/midleton.pdf.scss */
+.node .field:not(.field--type-text-long) {
+  page-break-inside: avoid;
+}
+/* line 3, ../sass/midleton.pdf.scss */
+.node .field:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 191, ../sass/midleton.pdf.scss */
+.node .field > .field__label {
+  width: 470px;
+  display: block;
+  float: left;
+  left: 0;
+}
+/* line 197, ../sass/midleton.pdf.scss */
+.node .field > .field__items {
+  font-weight: bold;
+  padding: 0;
+  color: #2e66b1;
+  left: 0;
+  padding-left: 0;
+  min-height: 50px;
+}
+/* line 206, ../sass/midleton.pdf.scss */
+.node .field > .field__items,
+.node .field > .field__label {
+  vertical-align: top;
+}
+/* line 212, ../sass/midleton.pdf.scss */
+.node .field .field__label .label {
+  font-weight: bold;
+}
+/* line 216, ../sass/midleton.pdf.scss */
+.node .field .field__label .description {
+  font-style: italic;
+  font-size: .9em;
+  color: #555;
+  margin-top: 2px;
+}
+/* line 223, ../sass/midleton.pdf.scss */
+.node .field.field--type-text-long,
+.node .field.field--label-hidden {
+  margin-bottom: 30px;
+  border-top: none;
+}
+/* line 227, ../sass/midleton.pdf.scss */
+.node .field.field--type-text-long .field__label,
+.node .field.field--label-hidden .field__label {
+  width: 100%;
+  display: block;
+  float: none;
+}
+/* line 232, ../sass/midleton.pdf.scss */
+.node .field.field--type-text-long .field__items,
+.node .field.field--label-hidden .field__items {
+  width: 100%;
+  font-weight: normal;
+  margin: 0;
+  margin-top: 10px;
+  display: block;
+}
+/* line 241, ../sass/midleton.pdf.scss */
+.node .field .star {
+  font-size: 40px;
+  font-weight: bold;
+  color: #ddd;
+}
+/* line 245, ../sass/midleton.pdf.scss */
+.node .field .star.highlighted,
+.node .field .star.selected {
+  color: #2e66b1;
+}
+/* line 249, ../sass/midleton.pdf.scss */
+.node .field .star img {
+  width: 20px;
+  margin-right: 5px;
+}
+/* line 255, ../sass/midleton.pdf.scss */
+.node .field--name-field-comments-chief-coordinator,
+.node .field--name-field-observations-coordinator,
+.node .field--name-field-coordinator-observations-3,
+.node .field--name-field-coordinator-observations-4,
+.node .field--name-field-observations-coordinator-2 {
+  /* .field__label {
        display: block;
        width: 100%;
        margin-bottom: 15px;
