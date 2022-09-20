@@ -37,7 +37,7 @@ global $base_url;
 <?php print render($node); ?>
 <div class="footer">
   <img
-    src="<?php print $base_url . '/' . drupal_get_path('module', 'midleton_base'); ?>/images/footer.jpg" width="300" height="200"/>
+    src="<?php print $base_url . '/' . drupal_get_path('module', 'midleton_base'); ?>/images/footer.jpg"/>
 </div>
 
   <script type="text/php">
