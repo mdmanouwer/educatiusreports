@@ -35,9 +35,9 @@ global $base_url;
   <?php print $report_date; ?>
 </div>
 <?php print render($node); ?>
-<div class="footer">
+<div class="footer" style="width: 150px;height: 150px">
   <img
-    src="<?php print $base_url . '/' . drupal_get_path('module', 'midleton_base'); ?>/images/footer.jpg"/>
+    src="<?php print $base_url . '/' . drupal_get_path('module', 'midleton_base'); ?>/images/footer.jpg" width="150" height="150"/>
 </div>
 
   <script type="text/php">
