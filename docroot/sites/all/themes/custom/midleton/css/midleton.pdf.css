@@ -91,7 +91,8 @@ html body .student .field .field__items {
 html body .footer {
   position: fixed;
   bottom: 0px;
-  width: 100%;
+  width: 200px;
+  left: 340px;
   text-align: center;
 }
 /* line 98, ../sass/midleton.pdf.scss */
