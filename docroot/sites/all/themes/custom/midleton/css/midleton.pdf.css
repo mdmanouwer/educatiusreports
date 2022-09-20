@@ -92,9 +92,13 @@ html body .student .field .field__items {
 html body .footer {
   position: fixed;
   top: 0px;
-  width: 100%; }
+  width: 100%;
+  margin-left: 29%;
+  margin-right: 29%;
+}
 /* line 98, ../sass/midleton.pdf.scss */
 html body .footer img {
+  margin-top: 120px;
   width: 100%;
   height: auto;
 }
