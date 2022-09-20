@@ -91,13 +91,14 @@ html body .student .field .field__items {
 html body .footer {
   position: fixed;
   bottom: 0px;
-  width: 275px;
+  width: 100%;
   text-align: center;
 }
 /* line 98, ../sass/midleton.pdf.scss */
 html body .footer img {
-  max-width: 275px;
-  height: auto;
+  max-width: 275px !important;
+  height: 150px;
+
   position: fixed;
   left: 50%;
   transform: translate(-50%);
