@@ -67,7 +67,7 @@ function midleton_base_send_email_form_submit(&$form, &$form_state) {
       'List-unsubscribe' => "",
     ],
     'subject' => $wrapper->field_mail_subject->value(),
-    'body' => $wrapper->field_mail_body->value()['value'],
+    'body' => strip_tags($wrapper->field_mail_body->value()['value']),
     'plain' => "",
     "plaintext" => "",
     'attachments' => $attachments,
