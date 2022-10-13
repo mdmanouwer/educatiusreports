@@ -652,7 +652,7 @@ function midleton_base_field_formatter_view($entity_type, $entity, $field, $inst
             $element[0]['#markup'] = t('Approved');
           }
           elseif ($value == "sent") {
-            $element[0]['#markup'] = t('Sent to parents');
+            $element[0]['#markup'] = t('Sent to Agency');
           }
         }
         else {
@@ -1246,7 +1246,7 @@ function midleton_base_form_views_exposed_form_alter(&$form, &$form_state) {
           'All' => t('- Any -'),
           'approval_pending' => t('Pending approval'),
           'approved' => t('Approved'),
-          'sent' => t('Sent to parents')
+          'sent' => t('Sent to Agency')
         ];
         break;
     }
