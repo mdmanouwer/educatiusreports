@@ -25,7 +25,7 @@ function midleton_email_features_default_rules_configuration() {
         { "mail" : {
             "to" : [ "node:author:field-user-superior:mail" ],
             "subject" : "New report from [node:author]",
-            "message" : "Buenos d\\u00edas,\\r\\n\\r\\n[node:author:name] has sent you a report to review. \\r\\n\\r\\nRegards,",
+            "message" : "Dear Educatius manager, \\r\\n\\r\\nThere is a new student progress report for you to review.\\r\\n\\r\\nBest wishes,\\r\\n",
             "language" : [ "" ]
           }
         }
@@ -43,11 +43,11 @@ function midleton_email_features_default_rules_configuration() {
         { "data_is" : { "data" : [ "node:field-status" ], "value" : "approval_pending" } }
       ],
       "DO" : [
-        { "drupal_message" : { "message" : "Thank you for submitting the form. We\\u0027ve notified Midleton in Madrid." } },
+        { "drupal_message" : { "message" : "Thank you for submitting the report. Educatius management have been notified to validate the report" } },
         { "mail_to_users_of_role" : {
             "roles" : { "value" : { "16" : "16" } },
-            "subject" : "Nuevo informe para revisar",
-            "message" : "Buenos d\\u00edas,\\r\\n\\r\\nHay un nuevo informe para revisar.\\r\\n\\r\\nSaludos,"
+            "subject" : "New Report to View",
+            "message" : "Hello,\\r\\n\\r\\nThere is a new report to review at Educatius Reports: http:\\/\\/educatiusreports.org\\r\\n\\r\\nThanks"
           }
         }
       ]

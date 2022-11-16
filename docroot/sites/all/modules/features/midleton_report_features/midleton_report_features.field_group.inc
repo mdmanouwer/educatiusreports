@@ -122,15 +122,9 @@ function midleton_report_features_field_group_info() {
   $field_group->data = array(
     'children' => array(
       0 => 'field__absences',
-      1 => 'field_absences',
-      2 => 'field_communicates_well_in_en',
-      3 => 'field_involved_school_activity',
-      4 => 'field_involved_school_activity2',
-      5 => 'field_observations_coordinator_2',
-      6 => 'field_subjects_courses',
-      7 => 'field_classroom_behaviour',
-      8 => 'field_care_of_materials',
-      9 => 'field_care_of_school_facilities',
+      1 => 'field_involved_school_activity2',
+      2 => 'field_observations_coordinator_2',
+      3 => 'field_subjects_courses',
     ),
     'format_settings' => array(
       'formatter' => 'collapsible',
@@ -353,19 +347,15 @@ function midleton_report_features_field_group_info() {
   $field_group->data = array(
     'children' => array(
       0 => 'field_appropriate_use_of_int',
-      1 => 'field_asks_permission_to_events',
-      2 => 'field_attitude_and_behavior',
-      3 => 'field_dialogue_with_family',
-      4 => 'field_english_communication',
-      5 => 'field_it_consumes_what_is',
-      6 => 'field_leads_a_balanced_diet',
-      7 => 'field_participates_in_the_activ',
-      8 => 'field_participates_in_the_daily',
-      9 => 'field_punctuality',
-      10 => 'field_punctuality2',
-      11 => 'field_respects_the_established_s',
-      12 => 'field_tidiness_of_the_room',
-      13 => 'field_when_you_are_outside',
+      1 => 'field_attitude_and_behavior',
+      2 => 'field_dialogue_with_family',
+      3 => 'field_english_communication',
+      4 => 'field_leads_a_balanced_diet',
+      5 => 'field_punctuality',
+      6 => 'field_punctuality2',
+      7 => 'field_respects_the_established_s',
+      8 => 'field_tidiness_of_the_room',
+      9 => 'field_when_you_are_outside',
     ),
     'format_settings' => array(
       'formatter' => 'collapsible',
@@ -580,12 +570,8 @@ function midleton_report_features_field_group_info() {
     'children' => array(
       0 => 'field_activities_in_which_it',
       1 => 'field_coordinator_observations_3',
-      2 => 'field_do_you_usually_do',
-      3 => 'field_friendships_at_school2',
-      4 => 'field_how_are_your_relationships',
-      5 => 'field_it_is_motivated',
-      6 => 'field_routine_weekend',
-      7 => 'field_starts_itself_activities',
+      2 => 'field_how_are_your_relationships',
+      3 => 'field_routine_weekend',
     ),
     'format_settings' => array(
       'formatter' => 'collapsible',
@@ -793,11 +779,10 @@ function midleton_report_features_field_group_info() {
   $field_group->data = array(
     'children' => array(
       0 => 'field_attending_the_coord',
-      1 => 'field_attending_the_family',
-      2 => 'field_coordinator_observations_4',
-      3 => 'field_he_had_to_go_to_the_docto2',
-      4 => 'field_he_had_to_go_to_the_doctor',
-      5 => 'field_respect_the_rules',
+      1 => 'field_coordinator_observations_4',
+      2 => 'field_he_had_to_go_to_the_docto2',
+      3 => 'field_he_had_to_go_to_the_doctor',
+      4 => 'field_respect_the_rules',
     ),
     'format_settings' => array(
       'formatter' => 'collapsible',

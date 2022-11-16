@@ -681,62 +681,6 @@ function midleton_report_features_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-report_1-field_asks_permission_to_events'.
-  $field_instances['node-report_1-field_asks_permission_to_events'] = array(
-    'bundle' => 'report_1',
-    'default_value' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'empty_fields_emptyfieldtext_empty_text' => '-',
-          'empty_fields_handler' => 'EmptyFieldText',
-        ),
-        'type' => 'list_default',
-        'weight' => 14,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'empty_fields_emptyfieldtext_empty_text' => '-',
-          'empty_fields_handler' => 'EmptyFieldText',
-        ),
-        'type' => 'list_default',
-        'weight' => 8,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_asks_permission_to_events',
-    'label' => 'Does he/she ask for permission to go out/attend events?',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'display_label' => 0,
-      ),
-      'type' => 'options_onoff',
-      'weight' => 16,
-    ),
-  );
-
   // Exported field_instance: 'node-report_1-field_attending_the_coord'.
   $field_instances['node-report_1-field_attending_the_coord'] = array(
     'bundle' => 'report_1',
@@ -777,7 +721,7 @@ function midleton_report_features_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_attending_the_coord',
-    'label' => 'Does he/she go to the coordinator when he/she needs something?',
+    'label' => 'Does he/she go to the host family or coordinator when he/she needs something?',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -790,62 +734,6 @@ function midleton_report_features_field_default_field_instances() {
       ),
       'type' => 'options_onoff',
       'weight' => 10,
-    ),
-  );
-
-  // Exported field_instance: 'node-report_1-field_attending_the_family'.
-  $field_instances['node-report_1-field_attending_the_family'] = array(
-    'bundle' => 'report_1',
-    'default_value' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'empty_fields_emptyfieldtext_empty_text' => '-',
-          'empty_fields_handler' => 'EmptyFieldText',
-        ),
-        'type' => 'list_default',
-        'weight' => 6,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'empty_fields_emptyfieldtext_empty_text' => '-',
-          'empty_fields_handler' => 'EmptyFieldText',
-        ),
-        'type' => 'list_default',
-        'weight' => 3,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_attending_the_family',
-    'label' => 'Does he/she go to the family when he/she needs something?',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'display_label' => 0,
-      ),
-      'type' => 'options_onoff',
-      'weight' => 11,
     ),
   );
 
@@ -1023,109 +911,6 @@ function midleton_report_features_field_default_field_instances() {
       ),
       'type' => 'text_textarea',
       'weight' => 16,
-    ),
-  );
-
-  // Exported field_instance: 'node-report_1-field_dialogue_with_family'.
-  $field_instances['node-report_1-field_dialogue_with_family'] = array(
-    'bundle' => 'report_1',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'midleton_base',
-        'settings' => array(
-          'empty_fields_emptyfieldtext_empty_text' => '-',
-          'empty_fields_handler' => 'EmptyFieldText',
-        ),
-        'type' => 'midleton_options_as_stars',
-        'weight' => 7,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'empty_fields_emptyfieldtext_empty_text' => '-',
-          'empty_fields_handler' => 'EmptyFieldText',
-        ),
-        'type' => 'list_default',
-        'weight' => 13,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_dialogue_with_family',
-    'label' => 'Does the student spend time with their host family?',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 7,
-    ),
-  );
-
-  // Exported field_instance: 'node-report_1-field_do_you_usually_do'.
-  $field_instances['node-report_1-field_do_you_usually_do'] = array(
-    'bundle' => 'report_1',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(
-          'empty_fields_emptyfieldtext_empty_text' => '-',
-          'empty_fields_handler' => 'EmptyFieldText',
-        ),
-        'type' => 'text_default',
-        'weight' => 8,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(
-          'empty_fields_emptyfieldtext_empty_text' => '-',
-          'empty_fields_handler' => 'EmptyFieldText',
-        ),
-        'type' => 'text_default',
-        'weight' => 3,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_do_you_usually_do',
-    'label' => 'What does he/she usually do after school?',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 1,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 5,
-      ),
-      'type' => 'text_textarea',
-      'weight' => 9,
     ),
   );
 
@@ -1445,168 +1230,6 @@ function midleton_report_features_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-report_1-field_integration_into_family_li'.
-  $field_instances['node-report_1-field_integration_into_family_li'] = array(
-    'bundle' => 'report_1',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'midleton_base',
-        'settings' => array(
-          'empty_fields_emptyfieldtext_empty_text' => '-',
-          'empty_fields_handler' => 'EmptyFieldText',
-        ),
-        'type' => 'midleton_options_as_stars',
-        'weight' => 6,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'empty_fields_emptyfieldtext_empty_text' => '-',
-          'empty_fields_handler' => 'EmptyFieldText',
-        ),
-        'type' => 'list_default',
-        'weight' => 14,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_integration_into_family_li',
-    'label' => 'How well has the student integrated into their family?',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 6,
-    ),
-  );
-
-  // Exported field_instance: 'node-report_1-field_it_consumes_what_is'.
-  $field_instances['node-report_1-field_it_consumes_what_is'] = array(
-    'bundle' => 'report_1',
-    'default_value' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'empty_fields_emptyfieldtext_empty_text' => '-',
-          'empty_fields_handler' => 'EmptyFieldText',
-        ),
-        'type' => 'list_default',
-        'weight' => 16,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'empty_fields_emptyfieldtext_empty_text' => '-',
-          'empty_fields_handler' => 'EmptyFieldText',
-        ),
-        'type' => 'list_default',
-        'weight' => 3,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_it_consumes_what_is',
-    'label' => 'Does he/she eat what he/she is offered without complaining?',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'display_label' => 0,
-      ),
-      'type' => 'options_onoff',
-      'weight' => 18,
-    ),
-  );
-
-  // Exported field_instance: 'node-report_1-field_it_is_motivated'.
-  $field_instances['node-report_1-field_it_is_motivated'] = array(
-    'bundle' => 'report_1',
-    'default_value' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'empty_fields_emptyfieldtext_empty_text' => '-',
-          'empty_fields_handler' => 'EmptyFieldText',
-        ),
-        'type' => 'list_default',
-        'weight' => 4,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'empty_fields_emptyfieldtext_empty_text' => '-',
-          'empty_fields_handler' => 'EmptyFieldText',
-        ),
-        'type' => 'list_default',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_it_is_motivated',
-    'label' => 'Is he/she motivated?',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'display_label' => 0,
-      ),
-      'type' => 'options_onoff',
-      'weight' => 6,
-    ),
-  );
-
   // Exported field_instance: 'node-report_1-field_leads_a_balanced_diet'.
   $field_instances['node-report_1-field_leads_a_balanced_diet'] = array(
     'bundle' => 'report_1',
@@ -1697,56 +1320,6 @@ function midleton_report_features_field_default_field_instances() {
       ),
       'type' => 'text_textarea',
       'weight' => 20,
-    ),
-  );
-
-  // Exported field_instance: 'node-report_1-field_participates_in_the_activ'.
-  $field_instances['node-report_1-field_participates_in_the_activ'] = array(
-    'bundle' => 'report_1',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'midleton_base',
-        'settings' => array(
-          'empty_fields_emptyfieldtext_empty_text' => '-',
-          'empty_fields_handler' => 'EmptyFieldText',
-        ),
-        'type' => 'midleton_options_as_stars',
-        'weight' => 9,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'empty_fields_emptyfieldtext_empty_text' => '-',
-          'empty_fields_handler' => 'EmptyFieldText',
-        ),
-        'type' => 'list_default',
-        'weight' => 16,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_participates_in_the_activ',
-    'label' => 'Is the student open to participating in activities proposed by the host?',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 11,
     ),
   );
 
@@ -2042,7 +1615,7 @@ function midleton_report_features_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_routine_weekend',
-    'label' => 'Weekend routine',
+    'label' => 'Free time Activities',
     'required' => 0,
     'settings' => array(
       'text_processing' => 1,
@@ -2056,62 +1629,6 @@ function midleton_report_features_field_default_field_instances() {
       ),
       'type' => 'text_textarea',
       'weight' => 10,
-    ),
-  );
-
-  // Exported field_instance: 'node-report_1-field_starts_itself_activities'.
-  $field_instances['node-report_1-field_starts_itself_activities'] = array(
-    'bundle' => 'report_1',
-    'default_value' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'empty_fields_emptyfieldtext_empty_text' => '-',
-          'empty_fields_handler' => 'EmptyFieldText',
-        ),
-        'type' => 'list_default',
-        'weight' => 5,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'empty_fields_emptyfieldtext_empty_text' => '-',
-          'empty_fields_handler' => 'EmptyFieldText',
-        ),
-        'type' => 'list_default',
-        'weight' => 1,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_starts_itself_activities',
-    'label' => 'Does he/she take up/suggest activities on his/her own initiative?',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'display_label' => 0,
-      ),
-      'type' => 'options_onoff',
-      'weight' => 7,
     ),
   );
 
@@ -2674,62 +2191,6 @@ this is optional',
     ),
   );
 
-  // Exported field_instance: 'node-report_2-field_asks_permission_to_events'.
-  $field_instances['node-report_2-field_asks_permission_to_events'] = array(
-    'bundle' => 'report_2',
-    'default_value' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'empty_fields_emptyfieldtext_empty_text' => '-',
-          'empty_fields_handler' => 'EmptyFieldText',
-        ),
-        'type' => 'list_default',
-        'weight' => 13,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'empty_fields_emptyfieldtext_empty_text' => '-',
-          'empty_fields_handler' => 'EmptyFieldText',
-        ),
-        'type' => 'list_default',
-        'weight' => 8,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_asks_permission_to_events',
-    'label' => 'Does he/she ask for permission to go out/attend events?',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'display_label' => 0,
-      ),
-      'type' => 'options_onoff',
-      'weight' => 23,
-    ),
-  );
-
   // Exported field_instance: 'node-report_2-field_attending_the_coord'.
   $field_instances['node-report_2-field_attending_the_coord'] = array(
     'bundle' => 'report_2',
@@ -2770,7 +2231,7 @@ this is optional',
     ),
     'entity_type' => 'node',
     'field_name' => 'field_attending_the_coord',
-    'label' => 'Does he/she still contact the coordinator when he/she needs something?',
+    'label' => 'Does he/she still contact the host family or coordinator when he/she needs something?',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -2783,62 +2244,6 @@ this is optional',
       ),
       'type' => 'options_onoff',
       'weight' => 30,
-    ),
-  );
-
-  // Exported field_instance: 'node-report_2-field_attending_the_family'.
-  $field_instances['node-report_2-field_attending_the_family'] = array(
-    'bundle' => 'report_2',
-    'default_value' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'empty_fields_emptyfieldtext_empty_text' => '-',
-          'empty_fields_handler' => 'EmptyFieldText',
-        ),
-        'type' => 'list_default',
-        'weight' => 6,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'empty_fields_emptyfieldtext_empty_text' => '-',
-          'empty_fields_handler' => 'EmptyFieldText',
-        ),
-        'type' => 'list_default',
-        'weight' => 3,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_attending_the_family',
-    'label' => 'Does he/she turn to the family when he/she needs something?',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'display_label' => 0,
-      ),
-      'type' => 'options_onoff',
-      'weight' => 31,
     ),
   );
 
@@ -2889,40 +2294,6 @@ this is optional',
       'settings' => array(),
       'type' => 'options_buttons',
       'weight' => 16,
-    ),
-  );
-
-  // Exported field_instance: 'node-report_2-field_care_of_school_facilities'.
-  $field_instances['node-report_2-field_care_of_school_facilities'] = array(
-    'bundle' => 'report_2',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'empty_fields_emptyfieldtext_empty_text' => '',
-          'empty_fields_handler' => '',
-        ),
-        'type' => 'list_default',
-        'weight' => 8,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_care_of_school_facilities',
-    'label' => 'Care of school facilities',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 24,
     ),
   );
 
@@ -3103,59 +2474,6 @@ this is optional',
     ),
   );
 
-  // Exported field_instance: 'node-report_2-field_do_you_usually_do'.
-  $field_instances['node-report_2-field_do_you_usually_do'] = array(
-    'bundle' => 'report_2',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(
-          'empty_fields_emptyfieldtext_empty_text' => '-',
-          'empty_fields_handler' => 'EmptyFieldText',
-        ),
-        'type' => 'text_default',
-        'weight' => 7,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(
-          'empty_fields_emptyfieldtext_empty_text' => '-',
-          'empty_fields_handler' => 'EmptyFieldText',
-        ),
-        'type' => 'text_default',
-        'weight' => 3,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_do_you_usually_do',
-    'label' => 'What does he/she usually do after school?',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 1,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 5,
-      ),
-      'type' => 'text_textarea',
-      'weight' => 9,
-    ),
-  );
-
   // Exported field_instance: 'node-report_2-field_email_reference'.
   $field_instances['node-report_2-field_email_reference'] = array(
     'bundle' => 'report_2',
@@ -3257,43 +2575,6 @@ this is optional',
       'settings' => array(),
       'type' => 'options_buttons',
       'weight' => 30,
-    ),
-  );
-
-  // Exported field_instance: 'node-report_2-field_friendships_at_school2'.
-  $field_instances['node-report_2-field_friendships_at_school2'] = array(
-    'bundle' => 'report_2',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(
-          'empty_fields_emptyfieldtext_empty_text' => '-',
-          'empty_fields_handler' => 'EmptyFieldText',
-        ),
-        'type' => 'text_default',
-        'weight' => 11,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_friendships_at_school2',
-    'label' => 'Observations',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 1,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 5,
-      ),
-      'type' => 'text_textarea',
-      'weight' => 13,
     ),
   );
 
@@ -3496,118 +2777,6 @@ this is optional',
     ),
   );
 
-  // Exported field_instance: 'node-report_2-field_it_consumes_what_is'.
-  $field_instances['node-report_2-field_it_consumes_what_is'] = array(
-    'bundle' => 'report_2',
-    'default_value' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'empty_fields_emptyfieldtext_empty_text' => '-',
-          'empty_fields_handler' => 'EmptyFieldText',
-        ),
-        'type' => 'list_default',
-        'weight' => 15,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'empty_fields_emptyfieldtext_empty_text' => '-',
-          'empty_fields_handler' => 'EmptyFieldText',
-        ),
-        'type' => 'list_default',
-        'weight' => 3,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_it_consumes_what_is',
-    'label' => 'Does he/she eat what he/she is offered without complaining?',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'display_label' => 0,
-      ),
-      'type' => 'options_onoff',
-      'weight' => 25,
-    ),
-  );
-
-  // Exported field_instance: 'node-report_2-field_it_is_motivated'.
-  $field_instances['node-report_2-field_it_is_motivated'] = array(
-    'bundle' => 'report_2',
-    'default_value' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'empty_fields_emptyfieldtext_empty_text' => '-',
-          'empty_fields_handler' => 'EmptyFieldText',
-        ),
-        'type' => 'list_default',
-        'weight' => 4,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'empty_fields_emptyfieldtext_empty_text' => '-',
-          'empty_fields_handler' => 'EmptyFieldText',
-        ),
-        'type' => 'list_default',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_it_is_motivated',
-    'label' => 'Is he/she motivated?',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'display_label' => 0,
-      ),
-      'type' => 'options_onoff',
-      'weight' => 6,
-    ),
-  );
-
   // Exported field_instance: 'node-report_2-field_leads_a_balanced_diet'.
   $field_instances['node-report_2-field_leads_a_balanced_diet'] = array(
     'bundle' => 'report_2',
@@ -3698,106 +2867,6 @@ this is optional',
       ),
       'type' => 'text_textarea',
       'weight' => 25,
-    ),
-  );
-
-  // Exported field_instance: 'node-report_2-field_participates_in_the_activ'.
-  $field_instances['node-report_2-field_participates_in_the_activ'] = array(
-    'bundle' => 'report_2',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'midleton_base',
-        'settings' => array(
-          'empty_fields_emptyfieldtext_empty_text' => '-',
-          'empty_fields_handler' => 'EmptyFieldText',
-        ),
-        'type' => 'midleton_options_as_stars',
-        'weight' => 8,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'empty_fields_emptyfieldtext_empty_text' => '-',
-          'empty_fields_handler' => 'EmptyFieldText',
-        ),
-        'type' => 'list_default',
-        'weight' => 16,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_participates_in_the_activ',
-    'label' => 'Does he/she participate in the activities proposed by the host?',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 18,
-    ),
-  );
-
-  // Exported field_instance: 'node-report_2-field_participates_in_the_daily'.
-  $field_instances['node-report_2-field_participates_in_the_daily'] = array(
-    'bundle' => 'report_2',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'midleton_base',
-        'settings' => array(
-          'empty_fields_emptyfieldtext_empty_text' => '-',
-          'empty_fields_handler' => 'EmptyFieldText',
-        ),
-        'type' => 'midleton_options_as_stars',
-        'weight' => 7,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'empty_fields_emptyfieldtext_empty_text' => '-',
-          'empty_fields_handler' => 'EmptyFieldText',
-        ),
-        'type' => 'list_default',
-        'weight' => 11,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_participates_in_the_daily',
-    'label' => 'Does he/she actively participate in daily family life?',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 17,
     ),
   );
 
@@ -4093,7 +3162,7 @@ this is optional',
     ),
     'entity_type' => 'node',
     'field_name' => 'field_routine_weekend',
-    'label' => 'Weekend routine',
+    'label' => 'Free time Activities',
     'required' => 0,
     'settings' => array(
       'text_processing' => 1,
@@ -4107,62 +3176,6 @@ this is optional',
       ),
       'type' => 'text_textarea',
       'weight' => 10,
-    ),
-  );
-
-  // Exported field_instance: 'node-report_2-field_starts_itself_activities'.
-  $field_instances['node-report_2-field_starts_itself_activities'] = array(
-    'bundle' => 'report_2',
-    'default_value' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'empty_fields_emptyfieldtext_empty_text' => '-',
-          'empty_fields_handler' => 'EmptyFieldText',
-        ),
-        'type' => 'list_default',
-        'weight' => 5,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'empty_fields_emptyfieldtext_empty_text' => '-',
-          'empty_fields_handler' => 'EmptyFieldText',
-        ),
-        'type' => 'list_default',
-        'weight' => 1,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_starts_itself_activities',
-    'label' => 'Does he/she take up/suggest activities on his/her own initiative?',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'display_label' => 0,
-      ),
-      'type' => 'options_onoff',
-      'weight' => 7,
     ),
   );
 
@@ -4737,7 +3750,7 @@ this is optional',
     ),
     'entity_type' => 'node',
     'field_name' => 'field_attending_the_coord',
-    'label' => 'Does he/she go to the coordinator when he/she needs something?',
+    'label' => 'Does he/she still contact the host family or coordinator when he/she needs something?',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -4750,92 +3763,6 @@ this is optional',
       ),
       'type' => 'options_onoff',
       'weight' => 63,
-    ),
-  );
-
-  // Exported field_instance: 'node-report_3-field_attending_the_family'.
-  $field_instances['node-report_3-field_attending_the_family'] = array(
-    'bundle' => 'report_3',
-    'default_value' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 28,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'empty_fields_emptyfieldtext_empty_text' => '-',
-          'empty_fields_handler' => 'EmptyFieldText',
-        ),
-        'type' => 'list_default',
-        'weight' => 3,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_attending_the_family',
-    'label' => 'Does he/she go to the family when he/she needs something?',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'display_label' => 0,
-      ),
-      'type' => 'options_onoff',
-      'weight' => 64,
-    ),
-  );
-
-  // Exported field_instance: 'node-report_3-field_attitude_and_behavior'.
-  $field_instances['node-report_3-field_attitude_and_behavior'] = array(
-    'bundle' => 'report_3',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'empty_fields_emptyfieldtext_empty_text' => '',
-          'empty_fields_handler' => '',
-        ),
-        'type' => 'list_default',
-        'weight' => 10,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_attitude_and_behavior',
-    'label' => 'Are the host family satisfied with the student’s behaviour at home?',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 13,
     ),
   );
 
@@ -4963,77 +3890,6 @@ this is optional',
       ),
       'type' => 'text_textarea',
       'weight' => 68,
-    ),
-  );
-
-  // Exported field_instance: 'node-report_3-field_dialogue_with_family'.
-  $field_instances['node-report_3-field_dialogue_with_family'] = array(
-    'bundle' => 'report_3',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'empty_fields_emptyfieldtext_empty_text' => '',
-          'empty_fields_handler' => '',
-        ),
-        'type' => 'list_default',
-        'weight' => 9,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_dialogue_with_family',
-    'label' => 'Does the student spend time with their host family?',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 12,
-    ),
-  );
-
-  // Exported field_instance: 'node-report_3-field_do_you_usually_do'.
-  $field_instances['node-report_3-field_do_you_usually_do'] = array(
-    'bundle' => 'report_3',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(
-          'empty_fields_emptyfieldtext_empty_text' => '',
-          'empty_fields_handler' => '',
-        ),
-        'type' => 'text_default',
-        'weight' => 17,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_do_you_usually_do',
-    'label' => 'What does he/she usually do after school?',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 1,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 5,
-      ),
-      'type' => 'text_textarea',
-      'weight' => 16,
     ),
   );
 
@@ -5302,86 +4158,6 @@ this is optional',
       ),
       'type' => 'text_textarea',
       'weight' => 18,
-    ),
-  );
-
-  // Exported field_instance: 'node-report_3-field_it_consumes_what_is'.
-  $field_instances['node-report_3-field_it_consumes_what_is'] = array(
-    'bundle' => 'report_3',
-    'default_value' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'empty_fields_emptyfieldtext_empty_text' => '',
-          'empty_fields_handler' => '',
-        ),
-        'type' => 'list_default',
-        'weight' => 17,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_it_consumes_what_is',
-    'label' => 'Does he/she eat what he/she is offered without complaining?',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'display_label' => 0,
-      ),
-      'type' => 'options_onoff',
-      'weight' => 21,
-    ),
-  );
-
-  // Exported field_instance: 'node-report_3-field_it_is_motivated'.
-  $field_instances['node-report_3-field_it_is_motivated'] = array(
-    'bundle' => 'report_3',
-    'default_value' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'empty_fields_emptyfieldtext_empty_text' => '',
-          'empty_fields_handler' => '',
-        ),
-        'type' => 'list_default',
-        'weight' => 14,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_it_is_motivated',
-    'label' => 'Is he/she motivated?',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'display_label' => 0,
-      ),
-      'type' => 'options_onoff',
-      'weight' => 13,
     ),
   );
 
@@ -5736,7 +4512,7 @@ this is optional',
     ),
     'entity_type' => 'node',
     'field_name' => 'field_routine_weekend',
-    'label' => 'Weekend routine',
+    'label' => 'Free time Activities',
     'required' => 0,
     'settings' => array(
       'text_processing' => 1,
@@ -6021,53 +4797,12 @@ this is optional',
     ),
   );
 
-  // Exported field_instance: 'node-report_3-field_when_you_are_outside'.
-  $field_instances['node-report_3-field_when_you_are_outside'] = array(
-    'bundle' => 'report_3',
-    'default_value' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'empty_fields_emptyfieldtext_empty_text' => '',
-          'empty_fields_handler' => '',
-        ),
-        'type' => 'list_default',
-        'weight' => 14,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_when_you_are_outside',
-    'label' => 'When he/she is not at home, does he/she inform the family of his/her whereabouts and company?',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'display_label' => 0,
-      ),
-      'type' => 'options_onoff',
-      'weight' => 18,
-    ),
-  );
-
   // Translatables
   // Included for use with string extractors like potx.
   t('Activities he/she is currently involved in');
   t('Are the host family enjoying having the student as a member of the family?');
   t('Are the host family satisfied with the student’s behaviour at home?');
   t('Attitude and behaviour at home');
-  t('Care of school facilities');
   t('Chief Coordinator comments');
   t('Cleanliness and tidiness of his/her bedroom');
   t('Comments');
@@ -6075,39 +4810,31 @@ this is optional',
   t('Coordinator\'s feedback');
   t('Did he/she have to go to the doctor?');
   t('Did he/she have to see a doctor?');
-  t('Does he/she actively participate in daily family life?');
   t('Does he/she arrive to school on time?');
   t('Does he/she ask for permission to go out/attend events?');
   t('Does he/she communicate well in English with those around him/her?');
   t('Does he/she communicate well in English?');
-  t('Does he/she eat what he/she is offered without complaining?');
   t('Does he/she follow Educatius rules?');
   t('Does he/she follow a balanced diet?');
   t('Does he/she get to school on time?');
-  t('Does he/she go to the coordinator when he/she needs something?');
-  t('Does he/she go to the family when he/she needs something?');
+  t('Does he/she go to the host family or coordinator when he/she needs something?');
   t('Does he/she keep his/her bedroom tidy?');
-  t('Does he/she participate in the activities proposed by the host?');
   t('Does he/she respect the times set by the family, e.g. bedtime, meal times etc.?');
-  t('Does he/she still contact the coordinator when he/she needs something?');
+  t('Does he/she still contact the host family or coordinator when he/she needs something?');
   t('Does he/she take up/suggest activities on his/her own initiative?');
-  t('Does he/she turn to the family when he/she needs something?');
   t('Does he/she use the Internet appropriately?');
-  t('Does the student spend time with their host family?');
   t('Emails');
+  t('Free time Activities');
   t('Has he/she made an improvement in their level of English?');
   t('Here you can upload images of the student,
 this is optional');
   t('Host Family Comments');
   t('How does the student interact with their peers?');
   t('How has the student adapted to living with their host family?');
-  t('How well has the student integrated into their family?');
   t('Interaction with the host family');
-  t('Is he/she motivated?');
   t('Is the student open to participating in activities proposed by the host?');
   t('Month');
   t('Number of absences');
-  t('Observations');
   t('Overall Coordinator Assessment');
   t('PDF');
   t('Please detail any medical issues');
@@ -6120,8 +4847,6 @@ this is optional');
   t('Subjects');
   t('Subjects he/she studies');
   t('Subjects studied');
-  t('Weekend routine');
-  t('What does he/she usually do after school?');
   t('When he/she is not at home, does he/she inform the family of his/her whereabouts and company?');
   t('Will a formal end of term report be released? ');
   t('Year');

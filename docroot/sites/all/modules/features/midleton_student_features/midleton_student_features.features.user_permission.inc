@@ -107,6 +107,8 @@ function midleton_student_features_user_default_permissions() {
   $permissions['eck delete student student entities'] = array(
     'name' => 'eck delete student student entities',
     'roles' => array(
+      'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'eck',
@@ -125,6 +127,8 @@ function midleton_student_features_user_default_permissions() {
   $permissions['eck edit student student entities'] = array(
     'name' => 'eck edit student student entities',
     'roles' => array(
+      'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'eck',
@@ -143,6 +147,8 @@ function midleton_student_features_user_default_permissions() {
   $permissions['eck list student student entities'] = array(
     'name' => 'eck list student student entities',
     'roles' => array(
+      'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'eck',
@@ -162,6 +168,7 @@ function midleton_student_features_user_default_permissions() {
     'name' => 'eck view student student entities',
     'roles' => array(
       'Educatius Master' => 'Educatius Master',
+      'Manager' => 'Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'eck',
