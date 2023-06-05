@@ -2,7 +2,6 @@
 docroot/files
 docroot/sites/*/files
 docroot/sites/*/private
-docroot/sites/*/settings.php
 .ddev
 .idea
 .DS_Store
