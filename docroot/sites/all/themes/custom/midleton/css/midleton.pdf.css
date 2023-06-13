@@ -300,3 +300,15 @@ h1 {
      }*/ }
 
 /*# sourceMappingURL=midleton.pdf.css.map */
+.field--name-field-student-image > div.field__items {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+.field--name-field-student-image > div.field__items > div.field__item {
+  margin:5px;
+}
+.fieldset-wrapper {
+  border: none;
+}
