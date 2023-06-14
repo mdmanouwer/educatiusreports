@@ -208,19 +208,18 @@ h1 {
 }
 /* line 191, ../sass/midleton.pdf.scss */
 .node .field > .field__label {
-  width: 470px;
+  width: 1200px;
   display: block;
-  float: left;
-  left: 0;
 }
 /* line 197, ../sass/midleton.pdf.scss */
 .node .field > .field__items {
+  display: block;
   font-weight: bold;
-  padding: 0;
   color: #2e66b1;
-  left: 0;
-  padding-left: 0;
   min-height: 50px;
+  margin: 0;
+  margin-top: 10px;
+
 }
 /* line 206, ../sass/midleton.pdf.scss */
 .node .field > .field__items,
