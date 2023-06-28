@@ -817,7 +817,7 @@ function midleton_base_menu_local_tasks_alter(&$data, $router_item, $root_path) 
 function _midleton_base_user_view_access($account) {
   global $user;
   if (1 != $user->uid) {
-    return FALSE;
+    return TRUE;
   }
   else {
     return TRUE;
