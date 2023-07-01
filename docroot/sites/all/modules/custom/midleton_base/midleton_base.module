@@ -676,7 +676,7 @@ function midleton_base_field_attach_view_alter(&$output, $context) {
   }
   $entity_type = $context['entity_type'];
   $entity = $context['entity'];
-  list($id, $vid, $bundle) = entity_extract_ids($entity_type, $entity);
+  [$id, $vid, $bundle] = entity_extract_ids($entity_type, $entity);
 
   // Special switch when rendered using field_view_field().
   if ($context['view_mode'] == '_custom' && isset($context['display'])) {
@@ -1388,4 +1388,21 @@ function midleton_base_form_parent_teacher_meeting_node_form_alter(&$form, &$for
   if(!$form['field_ptm_year'][LANGUAGE_NONE]['#default_value']){
     $form['field_ptm_year'][LANGUAGE_NONE]['#default_value'][] = date('Y');
   }
+}
+
+/**
+ * Implements hook_user_login().
+ */
+function midleton_base_user_login(&$edit, $account) {
+
+  if (in_array('coordinator', $account->roles)) {
+    $edit['redirect'] = 'coordinator/reports';
+  }
+  if (in_array('Manager', $account->roles)) {
+    $edit['redirect'] = 'chief-coordinator/reports';
+  }
+  if (in_array('educatius_master', $account->roles)) {
+    $edit['redirect'] = 'educatius/reports';
+  }
+
 }
